@@ -8,7 +8,7 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="flex justify-between align-center font-inter font-regular leading-tight lg:container lg:mx-auto">
+      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-4 px-4 shadow-md bg-white lg:container lg:mx-auto">
         <a
           href="#"
           className="flex flex-col justify-center align-center w-full"
