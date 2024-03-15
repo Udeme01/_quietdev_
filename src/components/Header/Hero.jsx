@@ -9,7 +9,7 @@ import {
 const Hero = () => {
   return (
     <>
-      <section className="leading-10 font-inter font-regular">
+      <section className="leading-6 font-inter font-regular">
         <div className="px-4 py-16 text-left sm:bg-slate-400 md:bg-slate-700 lg:bg-red-300 lg:container lg:mx-auto">
           {/* <p className="p-2 text-sm bg-slate-200 mb-2 w-fit">
             Udeme Emmanuel | Frontend Developer
@@ -19,7 +19,7 @@ const Hero = () => {
             src={profile}
             alt="profile"
           /> */}
-          <h1 className="text-3xl mb-3 font-medium">Frontend Developer</h1>
+          <h1 className="text-3xl mb-3 font-regular">Frontend Developer</h1>
           <p className="lg:w-1/2 leading-7">
             I am Udeme Emmanuel, your go-to Frontend Developer, passionate about
             crafting user-friendly interfaces that captivate and engage. With a
@@ -31,27 +31,20 @@ const Hero = () => {
             needs.
           </p>
           <section>
-            {/* <a
-              href="mailto:<EMAIL>"
-              className="border border-black py-2 px-4 mt-4 bg-slate-100 hover:bg-slate-200 hover:border-none"
-            >
-              <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-              Send me an email
-            </a> */}
             <div>
-              <a href="#">
+              <a href="www.linkedin.com/in/emmanuel-udeme">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="text-2xl pr-4 mt-4"
                 />
               </a>
-              <a href="#">
+              <a href="https://github.com/Udeme01">
                 <FontAwesomeIcon
                   icon={faGithub}
                   className="text-2xl pr-4 mt-4"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/quietdev_udy">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="text-2xl pr-4 mt-4"

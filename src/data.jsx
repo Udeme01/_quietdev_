@@ -76,4 +76,39 @@ export const SKILLS = [
     link: "icons/vscode.svg",
     title: "vscode icon",
   },
+  {
+    id: "typescript",
+    link: "icons/typescript.svg",
+    title: "typescript icon",
+  },
+  {
+    id: "nodejs",
+    link: "icons/nodejs.svg",
+    title: "nodejs icon",
+  },
+  {
+    id: "nextjs",
+    link: "icons/nextjs.svg",
+    title: "nextjs icon",
+  },
+  {
+    id: "playwright",
+    link: "icons/playwright.svg",
+    title: "playwright icon",
+  },
+  {
+    id: "redux",
+    link: "icons/redux.svg",
+    title: "redux icon",
+  },
+  {
+    id: "vitejs",
+    link: "icons/vitejs.svg",
+    title: "vitejs icon",
+  },
+  {
+    id: "vitest",
+    link: "icons/vitest.svg",
+    title: "vitest icon",
+  },
 ];
