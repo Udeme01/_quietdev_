@@ -1,9 +1,11 @@
+import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="p-4 border border-black lg:hidden">
+    <header className="p-4">
       <MobileNav />
+      <DesktopNav />
     </header>
   );
 };

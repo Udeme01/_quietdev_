@@ -6,8 +6,10 @@ import { PROJECTS } from "../../data";
 const Projects = () => {
   return (
     <>
-      <h1 className="text-3xl text-left font-medium m-4 mt-16 py-2 font-inter">My Projects</h1>
-      <section className="font-inter">
+      <h1 className="text-3xl text-left font-medium m-4 mt-16 py-2 font-inter lg:container lg:mx-auto lg:pl-4">
+        My Projects
+      </h1>
+      <section className="font-inter md:grid md:grid-cols-2 lg:container lg:mx-auto lg:grid-cols-3">
         {PROJECTS.map((proj) => {
           const {
             id,
