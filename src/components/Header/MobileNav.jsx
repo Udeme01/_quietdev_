@@ -8,7 +8,7 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-4 px-4 shadow-md bg-white lg:container lg:mx-auto">
+      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-2 px-4 shadow-md bg-white lg:container lg:mx-auto">
         <a
           href="#"
           className="flex flex-col justify-center align-center w-full"
@@ -23,7 +23,7 @@ const MobileNav = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.nav
-              className="bg-white opacity-80 py-4 fixed top-[4rem] right-0 bottom-0 left-0 lg:hidden"
+              className="bg-white opacity-80 fixed top-[3.5rem] right-0 bottom-0 left-0 lg:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

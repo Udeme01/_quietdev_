@@ -1,13 +1,3 @@
-// import html from "../src/icons/html.svg";
-// import css from "../src/icons/css.svg";
-// import js from "../src/icons/js.svg";
-// import react from "../src/icons/react.svg";
-// import bootstrap from "../src/icons/bootstrap.svg";
-// import tailwindcss from "../src/icons/tailwindcss.svg";
-// import git from "../src/icons/git.svg";
-// import github from "../src/icons/github.svg";
-// import vscode from "../src/icons/vscode.svg";
-
 // NAVIGATION ROUTES
 export const ROUTES = [
   {
@@ -17,7 +7,7 @@ export const ROUTES = [
   },
   {
     id: "about",
-    title: "About",
+    title: "About Me",
     href: "#about",
   },
   {
@@ -28,7 +18,6 @@ export const ROUTES = [
 ];
 
 // skills list
-
 export const SKILLS = [
   {
     id: "html",
@@ -110,5 +99,79 @@ export const SKILLS = [
     id: "vitest",
     link: "icons/vitest.svg",
     title: "vitest icon",
+  },
+];
+
+// Projects
+export const PROJECTS = [
+  {
+    id: "0",
+    projectImg: "/projectImg/cars.jpg",
+    title: "Project Name",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
+    stacks: "HTML, CSS, JAVASCRIPT, REACT",
+    previewLink: "https://github.com",
+    codeLink: "https://github.com",
+  },
+  {
+    id: "1",
+    projectImg: "/projectImg/clouds.jpg",
+    title: "Project Name",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
+    stacks: "HTML, CSS, JAVASCRIPT, REACT",
+    previewLink: "https://github.com",
+    codeLink: "https://github.com",
+  },
+  {
+    id: "2",
+    projectImg: "/projectImg/temp.png",
+    title: "Project Name",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
+    stacks: "HTML, CSS, JAVASCRIPT, REACT",
+    previewLink: "https://github.com",
+    codeLink: "https://github.com",
+  },
+];
+
+// certifications
+
+export const CERTIFICATIONS = [
+  {
+    id: "cert01",
+    href: "https://github.com",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Introduction to Frontend Development",
+  },
+  {
+    id: "cert02",
+    href: "https://github.com",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "HTML and CSS in depth",
+  },
+  {
+    id: "cert03",
+    href: "https://github.com",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Programming with JavaScript",
+  },
+  {
+    id: "cert04",
+    href: "https://github.com",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Version Control",
+  },
+  {
+    id: "cert05",
+    href: "https://github.com",
+    certImg: "/certImg/freecodecamp.png",
+    title: "Free Code Camp",
+    description: "JavaScript Algorithms and Data Structures",
   },
 ];

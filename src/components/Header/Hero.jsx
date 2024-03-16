@@ -20,7 +20,7 @@ const Hero = () => {
             alt="profile"
           /> */}
           <h1 className="text-3xl mb-3 font-regular">Frontend Developer</h1>
-          <p className="lg:w-1/2 leading-7">
+          <p className="lg:w-1/2 leading-7 font-light">
             I am Udeme Emmanuel, your go-to Frontend Developer, passionate about
             crafting user-friendly interfaces that captivate and engage. With a
             knack for translating concepts into pixel-perfect designs, I bring
