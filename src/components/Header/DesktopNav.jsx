@@ -17,7 +17,10 @@ const DesktopNav = () => {
             {ROUTES.map((listItem) => {
               const { id, title, href } = listItem;
               return (
-                <li key={id} className="lg:mx-10 last:mr-0 lg:font-medium lg:mt-1">
+                <li
+                  key={id}
+                  className="lg:mx-10 last:mr-0 lg:font-medium lg:mt-1"
+                >
                   <a href={href}>{title}</a>
                 </li>
               );

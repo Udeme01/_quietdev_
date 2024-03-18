@@ -56,7 +56,7 @@ const Hero = () => {
           </section>
           <button
             type="button"
-            className="bg-black text-white py-3 px-4 mt-4 hover:bg-slate-200 hover:border-none"
+            className="bg-black text-white py-3 px-4 mt-4 hover:border-none"
           >
             Hire Me
           </button>
