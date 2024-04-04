@@ -1,8 +1,8 @@
 import Header from "./components/Header/Header";
-import Hero from "./components/Header/Hero";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Certificates from "./components/Certifications/Certifications";
+import Hero from "./components/portfolio/Hero";
+import Skills from "./components/portfolio/Skills";
+import Projects from "./components/portfolio/Projects";
+import Certificates from "./components/portfolio/Certifications";
 import Footer from "./components/Footer/Footer";
 
 function App() {

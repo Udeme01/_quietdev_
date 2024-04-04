@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../../../src/img/logo.png";
 import { ROUTES } from "../../data";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,12 +54,13 @@ const MobileNav = () => {
                         delay: 0.1 + idx / 10,
                       }}
                     >
-                      <a
+                      <Link
+                        to={href}
                         className="cursor-pointer w-full absolute top-0 right-0 bottom-0 left-0 pl-4 pt-5"
-                        href={href}
+                        // href={href}
                       >
                         {title}
-                      </a>
+                      </Link>
                     </motion.li>
                   );
                 })}

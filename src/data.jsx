@@ -3,17 +3,17 @@ export const ROUTES = [
   {
     id: "portfolio",
     title: "Portfolio",
-    href: "#portfolio",
+    href: "/",
   },
   {
     id: "about",
     title: "About Me",
-    href: "#about",
+    href: "/about",
   },
   {
     id: "contact",
     title: "Contact",
-    href: "#contact",
+    href: "/contact",
   },
 ];
 
@@ -106,33 +106,34 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: "0",
-    projectImg: "/projectImg/cars.jpg",
-    title: "Project Name",
+    projectImg: "/projectImg/comfy.png",
+    title: "Comfy House Furnitures",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
-    stacks: "HTML, CSS, JAVASCRIPT, REACT",
-    previewLink: "https://github.com",
-    codeLink: "https://github.com",
+    stacks: "HTML / CSS / JAVASCRIPT / Contentful CMS",
+    previewLink: "https://comfyhousefurnitures.vercel.app",
+    codeLink: "https://github.com/Udeme01/comfyHouse",
   },
   {
     id: "1",
-    projectImg: "/projectImg/clouds.jpg",
-    title: "Project Name",
+    projectImg: "/projectImg/wood.png",
+    title: "Rooms Homepage",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
-    stacks: "HTML, CSS, JAVASCRIPT, REACT",
-    previewLink: "https://github.com",
-    codeLink: "https://github.com",
+    stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
+    previewLink: "https://rooms-homepage-ecom.netlify.app/#",
+    codeLink: "https://github.com/Udeme01/ROOMS-HOMEPAGE",
   },
   {
     id: "2",
-    projectImg: "/projectImg/temp.png",
-    title: "Project Name",
+    projectImg: "/projectImg/yel.png",
+    title: "Snap | Make Remote Work",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
-    stacks: "HTML, CSS, JAVASCRIPT, REACT",
-    previewLink: "https://github.com",
-    codeLink: "https://github.com",
+    stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
+    previewLink: "https://intro-section-app-001.netlify.app/#",
+    codeLink:
+      "https://github.com/Udeme01/Intro-Section-With-Dropdown-Navigation",
   },
 ];
 
@@ -141,35 +142,35 @@ export const PROJECTS = [
 export const CERTIFICATIONS = [
   {
     id: "cert01",
-    href: "https://github.com",
+    href: "https://www.coursera.org/account/accomplishments/verify/T5SYKNDLPNH2",
     certImg: "/certImg/coursera.png",
     title: "Coursera",
     description: "Introduction to Frontend Development",
   },
   {
     id: "cert02",
-    href: "https://github.com",
+    href: "https://www.coursera.org/account/accomplishments/verify/TNGMJ8ZKQCWN",
     certImg: "/certImg/coursera.png",
     title: "Coursera",
     description: "HTML and CSS in depth",
   },
   {
     id: "cert03",
-    href: "https://github.com",
+    href: "https://www.coursera.org/account/accomplishments/verify/UA4UPWMZEJH4",
     certImg: "/certImg/coursera.png",
     title: "Coursera",
     description: "Programming with JavaScript",
   },
   {
     id: "cert04",
-    href: "https://github.com",
+    href: "https://www.coursera.org/account/accomplishments/verify/5Z6PDVNXBA66",
     certImg: "/certImg/coursera.png",
     title: "Coursera",
     description: "Version Control",
   },
   {
     id: "cert05",
-    href: "https://github.com",
+    href: "https://www.freecodecamp.org/certification/Udeme_Emmanuel_Edet/javascript-algorithms-and-data-structures",
     certImg: "/certImg/freecodecamp.png",
     title: "Free Code Camp",
     description: "JavaScript Algorithms and Data Structures",

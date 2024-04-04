@@ -17,6 +17,9 @@ export default {
         extraBold: "800",
         black: "900",
       },
+      height: {
+        350: "150px",
+      },
     },
   },
   plugins: [],
