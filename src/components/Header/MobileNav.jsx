@@ -57,7 +57,6 @@ const MobileNav = () => {
                       <Link
                         to={href}
                         className="cursor-pointer w-full absolute top-0 right-0 bottom-0 left-0 pl-4 pt-5"
-                        // href={href}
                       >
                         {title}
                       </Link>

@@ -1,5 +1,6 @@
 import logo from "../../../src/img/logo.png";
 import { ROUTES } from "../../data";
+import { Link } from "react-router-dom";
 
 const DesktopNav = () => {
   return (
@@ -21,7 +22,7 @@ const DesktopNav = () => {
                   key={id}
                   className="lg:mx-10 last:mr-0 lg:font-medium lg:mt-1"
                 >
-                  <a href={href}>{title}</a>
+                  <Link to={href}>{title}</Link>
                 </li>
               );
             })}

@@ -6,6 +6,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,12 +31,12 @@ const Footer = () => {
                   className="border-b border-slate-300 first:border-t first:border-slate-300 p-4 pl-0 lg:border-none lg:outline-none font-medium"
                   key={id}
                 >
-                  <a
+                  <Link to={href}
                     className="cursor-pointer w-full pl-4 pt-5 -z-0"
                     href={href}
                   >
                     {title}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
