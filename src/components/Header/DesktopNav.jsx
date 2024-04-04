@@ -31,7 +31,7 @@ const DesktopNav = () => {
           type="button"
           className="text-white lg:px-4 border bg-black lg:hover:opacity-75"
         >
-          <a href="#">Hire Me</a>
+          <a href="mailto:quietdevstudio@gmail.com">Hire Me</a>
         </button>
       </div>
     </>

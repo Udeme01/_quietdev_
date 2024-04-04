@@ -71,7 +71,7 @@ const MobileNav = () => {
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <a href="#">Hire Me</a>
+                  <a href="mailto:quietdevstudio@gmail.com">Hire Me</a>
                 </motion.button>
               </ul>
             </motion.nav>

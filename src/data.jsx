@@ -1,3 +1,11 @@
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   // faGithub,
+//   faInstagram,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons";
+// // import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 // NAVIGATION ROUTES
 export const ROUTES = [
   {
@@ -176,3 +184,51 @@ export const CERTIFICATIONS = [
     description: "JavaScript Algorithms and Data Structures",
   },
 ];
+
+// Socials
+
+// export const SOCIALS = [
+//   {
+//     id: "social01",
+//     href: "https://www.coursera.org/account/accomplishments/verify/T5SYKNDLPNH2",
+//     icons: `${faLinkedin}`,
+//     title: "Linkedin",
+//     description: "Introduction to Frontend Development",
+//   },
+//   {
+//     id: "social02",
+//     href: "https://www.coursera.org/account/accomplishments/verify/TNGMJ8ZKQCWN",
+//     icons: `${(
+//       <FontAwesomeIcon
+//         icon={faInstagram}
+//         className="text-2xl p-4 bg-black text-white"
+//       />
+//     )}`,
+//     title: "GitHub",
+//     description: "HTML and CSS in depth",
+//   },
+  // {
+  //   id: "social03",
+  //   href: "https://www.coursera.org/account/accomplishments/verify/UA4UPWMZEJH4",
+  //   certImg: `${(
+  //     <FontAwesomeIcon
+  //       icon={faGithub}
+  //       className="text-2xl p-4 bg-black text-white"
+  //     />
+  //   )}`,
+  //   title: "Instagram",
+  //   description: "Programming with JavaScript",
+  // },
+  // {
+  //   id: "social04",
+  //   href: "https://www.coursera.org/account/accomplishments/verify/5Z6PDVNXBA66",
+  //   certImg: `${(
+  //     <FontAwesomeIcon
+  //       icon={faEnvelope}
+  //       className="text-2xl p-4 bg-black text-white"
+  //     />
+  //   )}`,
+  //   title: "Email",
+  //   description: "Version Control",
+  // },
+// ];

@@ -42,13 +42,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="border-b border-slate-300 p-1 flex justify-end align-center">
-          <a href="www.linkedin.com/in/emmanuel-udeme">
+          <a href="https://www.linkedin.com/in/emmanuel-udeme/" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} className="text-2xl pr-6 my-5" />
           </a>
-          <a href="https://github.com/Udeme01">
+          <a href="https://github.com/Udeme01" target="_blank">
             <FontAwesomeIcon icon={faGithub} className="text-2xl pr-6 my-5" />
           </a>
-          <a href="https://www.instagram.com/quietdev_udy">
+          <a href="https://www.instagram.com/quietdev_udy" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
               className="text-2xl pr-4 my-5"

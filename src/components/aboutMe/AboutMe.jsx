@@ -97,10 +97,7 @@ const AboutMe = () => {
                   />
                 </div>
               </div>
-              <button
-                className="bg-white px-4 py-2 text-xl uppercase"
-                type="submit"
-              >
+              <button className="bg-white px-4 py-2 uppercase" type="submit">
                 submit
               </button>
             </form>

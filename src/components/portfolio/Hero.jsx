@@ -34,19 +34,22 @@ const Hero = () => {
           </p>
           <section>
             <div className="my-2">
-              <a href="www.linkedin.com/in/emmanuel-udeme">
+              <a
+                href="https://www.linkedin.com/in/emmanuel-udeme/"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="text-2xl pr-4 mt-4"
                 />
               </a>
-              <a href="https://github.com/Udeme01">
+              <a href="https://github.com/Udeme01" target="_blank">
                 <FontAwesomeIcon
                   icon={faGithub}
                   className="text-2xl pr-4 mt-4"
                 />
               </a>
-              <a href="https://www.instagram.com/quietdev_udy">
+              <a href="https://www.instagram.com/quietdev_udy" target="_blank">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="text-2xl pr-4 mt-4"
@@ -54,12 +57,14 @@ const Hero = () => {
               </a>
             </div>
           </section>
-          <button
-            type="button"
-            className="bg-black text-white py-3 px-4 mt-4 hover:border-none"
-          >
-            Hire Me
-          </button>
+          <a href="mailto:quietdevstudio@gmail.com" target="_blank">
+            <button
+              type="button"
+              className="bg-black text-white py-3 px-4 mt-4 hover:border-none"
+            >
+              Hire Me
+            </button>
+          </a>
         </div>
       </section>
     </>

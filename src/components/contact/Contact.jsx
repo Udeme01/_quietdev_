@@ -1,24 +1,156 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
     <div>
       <Header />
-      <h1>Contact Me!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, id
-        quasi rerum nam tempora quidem voluptatibus, quis voluptatum quaerat
-        repellat atque laborum autem doloremque temporibus! Quis tenetur at, non
-        itaque ex unde, facilis nobis quod possimus iure minus rerum odit,
-        nostrum consequuntur! Culpa ipsam molestiae ullam sunt doloremque dolore
-        veritatis, possimus at placeat illum vel aspernatur eum non eveniet modi
-        omnis cumque nihil quo quasi quibusdam, blanditiis expedita quisquam
-        saepe. Voluptatem quam id ipsum, a exercitationem quos error distinctio
-        repellat doloribus reiciendis, quod dolores asperiores soluta adipisci
-        odio, voluptas aut? Eum asperiores ducimus quaerat porro deleniti natus
-        ex recusandae nisi?
-      </p>
+      <section className="mx-4 text-center px-4 py-16 pb-8 bg-gray-200 lg:container lg:mx-auto">
+        <div className="lg:w-3/5 lg:mx-auto">
+          <h1 className="font-regular text-3xl my-3 md:text-4xl">
+            <span className="text-sm block p-1">Let&apos; Chat</span>
+            Ready to Embark on a Project?
+          </h1>
+          <p className="text-center max-w-screen-md mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            consectetur adipisci nisi praesentium a reiciendis, expedita
+            commodi, rerum ex laboriosam quidem tempora quaerat quasi architecto
+            nobis! Dolores natus deserunt iure voluptatem velit cumque vitae
+            dolorum ratione dignissimos voluptate in praesentium, sint
+            voluptates repellat aspernatur a esse eum ea quod quas magni earum!
+            Quaerat esse quia quae sequi. Magni, incidunt dolorem deserunt quod
+            iure numquam! Vitae voluptatibus iste asperiores eligendi. Autem
+            officiis vel fuga, distinctio, commodi amet quos cumque ratione,
+            sunt similique ex nesciunt enim tempora in impedit quo veritatis.
+            Incidunt dolor, ipsum dolore illum laudantium officia iure atque
+            aperiam tempora?
+          </p>
+          <form className="mt-10">
+            <div>
+              <div className="my-4">
+                <input
+                  className="w-full p-2"
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="First name"
+                  required
+                />
+              </div>
+              <div className="my-4">
+                <input
+                  className="w-full p-2"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  className="w-full p-2"
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  required
+                />
+              </div>
+            </div>
+            <button
+              className="bg-white px-4 py-2 mt-4 text-xl uppercase"
+              type="submit"
+            >
+              submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* socials */}
+      <section className="text-left my-6 lg:container lg:mx-auto lg:grid lg:grid-cols-3">
+        <div className="font-inter">
+          <a href="https://www.linkedin.com/in/emmanuel-udeme/" target="_blank">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:m-0">
+              <div>
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="text-2xl p-3 bg-black text-white"
+                />
+              </div>
+              <div className="flex justify-center align-center flex-col w-full">
+                <h2 className="font-medium">LinkedIn</h2>
+                <p className="font-light text-md">
+                  Take a look at my linkedin profile.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="font-inter">
+          <a href="https://github.com/Udeme01" target="_blank">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0">
+              <div>
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="text-2xl p-3 bg-black text-white"
+                />
+              </div>
+              <div className="flex justify-center align-center flex-col w-full">
+                <h2 className="font-medium">GitHub</h2>
+                <p className="font-light text-md">
+                  What&apos;s history without github? All Time Project&apos;s
+                  here.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="font-inter">
+          <a href="https://www.instagram.com/quietdev_udy/" target="_blank">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0">
+              <div>
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="text-2xl p-3 bg-black text-white"
+                />
+              </div>
+              <div className="flex justify-center align-center flex-col w-full">
+                <h2 className="font-medium">Instagram</h2>
+                <p className="font-light text-md">
+                  Follow through the journey, and experience.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="font-inter">
+          <a href="mailto:quietdevstudio@gmail.com" target="_blank">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:ml-0 lg:mb-0">
+              <div>
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="text-2xl p-3 bg-black text-white"
+                />
+              </div>
+              <div className="flex justify-center align-center flex-col w-full">
+                <h2 className="font-medium">Email</h2>
+                <p className="font-light text-md">
+                  Always available to answer to your emails.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
       <Footer />
     </div>
   );
