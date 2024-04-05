@@ -19,18 +19,15 @@ const Contact = () => {
             Ready to Embark on a Project?
           </h1>
           <p className="text-center max-w-screen-md mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            consectetur adipisci nisi praesentium a reiciendis, expedita
-            commodi, rerum ex laboriosam quidem tempora quaerat quasi architecto
-            nobis! Dolores natus deserunt iure voluptatem velit cumque vitae
-            dolorum ratione dignissimos voluptate in praesentium, sint
-            voluptates repellat aspernatur a esse eum ea quod quas magni earum!
-            Quaerat esse quia quae sequi. Magni, incidunt dolorem deserunt quod
-            iure numquam! Vitae voluptatibus iste asperiores eligendi. Autem
-            officiis vel fuga, distinctio, commodi amet quos cumque ratione,
-            sunt similique ex nesciunt enim tempora in impedit quo veritatis.
-            Incidunt dolor, ipsum dolore illum laudantium officia iure atque
-            aperiam tempora?
+            Welcome to the realm where requirements hold as much significance as
+            the desired outcomes. Whether you&apos;re a fledgling startup
+            establishing your online presence or a seasoned enterprise aiming to
+            enhance your brand&apos;s visibility and impact, my expertise and
+            dedication remain unwavering, ready to tailor solutions that align
+            with your specific goals and aspirations. I deliver impactful
+            results that drive the success of your project from start to finish.
+            Let&apos;s work together to transform your vision into reality with
+            a design that truly stands out and makes a meaningful impact.
           </p>
           <form className="mt-10">
             <div>
