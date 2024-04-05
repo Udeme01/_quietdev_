@@ -4,6 +4,7 @@ import logo from "../../../src/img/logo.png";
 import { ROUTES } from "../../data";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Theme } from "../../features/ThemeChange";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,17 +18,15 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-2 px-4 shadow-md bg-white lg:container lg:mx-auto lg:hidden dark:bg-neutral-900">
-        <a
-          href="#"
-          className="flex flex-col justify-center align-center w-full"
-        >
+      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-2 px-4 pr-2 shadow-md bg-white lg:container lg:mx-auto lg:hidden dark:bg-neutral-900">
+        <a href="#" className="flex flex-col justify-center align-center w-fit">
           <img
             className="w-7 rounded-full cursor-pointer"
             src={logo}
             alt="logo"
           />
         </a>
+        <Theme />
         <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
         <AnimatePresence>
           {isOpen && (
