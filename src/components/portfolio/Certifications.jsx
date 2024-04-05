@@ -12,7 +12,7 @@ const Certificates = () => {
             const { id, href, certImg, title, description } = certificates;
             return (
               <a key={id} href={href} target="_blank">
-                <div className="m-4 p-2 flex justify-start gap-4 bg-gray-100 text-black shadow-md">
+                <div className="m-4 p-2 flex justify-start gap-4 bg-gray-100 text-black shadow-md dark:bg-neutral-800 dark:text-neutral-100">
                   <img
                     src={certImg}
                     alt="logo"

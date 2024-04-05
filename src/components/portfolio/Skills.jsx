@@ -12,7 +12,7 @@ const Skills = () => {
           return (
             <img
               key={id}
-              className="mx-auto border border-white shadow-xl w-4/6 md:w-8/12 lg:w-6/12"
+              className="mx-auto border border-white shadow-xl w-4/6 md:w-8/12 lg:w-6/12 dark:bg-white border-none"
               src={link}
               alt={title}
             />

@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <>
       <Header />
-      <section className="container mx-auto px-4 py-16 pb-0 dark:text-whit dark:bg-blac">
+      <section className="container mx-auto px-4 py-16 pb-0 dark:text-neutral-100">
         <h1 className="text-center font-regular font-inter text-2xl mb-3 md:text-4xl">
           LEAVE BEHIND THE WORLD OF MAKE-BELIEVE, WELCOME TO MY CORNER OF THE
           WEB, WHERE CODE MEETS CREATIVITY!
@@ -22,7 +22,7 @@ const AboutMe = () => {
           </video>
         </div>
 
-        <section className="mt-24 bg-gray-200 p-4 dark:bg-black">
+        <section className="mt-24 bg-gray-200 p-4 dark:bg-neutral-800">
           <div className="py-10 pt-0 lg:flex">
             <img
               className="exp lg:w-1/2 lg:py-8 lg:px-4"
@@ -53,7 +53,7 @@ const AboutMe = () => {
             />
             <div className="lg:flex lg:flex-col lg:align-center lg:justify-center lg:py-8 lg:px-4 lg:order-first">
               <h1 className="font-regular text-2xl mt-3 md:text-4xl">
-                <span className="text-xs block bg-white w-fit p-1">
+                <span className="text-xs block bg-white w-fit p-1 dark:bg-neutral-900">
                   RESPONSIVE DESIGN
                 </span>
                 I DELIVER EXCELLENCE ACROSS DEVICES WITH RESPONSIVE DESIGNS
@@ -113,7 +113,10 @@ const AboutMe = () => {
                     />
                   </div>
                 </div>
-                <button className="bg-white px-4 py-2 uppercase" type="submit">
+                <button
+                  className="bg-white px-4 py-2 uppercase dark:bg-neutral-900"
+                  type="submit"
+                >
                   submit
                 </button>
               </form>

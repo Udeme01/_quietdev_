@@ -17,7 +17,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-2 px-4 shadow-md bg-white lg:container lg:mx-auto lg:hidden">
+      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-2 px-4 shadow-md bg-white lg:container lg:mx-auto lg:hidden dark:bg-neutral-900">
         <a
           href="#"
           className="flex flex-col justify-center align-center w-full"
@@ -32,7 +32,7 @@ const MobileNav = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.nav
-              className="bg-white opacity-80 fixed top-[3.5rem] right-0 bottom-0 left-0"
+              className="bg-white opacity-80 fixed top-[3.5rem] right-0 bottom-0 left-0 dark:bg-neutral-900"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -65,7 +65,7 @@ const MobileNav = () => {
                 })}
                 <motion.button
                   type="button"
-                  className="btnHire mt-4 absolute right-4 left-4"
+                  className="btnHire mt-4 absolute right-4 left-4 dark:bg-neutral-100 dark:text-neutral-900"
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.6 }}

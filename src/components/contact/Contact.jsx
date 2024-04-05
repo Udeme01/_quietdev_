@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div>
       <Header />
-      <section className="mx-4 text-center px-4 py-16 pb-8 bg-gray-200 lg:container lg:mx-auto">
+      <section className="mx-4 text-center px-4 py-16 pb-8 bg-gray-200 lg:container lg:mx-auto dark:bg-neutral-800 dark:text-neutral-100">
         <div className="lg:w-3/5 lg:mx-auto">
           <h1 className="font-regular text-3xl my-3 md:text-4xl">
             <span className="text-sm block p-1">Let&apos; Chat</span>
@@ -63,7 +63,7 @@ const Contact = () => {
               </div>
             </div>
             <button
-              className="bg-white px-4 py-2 mt-4 text-xl uppercase"
+              className="bg-white px-4 py-2 mt-4 text-xl uppercase dark:bg-neutral-900"
               type="submit"
             >
               submit
@@ -74,9 +74,10 @@ const Contact = () => {
 
       {/* socials */}
       <section className="text-left my-6 lg:container lg:mx-auto lg:grid lg:grid-cols-3">
+        {/* LinkedIn */}
         <div className="font-inter">
           <a href="https://www.linkedin.com/in/emmanuel-udeme/" target="_blank">
-            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:m-0">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:m-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faLinkedin}
@@ -92,9 +93,11 @@ const Contact = () => {
             </div>
           </a>
         </div>
+
+        {/* GitHub */}
         <div className="font-inter">
           <a href="https://github.com/Udeme01" target="_blank">
-            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -111,9 +114,11 @@ const Contact = () => {
             </div>
           </a>
         </div>
+
+        {/* Instagram */}
         <div className="font-inter">
           <a href="https://www.instagram.com/quietdev_udy/" target="_blank">
-            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faInstagram}
@@ -129,9 +134,11 @@ const Contact = () => {
             </div>
           </a>
         </div>
+
+        {/* Email */}
         <div className="font-inter">
           <a href="mailto:quietdevstudio@gmail.com" target="_blank">
-            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:ml-0 lg:mb-0">
+            <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:ml-0 lg:mb-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faEnvelope}

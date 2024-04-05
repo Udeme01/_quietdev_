@@ -60,7 +60,7 @@ const Hero = () => {
           <a href="mailto:quietdevstudio@gmail.com" target="_blank">
             <button
               type="button"
-              className="bg-black text-white py-3 px-4 mt-4 hover:border-none"
+              className="bg-black text-white py-3 px-4 mt-4 hover:border-none dark:bg-neutral-100 dark:text-neutral-900"
             >
               Hire Me
             </button>
