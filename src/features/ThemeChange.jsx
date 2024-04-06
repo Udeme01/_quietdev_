@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 
 export const Theme = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
-  //   this runs whenever our "darkMode" state changes
+  // this runs whenever our "darkMode" state changes
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -16,8 +16,18 @@ export const Theme = () => {
     }
   }, [darkMode]);
 
+  //   useEffect(() => {
+  //     if (localStorage.getItem("theme") === "dark") {
+  //       setDarkMode(true);
+  //       localStorage.setItem("theme", "dark");
+  //     } else {
+  //       setDarkMode(false);
+  //       localStorage.setItem("theme", "light");
+  //     }
+  //   }, []);
+
   const toggleThemeMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevstate) => !prevstate);
   };
 
   return (

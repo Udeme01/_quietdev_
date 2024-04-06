@@ -17,7 +17,7 @@ const AboutMe = () => {
           elevate brands.
         </p>
         <div className="mt-4">
-          <video autoPlay muted loop className="w-screen">
+          <video autoPlay muted loop controls="none" className="w-screen">
             <source src="./videos/coder-03.mp4" />
           </video>
         </div>
