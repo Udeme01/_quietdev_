@@ -7,6 +7,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { SendMe } from "../../features/SendMe";
 
 const Contact = () => {
   return (
@@ -29,46 +30,7 @@ const Contact = () => {
             Let&apos;s work together to transform your vision into reality with
             a design that truly stands out and makes a meaningful impact.
           </p>
-          <form className="mt-10">
-            <div>
-              <div className="my-4">
-                <input
-                  className="w-full p-2"
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  placeholder="First name"
-                  required
-                />
-              </div>
-              <div className="my-4">
-                <input
-                  className="w-full p-2"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div>
-                <textarea
-                  className="w-full p-2"
-                  type="text"
-                  name="message"
-                  id="message"
-                  placeholder="Message"
-                  required
-                />
-              </div>
-            </div>
-            <button
-              className="bg-white px-4 py-2 mt-4 text-xl uppercase dark:bg-neutral-900"
-              type="submit"
-            >
-              submit
-            </button>
-          </form>
+          <SendMe />
         </div>
       </section>
 

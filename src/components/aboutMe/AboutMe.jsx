@@ -1,5 +1,6 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { SendMe } from "../../features/SendMe";
 
 const AboutMe = () => {
   return (
@@ -17,7 +18,7 @@ const AboutMe = () => {
           elevate brands.
         </p>
         <div className="mt-4">
-          <video autoPlay muted loop controls="none" className="w-screen">
+          <video autoPlay muted loop controls={false} className="w-screen">
             <source src="./videos/coder-03.mp4" />
           </video>
         </div>
@@ -80,46 +81,7 @@ const AboutMe = () => {
               <h1 className="text-center font-regular text-2xl mt-3 md:text-4xl">
                 SO, HOW CAN I HELP?
               </h1>
-              <form className="text-center">
-                <div>
-                  <div className="my-4">
-                    <input
-                      className="w-full p-2"
-                      type="text"
-                      name="firstname"
-                      id="firstname"
-                      placeholder="First name"
-                      required
-                    />
-                  </div>
-                  <div className="my-4">
-                    <input
-                      className="w-full p-2"
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      className="w-full p-2"
-                      type="text"
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                      required
-                    />
-                  </div>
-                </div>
-                <button
-                  className="bg-white px-4 py-2 uppercase dark:bg-neutral-900"
-                  type="submit"
-                >
-                  submit
-                </button>
-              </form>
+              <SendMe />
             </div>
           </div>
         </section>
