@@ -5,6 +5,7 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="lg:flex lg:justify-center lg:w-full lg:align-center">
           <a
             href="#"
-            className="flex flex-col justify-around align-center w-full"
+            className="flex flex-col justify-around align-center w-fit"
           >
             <img
               className="w-6 rounded-full cursor-pointer m-4 dark:border-white border"
@@ -28,11 +29,12 @@ const Footer = () => {
               const { id, title, href } = listItem;
               return (
                 <li
-                  className="border-b border-slate-300 first:border-t first:border-slate-300 p-4 pl-0 lg:border-none lg:outline-none font-medium"
+                  className="border-b border-slate-300 first:border-t first:border-slate-300 relative p-4 pl-0 py-8 lg:border-none lg:outline-none font-medium"
                   key={id}
                 >
-                  <Link to={href}
-                    className="cursor-pointer w-full pl-4 pt-5 -z-0"
+                  <Link
+                    to={href}
+                    className="absolute top-0 right-0 bottom-0 left-0 cursor-pointer pl-4 py-6 -z-0"
                     href={href}
                   >
                     {title}
@@ -52,6 +54,12 @@ const Footer = () => {
           <a href="https://www.instagram.com/quietdev_udy" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
+              className="text-2xl pr-4 my-5"
+            />
+          </a>
+          <a href="https://www.twitter.com/quietdev_udy" target="_blank">
+            <FontAwesomeIcon
+              icon={faTwitter}
               className="text-2xl pr-4 my-5"
             />
           </a>

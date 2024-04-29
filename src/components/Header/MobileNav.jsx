@@ -4,7 +4,7 @@ import logo from "../../../src/img/logo.png";
 import { ROUTES } from "../../data";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Theme } from "../../features/ThemeChange";
+// import { Theme } from "../../features/ThemeChange";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const MobileNav = () => {
             alt="logo"
           />
         </a>
-        <Theme />
+        {/* <Theme /> */}
         <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
         <AnimatePresence>
           {isOpen && (

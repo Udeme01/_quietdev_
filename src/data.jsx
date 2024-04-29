@@ -44,11 +44,6 @@ export const SKILLS = [
     title: "js icon",
   },
   {
-    id: "react",
-    link: "/icons/react.svg",
-    title: "react icon",
-  },
-  {
     id: "bootstrap",
     link: "/icons/bootstrap.svg",
     title: "bootstrap icon",
@@ -57,6 +52,11 @@ export const SKILLS = [
     id: "tailwindcss",
     link: "/icons/tailwindcss.svg",
     title: "tailwindcss icon",
+  },
+  {
+    id: "react",
+    link: "/icons/react.svg",
+    title: "react icon",
   },
   {
     id: "git",
@@ -73,41 +73,41 @@ export const SKILLS = [
     link: "icons/vscode.svg",
     title: "vscode icon",
   },
-  {
-    id: "typescript",
-    link: "icons/typescript.svg",
-    title: "typescript icon",
-  },
-  {
-    id: "nodejs",
-    link: "icons/nodejs.svg",
-    title: "nodejs icon",
-  },
-  {
-    id: "nextjs",
-    link: "icons/nextjs.svg",
-    title: "nextjs icon",
-  },
-  {
-    id: "playwright",
-    link: "icons/playwright.svg",
-    title: "playwright icon",
-  },
-  {
-    id: "redux",
-    link: "icons/redux.svg",
-    title: "redux icon",
-  },
+  // {
+  //   id: "typescript",
+  //   link: "icons/typescript.svg",
+  //   title: "typescript icon",
+  // },
+  // {
+  //   id: "nodejs",
+  //   link: "icons/nodejs.svg",
+  //   title: "nodejs icon",
+  // },
+  // {
+  //   id: "nextjs",
+  //   link: "icons/nextjs.svg",
+  //   title: "nextjs icon",
+  // },
+  // {
+  //   id: "playwright",
+  //   link: "icons/playwright.svg",
+  //   title: "playwright icon",
+  // },
+  // {
+  //   id: "redux",
+  //   link: "icons/redux.svg",
+  //   title: "redux icon",
+  // },
   {
     id: "vitejs",
     link: "icons/vitejs.svg",
     title: "vitejs icon",
   },
-  {
-    id: "vitest",
-    link: "icons/vitest.svg",
-    title: "vitest icon",
-  },
+  // {
+  //   id: "vitest",
+  //   link: "icons/vitest.svg",
+  //   title: "vitest icon",
+  // },
 ];
 
 // Projects
@@ -178,6 +178,20 @@ export const CERTIFICATIONS = [
   },
   {
     id: "cert05",
+    href: "https://www.coursera.org/account/accomplishments/verify/9VBNAYJ5P3AR",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "React Basics",
+  },
+  {
+    id: "cert06",
+    href: "https://www.coursera.org/account/accomplishments/verify/ZSHZHPP4ULAB",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Advanced React",
+  },
+  {
+    id: "cert07",
     href: "https://www.freecodecamp.org/certification/Udeme_Emmanuel_Edet/javascript-algorithms-and-data-structures",
     certImg: "/certImg/freecodecamp.png",
     title: "Free Code Camp",
@@ -207,28 +221,28 @@ export const CERTIFICATIONS = [
 //     title: "GitHub",
 //     description: "HTML and CSS in depth",
 //   },
-  // {
-  //   id: "social03",
-  //   href: "https://www.coursera.org/account/accomplishments/verify/UA4UPWMZEJH4",
-  //   certImg: `${(
-  //     <FontAwesomeIcon
-  //       icon={faGithub}
-  //       className="text-2xl p-4 bg-black text-white"
-  //     />
-  //   )}`,
-  //   title: "Instagram",
-  //   description: "Programming with JavaScript",
-  // },
-  // {
-  //   id: "social04",
-  //   href: "https://www.coursera.org/account/accomplishments/verify/5Z6PDVNXBA66",
-  //   certImg: `${(
-  //     <FontAwesomeIcon
-  //       icon={faEnvelope}
-  //       className="text-2xl p-4 bg-black text-white"
-  //     />
-  //   )}`,
-  //   title: "Email",
-  //   description: "Version Control",
-  // },
+// {
+//   id: "social03",
+//   href: "https://www.coursera.org/account/accomplishments/verify/UA4UPWMZEJH4",
+//   certImg: `${(
+//     <FontAwesomeIcon
+//       icon={faGithub}
+//       className="text-2xl p-4 bg-black text-white"
+//     />
+//   )}`,
+//   title: "Instagram",
+//   description: "Programming with JavaScript",
+// },
+// {
+//   id: "social04",
+//   href: "https://www.coursera.org/account/accomplishments/verify/5Z6PDVNXBA66",
+//   certImg: `${(
+//     <FontAwesomeIcon
+//       icon={faEnvelope}
+//       className="text-2xl p-4 bg-black text-white"
+//     />
+//   )}`,
+//   title: "Email",
+//   description: "Version Control",
+// },
 // ];

@@ -4,6 +4,7 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
@@ -52,6 +53,12 @@ const Hero = () => {
               <a href="https://www.instagram.com/quietdev_udy" target="_blank">
                 <FontAwesomeIcon
                   icon={faInstagram}
+                  className="text-2xl pr-4 mt-4"
+                />
+              </a>
+              <a href="https://www.twitter.com/quietdev_udy" target="_blank">
+                <FontAwesomeIcon
+                  icon={faTwitter}
                   className="text-2xl pr-4 mt-4"
                 />
               </a>
