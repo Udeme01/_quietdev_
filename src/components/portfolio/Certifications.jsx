@@ -16,7 +16,7 @@ const Certificates = () => {
                   <img
                     src={certImg}
                     alt="logo"
-                    className="rounded-full w-24 border p-px bg-white border-black"
+                    className="rounded-full w-24 border p-px bg-white border-red-600"
                   />
                   <div className="flex justify-center align-center flex-col w-full">
                     <h2 className="font-regular text-lg">{title}</h2>
