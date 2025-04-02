@@ -1,13 +1,8 @@
 import { ROUTES } from "../../data";
 import logo from "../../../src/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-  faTwitter
-} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { SOCIALS } from "../../data";
 
 const Footer = () => {
   return (
@@ -29,7 +24,7 @@ const Footer = () => {
               const { id, title, href } = listItem;
               return (
                 <li
-                  className="border-b border-slate-300 first:border-t first:border-slate-300 relative p-4 pl-0 py-8 lg:border-none lg:outline-none font-medium"
+                  className="border-b border-slate-300 first:border-t first:border-slate-300 relative p-4 pl-0 py-8 text-[1.1rem] font-regular tracking-wider lg:border-none lg:outline-none"
                   key={id}
                 >
                   <Link
@@ -45,24 +40,19 @@ const Footer = () => {
           </ul>
         </div>
         <div className="border-b border-slate-300 p-1 flex justify-end align-center">
-          <a href="https://www.linkedin.com/in/emmanuel-udeme/" target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} className="text-2xl pr-6 my-5" />
-          </a>
-          <a href="https://github.com/Udeme01" target="_blank">
-            <FontAwesomeIcon icon={faGithub} className="text-2xl pr-6 my-5" />
-          </a>
-          <a href="https://www.instagram.com/quietdev_udy" target="_blank">
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="text-2xl pr-4 my-5"
-            />
-          </a>
-          <a href="https://www.twitter.com/quietdev_udy" target="_blank">
-            <FontAwesomeIcon
-              icon={faTwitter}
-              className="text-2xl pr-4 my-5"
-            />
-          </a>
+          <div className="my-2">
+            {SOCIALS.map((socials) => {
+              const { id, href, target, icon, rel } = socials;
+              return (
+                <a key={id} href={href} target={target} rel={rel}>
+                  <FontAwesomeIcon
+                    icon={icon}
+                    className="text-2xl mr-5 mt-4 text-red-400 hover:text-red-600"
+                  />
+                </a>
+              );
+            })}
+          </div>
         </div>
         <p className="p-4 font-light">Udeme Emmanuel</p>
       </section>

@@ -19,7 +19,7 @@ const Certificates = () => {
                     className="rounded-full w-24 border p-px bg-white border-black"
                   />
                   <div className="flex justify-center align-center flex-col w-full">
-                    <h2 className="font-medium">{title}</h2>
+                    <h2 className="font-regular text-lg">{title}</h2>
                     <p className="font-light text-md">{description}</p>
                   </div>
                 </div>
