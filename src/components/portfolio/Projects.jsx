@@ -6,10 +6,10 @@ import { PROJECTS } from "../../data";
 const Projects = () => {
   return (
     <>
-      <h1 className="text-3xl text-left font-medium m-4 mt-16 py-2 font-inter lg:container lg:mx-auto lg:pl-4">
+      <h1 className="text-3xl text-left font-medium m-4 py-2 font-winkySans text-red-400 lg:container lg:mx-auto lg:pl-4">
         My Projects
       </h1>
-      <section className="font-inter md:grid md:grid-cols-2 lg:container lg:mx-auto lg:grid-cols-3">
+      <section className="font-winkySans md:grid md:grid-cols-2 lg:container lg:mx-auto lg:grid-cols-3">
         {PROJECTS.map((proj) => {
           const {
             id,
@@ -36,21 +36,33 @@ const Projects = () => {
                   {/* <p className="leading-5 font-light">{description}</p> */}
 
                   {/* Project Tech Stacks */}
-                  <div className="techStacks__wrapper">
+                  <div className="techStacks__wrapper border tracking-wide">
                     <p className="font-light">
                       <span className="font-medium">Tech Stacks: </span>
                       {stacks}
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-around align-center">
-                  <a href={previewLink} target="_blank">
+                <div className="flex justify-around align-center mt-5 w-full">
+                  <a
+                    href={previewLink}
+                    target="_blank"
+                    className="text-red-600 hover:text-red-400 px-2"
+                  >
                     <FontAwesomeIcon icon={faLink} />
-                    <span className="ml-2 font-medium">Live Preview</span>
+                    <span className="ml-2 font-medium tracking-wide">
+                      Live Preview
+                    </span>
                   </a>
-                  <a href={codeLink} target="_blank">
+                  <a
+                    href={codeLink}
+                    target="_blank"
+                    className="text-red-600 hover:text-red-400 px-2"
+                  >
                     <FontAwesomeIcon icon={faGithub} />
-                    <span className="ml-2 font-medium">View Code</span>
+                    <span className="ml-2 font-medium tracking-wide">
+                      View Code
+                    </span>
                   </a>
                 </div>
               </div>

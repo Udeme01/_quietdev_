@@ -3,11 +3,11 @@ import { CERTIFICATIONS } from "../../data";
 const Certificates = () => {
   return (
     <>
-      <section className="lg:container lg:mx-auto">
-        <h1 className="text-3xl text-left font-medium m-4 mt-8">
+      <section className="lg:container lg:mx-auto mt-12 font-winkySans">
+        <h1 className="text-3xl text-left font-medium m-4 mt-8 text-red-400 tracking-wide">
           Certifications
         </h1>
-        <div className="font-inter lg:grid lg:grid-cols-3">
+        <div className="tracking-wide lg:grid lg:grid-cols-3">
           {CERTIFICATIONS.map((certificates) => {
             const { id, href, certImg, title, description } = certificates;
             return (

@@ -21,7 +21,7 @@ const MobileNav = () => {
       <div className="flex justify-between align-center font-winkySans font-regular leading-tight w-full shadow bg-white px-6 pl-8  py-4 lg:container lg:mx-auto lg:hidden">
         <a href="#" className="flex flex-col justify-center align-center w-fit">
           <img
-            className="w-9 rounded-full cursor-pointer"
+            className="w-9 rounded-full cursor-pointer border border-red-600"
             src={logo}
             alt="logo"
           />

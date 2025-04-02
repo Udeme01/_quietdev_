@@ -12,14 +12,14 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <section className="font-inter text-sm mt-8 lg:container lg:mx-auto lg:bg-gray-100 dark:text-neutral-100 dark:bg-neutral-900">
+      <section className="font-winkySans tracking-wider text-sm mt-8 lg:container lg:mx-auto lg:bg-gray-100 dark:text-neutral-100 dark:bg-neutral-900">
         <div className="lg:flex lg:justify-center lg:w-full lg:align-center">
           <a
             href="#"
             className="flex flex-col justify-around align-center w-fit"
           >
             <img
-              className="w-6 rounded-full cursor-pointer m-4 dark:border-white border"
+              className="w-9 rounded-full border border-red-600 cursor-pointer m-4 dark:border-white"
               src={logo}
               alt="logo"
             />
