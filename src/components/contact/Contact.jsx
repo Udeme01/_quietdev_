@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div>
       <Header />
-      <section className="mx-4 text-center px-4 py-16 pb-8 bg-gray-200 lg:container lg:mx-auto dark:bg-neutral-800 dark:text-neutral-100">
+      <section className="font-winkySans mx-4 text-center px-4 py-16 pb-8 bg-gray-200 lg:container lg:mx-auto dark:bg-neutral-800 dark:text-neutral-100">
         <div className="lg:w-3/5 lg:mx-auto">
           <h1 className="font-regular text-3xl my-3 md:text-4xl">
             <span className="text-sm block p-1">Let&apos; Chat</span>
@@ -37,13 +37,13 @@ const Contact = () => {
       {/* socials */}
       <section className="text-left my-6 lg:container lg:mx-auto lg:grid lg:grid-cols-3">
         {/* LinkedIn */}
-        <div className="font-inter">
+        <div className="font-winkySans">
           <a href="https://www.linkedin.com/in/emmanuel-udeme/" target="_blank">
             <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:m-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="text-2xl p-3 bg-black text-white"
+                  className="text-2xl p-3 bg-black text-red-400"
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">
@@ -57,13 +57,13 @@ const Contact = () => {
         </div>
 
         {/* GitHub */}
-        <div className="font-inter">
+        <div className="font-winkySans">
           <a href="https://github.com/Udeme01" target="_blank">
             <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="text-2xl p-3 bg-black text-white"
+                  className="text-2xl p-3 bg-black text-red-400"
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">
@@ -78,13 +78,13 @@ const Contact = () => {
         </div>
 
         {/* Instagram */}
-        <div className="font-inter">
+        <div className="font-winkySans">
           <a href="https://www.instagram.com/quietdev_udy/" target="_blank">
             <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  className="text-2xl p-3 bg-black text-white"
+                  className="text-2xl p-3 bg-black text-red-400"
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">
@@ -98,13 +98,13 @@ const Contact = () => {
         </div>
 
         {/* Email */}
-        <div className="font-inter">
+        <div className="font-winkySans">
           <a href="mailto:quietdevstudio@gmail.com" target="_blank">
             <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:ml-0 lg:mb-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="text-2xl p-3 bg-black text-white"
+                  className="text-2xl p-3 bg-black text-red-400"
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">

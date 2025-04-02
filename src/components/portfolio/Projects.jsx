@@ -23,18 +23,21 @@ const Projects = () => {
           return (
             <div
               key={id}
-              className="m-4 mb-8 pb-2 rounded-t-2xl text-left leading-8 shadow-md"
+              className="m-4 mb-8 py-2 rounded-t-2xl text-left leading-8 shadow-md bg-gray-100 overflow-hidden"
             >
-              <img src={projectImg} alt="cards" className="rounded-t-2xl" />
+              <h1 className="leading-10 font-medium text-xl ml-6">{title}</h1>
+
+              <div className="overflow-hidden rounded-t-2xl">
+                <img
+                  src={projectImg}
+                  alt="cards"
+                  className="rounded-t-3xl cursor-pointer transition-transform duration-500 p-4 hover:scale-110"
+                />
+              </div>
 
               {/* project details */}
               <div className="ml-4 mb-4">
                 <div className="details__wrapper">
-                  <h1 className="leading-10 font-medium text-xl py-2">
-                    {title}
-                  </h1>
-                  {/* <p className="leading-5 font-light">{description}</p> */}
-
                   {/* Project Tech Stacks */}
                   <div className="techStacks__wrapper border tracking-wide">
                     <p className="font-light">
