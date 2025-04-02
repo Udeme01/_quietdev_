@@ -18,31 +18,38 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className="flex justify-between align-center font-inter font-regular leading-tight fixed left-0 right-0 top-0 pt-2 px-4 pr-2 shadow-md bg-white lg:container lg:mx-auto lg:hidden dark:bg-neutral-900">
+      <div className="flex justify-between align-center font-winkySans font-regular leading-tight w-full shadow bg-white px-6 pl-8  py-4 lg:container lg:mx-auto lg:hidden">
         <a href="#" className="flex flex-col justify-center align-center w-fit">
           <img
-            className="w-7 rounded-full cursor-pointer"
+            className="w-9 rounded-full cursor-pointer"
             src={logo}
             alt="logo"
           />
         </a>
         {/* <Theme /> */}
-        <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
+        <button className="relative">
+          <Hamburger
+            toggled={isOpen}
+            toggle={setIsOpen}
+            size={20}
+            color="red"
+          />
+        </button>
         <AnimatePresence>
           {isOpen && (
             <motion.nav
-              className="bg-white opacity-80 fixed top-[3.5rem] right-0 bottom-0 left-0 dark:bg-neutral-900"
+              className="bg-white opacity-80 fixed top-[5rem] right-0 bottom-0 left-0 dark:bg-neutral-900"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <ul>
+              <ul className="">
                 {ROUTES.map((listItem, idx) => {
                   const { id, title, href } = listItem;
                   return (
                     <motion.li
-                      className="border-b border-slate-300 first:border-t first:border-slate-300 relative p-8"
+                      className="first:border-t first:border-red-300 relative p-10 my-2"
                       key={id}
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
@@ -55,22 +62,22 @@ const MobileNav = () => {
                     >
                       <Link
                         to={href}
-                        className="cursor-pointer w-full absolute top-0 right-0 bottom-0 left-0 pl-4 pt-5"
+                        className="cursor-pointer w-full absolute border-b border-red-300 top-0 right-0 bottom-0 left-0 py-7 px-8 tracking-wider"
                       >
                         {title}
                       </Link>
                     </motion.li>
                   );
                 })}
-                <motion.button
-                  type="button"
-                  className="btnHire mt-4 absolute right-4 left-4 dark:bg-neutral-100 dark:text-neutral-900"
+                <motion.a
+                href="mailto:quietdevstudio@gmail.com"
+                  className="bg-black text-red-400 p-5 mt-4 absolute right-4 left-4 bottom-4 text-center dark:bg-neutral-100 dark:text-neutral-900 hover:bg-red-400 hover:text-white"
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <a href="mailto:quietdevstudio@gmail.com">Hire Me</a>
-                </motion.button>
+                  <button type="button" className="text-xl tracking-wider">Hire Me</button>
+                </motion.a>
               </ul>
             </motion.nav>
           )}

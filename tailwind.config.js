@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        indieFlower: ["Indie Flower", "cursive"],
+        winkySans: ["Winky Sans", "sans-serif"],
       },
       fontWeight: {
         thin: "100",

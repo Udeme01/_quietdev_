@@ -3,7 +3,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="p-4">
+    <header>
       <MobileNav />
       <DesktopNav />
     </header>
