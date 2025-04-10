@@ -7,11 +7,11 @@ import { SOCIALS } from "../../data";
 const Footer = () => {
   return (
     <>
-      <section className="font-winkySans tracking-wider text-sm mt-8 lg:container lg:mx-auto lg:bg-gray-100 dark:text-neutral-100 dark:bg-neutral-900">
-        <div className="lg:flex lg:justify-center lg:w-full lg:align-center">
+      <section className="font-winkySans text-sm mt-16 lg:container lg:mx-auto dark:text-neutral-100 dark:bg-neutral-900">
+        <div className="lg:flex lg:justify-between lg:w-full lg:align-center">
           <a
             href="#"
-            className="flex flex-col justify-around align-center w-fit"
+            className="flex flex-col justify-around align-center w-fit mx-4 rounded-lg"
           >
             <img
               className="w-9 rounded-full border border-red-600 cursor-pointer m-4 dark:border-white"
@@ -19,17 +19,17 @@ const Footer = () => {
               alt="logo"
             />
           </a>
-          <ul className="lg:flex lg:align-center lg:justify-end lg:w-1/2">
+          <ul className="mx-4 mt-4 lg:flex lg:gap-8 lg:items-center lg:justify-center">
             {ROUTES.map((listItem) => {
               const { id, title, href } = listItem;
               return (
                 <li
-                  className="border-b border-slate-300 first:border-t first:border-slate-300 relative p-4 pl-0 py-8 text-[1.1rem] font-regular tracking-wider lg:border-none lg:outline-none"
+                  className="relative text-[1.1rem] tracking-wider p-4 pl-0 py-8 border-b lg:border-none lg:outline-none lg:rounded-md lg:p-1 hover:bg-red-50 lg:hover:bg-transparent"
                   key={id}
                 >
                   <Link
                     to={href}
-                    className="absolute top-0 right-0 bottom-0 left-0 cursor-pointer pl-4 py-6 -z-0"
+                    className="cursor-pointer absolute top-0 right-0 bottom-0 left-0 leading-7 p-4 pl-4 lg:relative lg:hover:opacity-60"
                     href={href}
                   >
                     {title}
@@ -47,17 +47,19 @@ const Footer = () => {
                 <a key={id} href={href} target={target} rel={rel}>
                   <FontAwesomeIcon
                     icon={icon}
-                    className="text-2xl mr-5 mt-4 text-red-400 hover:text-red-600"
+                    className="text-2xl mr-5 py-2 text-red-400 hover:text-red-600"
                   />
                 </a>
               );
             })}
           </div>
         </div>
-        <p className="p-4 font-light">Udeme Emmanuel</p>
+        <p className="p-6 font-light tracking-wider">Udeme Emmanuel</p>
       </section>
     </>
   );
 };
 
 export default Footer;
+
+//   text-[1.1rem] font-regular

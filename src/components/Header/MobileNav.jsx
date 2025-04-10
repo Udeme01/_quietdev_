@@ -49,7 +49,7 @@ const MobileNav = () => {
                   const { id, title, href } = listItem;
                   return (
                     <motion.li
-                      className="first:border-t first:border-red-300 relative p-10 my-2"
+                      className="first:border-t first:border-red-300 relative p-10 hover:bg-red-50"
                       key={id}
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}

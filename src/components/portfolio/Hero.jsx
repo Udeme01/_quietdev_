@@ -7,6 +7,9 @@ const Hero = () => {
       <section className="leading-6 font-winkySans font-regular">
         <div className="px-4 py-8 text-left lg:container lg:mx-auto">
           <h1 className="text-3xl mb-3 font-regular text-red-400 md:text-5xl">
+            <span className="text-xs font-winkySans block bg-black text-red-400 w-fit px-2 py-1 tracking-widest dark:bg-neutral-900">
+              Web3 Dev
+            </span>
             Frontend Developer
           </h1>
           <p className="leading-7 tracking-wide font-light md:text-lg md:leading-8 lg:w-9/12">

@@ -12,11 +12,11 @@ const Certificates = () => {
             const { id, href, certImg, title, description } = certificates;
             return (
               <a key={id} href={href} target="_blank">
-                <div className="m-4 p-2 flex justify-start gap-4 bg-gray-100 text-black shadow-md dark:bg-neutral-800 dark:text-neutral-100">
+                <div className="border border-red-50 rounded-xl m-4 p-2 flex justify-start gap-4 bg-gray-100 text-black shadow-md dark:bg-neutral-800 dark:text-neutral-100">
                   <img
                     src={certImg}
                     alt="logo"
-                    className="rounded-full w-24 border p-px bg-white border-red-600"
+                    className="rounded-full w-24 border p-px bg-white border-red-400"
                   />
                   <div className="flex justify-center align-center flex-col w-full">
                     <h2 className="font-regular text-lg">{title}</h2>
