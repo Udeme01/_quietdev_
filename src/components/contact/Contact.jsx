@@ -8,10 +8,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { SendMe } from "../../features/SendMe";
+import ScrollToTop from "../ScrollToTop";
 
 const Contact = () => {
   return (
     <div>
+      <ScrollToTop />
       <Header />
       <section className="font-winkySans mx-4 text-center px-4 py-16 pb-8 bg-gray-200 lg:container lg:mx-auto dark:bg-neutral-800 dark:text-neutral-100">
         <div className="lg:w-3/5 lg:mx-auto">

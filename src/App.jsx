@@ -4,10 +4,12 @@ import Hero from "./components/portfolio/Hero";
 import Projects from "./components/portfolio/Projects";
 import Certificates from "./components/portfolio/Certifications";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Hero />
       {/* <Skills /> */}

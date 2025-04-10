@@ -70,13 +70,15 @@ const MobileNav = () => {
                   );
                 })}
                 <motion.a
-                href="mailto:quietdevstudio@gmail.com"
+                  href="mailto:quietdevstudio@gmail.com"
                   className="bg-black text-red-400 p-5 mt-4 absolute right-4 left-4 bottom-4 text-center dark:bg-neutral-100 dark:text-neutral-900 hover:bg-red-400 hover:text-white"
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <button type="button" className="text-xl tracking-wider">Hire Me</button>
+                  <button type="button" className="text-xl tracking-wider">
+                    Hire Me
+                  </button>
                 </motion.a>
               </ul>
             </motion.nav>

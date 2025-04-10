@@ -1,10 +1,12 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { SendMe } from "../../features/SendMe";
+import ScrollToTop from "../ScrollToTop";
 
 const AboutMe = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <section className="container font-winkySans mx-auto px-4 py-16 pb-0 dark:text-neutral-100">
         <h1 className="text-center font-regular text-2xl mb-3 md:text-4xl">
