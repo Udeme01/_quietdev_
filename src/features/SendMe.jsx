@@ -58,11 +58,7 @@ export const SendMe = () => {
         <div>
           <div className="my-4">
             <input
-<<<<<<< HEAD
-              className="w-full p-2"
-=======
               className="w-full p-4 rounded-xl"
->>>>>>> main
               type="text"
               name="firstname"
               id="firstname"
@@ -74,11 +70,7 @@ export const SendMe = () => {
           </div>
           <div className="my-4">
             <input
-<<<<<<< HEAD
-              className="w-full p-2"
-=======
               className="w-full p-4 rounded-xl"
->>>>>>> main
               type="email"
               name="email"
               id="email"
@@ -90,11 +82,7 @@ export const SendMe = () => {
           </div>
           <div>
             <textarea
-<<<<<<< HEAD
-              className="w-full p-2"
-=======
               className="w-full p-4 rounded-xl"
->>>>>>> main
               type="text"
               name="message"
               id="message"
@@ -106,11 +94,7 @@ export const SendMe = () => {
           </div>
         </div>
         <button
-<<<<<<< HEAD
-          className="bg-white px-4 py-2 mt-4 text-xl uppercase dark:bg-neutral-900"
-=======
           className="bg-white px-4 py-2 rounded-xl mt-4 text-md capitalize tracking-wide dark:bg-neutral-900"
->>>>>>> main
           type="submit"
         >
           submit

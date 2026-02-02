@@ -45,11 +45,7 @@ const Contact = () => {
               <div>
                 <FontAwesomeIcon
                   icon={faLinkedin}
-<<<<<<< HEAD
-                  className="text-2xl p-3 bg-black text-red-400"
-=======
                   className="text-2xl p-3 bg-black text-red-400 rounded-xl"
->>>>>>> main
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">
@@ -69,11 +65,7 @@ const Contact = () => {
               <div>
                 <FontAwesomeIcon
                   icon={faGithub}
-<<<<<<< HEAD
-                  className="text-2xl p-3 bg-black text-red-400"
-=======
                   className="text-2xl p-3 bg-black text-red-400 rounded-xl"
->>>>>>> main
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">
@@ -94,11 +86,7 @@ const Contact = () => {
               <div>
                 <FontAwesomeIcon
                   icon={faInstagram}
-<<<<<<< HEAD
-                  className="text-2xl p-3 bg-black text-red-400"
-=======
                   className="text-2xl p-3 bg-black text-red-400 rounded-xl"
->>>>>>> main
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">
@@ -118,11 +106,7 @@ const Contact = () => {
               <div>
                 <FontAwesomeIcon
                   icon={faEnvelope}
-<<<<<<< HEAD
-                  className="text-2xl p-3 bg-black text-red-400"
-=======
                   className="text-2xl p-3 bg-black text-red-400 rounded-xl"
->>>>>>> main
                 />
               </div>
               <div className="flex justify-center align-center flex-col w-full">

@@ -19,15 +19,6 @@ const MobileNav = () => {
   return (
     <>
       <div className="flex justify-between align-center font-winkySans font-regular leading-tight w-full shadow bg-white px-6 pl-8  py-4 lg:container lg:mx-auto lg:hidden">
-<<<<<<< HEAD
-        <a href="#" className="flex flex-col justify-center align-center w-fit">
-          <img
-            className="w-9 rounded-full cursor-pointer border border-red-600"
-            src={logo}
-            alt="logo"
-          />
-        </a>
-=======
         <picture className="flex flex-col justify-center align-center w-fit">
           <img
             className="w-9 rounded-full border border-red-400"
@@ -35,7 +26,6 @@ const MobileNav = () => {
             alt="logo"
           />
         </picture>
->>>>>>> main
         {/* <Theme /> */}
         <button className="relative">
           <Hamburger
@@ -59,11 +49,7 @@ const MobileNav = () => {
                   const { id, title, href } = listItem;
                   return (
                     <motion.li
-<<<<<<< HEAD
-                      className="first:border-t first:border-red-300 relative p-10 hover:bg-red-50"
-=======
                       className="first:border-t first:border-red-100 relative p-10 hover:bg-red-50"
->>>>>>> main
                       key={id}
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
@@ -76,11 +62,7 @@ const MobileNav = () => {
                     >
                       <Link
                         to={href}
-<<<<<<< HEAD
-                        className="cursor-pointer w-full absolute border-b border-red-300 top-0 right-0 bottom-0 left-0 py-7 px-8 tracking-wider"
-=======
                         className="cursor-pointer w-full absolute border-b border-red-100 top-0 right-0 bottom-0 left-0 py-7 px-8 tracking-wider"
->>>>>>> main
                       >
                         {title}
                       </Link>
