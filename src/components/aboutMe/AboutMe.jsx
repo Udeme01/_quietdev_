@@ -13,7 +13,7 @@ const AboutMe = () => {
           LEAVE BEHIND THE WORLD OF MAKE-BELIEVE, WELCOME TO MY CORNER OF THE
           WEB, WHERE CODE MEETS CREATIVITY!
         </h1>
-        <p className="text-center max-w-screen-md mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
+        <p className="text-center max-w-(--breakpoint-md) mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
           I&apos;m Udeme Emmanuel, a passionate frontend developer with a keen
           eye for design and a committment to excellence. I specialize in
           seamless and exceptional user experiences that captivate audiences and
@@ -46,7 +46,7 @@ const AboutMe = () => {
                 ARMED WITH ALMOST 2 YEARS OF EXPERIENCE, MY FINGER IS ON THE
                 TRIGGER
               </h1>
-              <p className="max-w-screen-md mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
+              <p className="max-w-(--breakpoint-md) mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
                 Having had the privilege of working on a diverse array of
                 projects, from corporate websites to e-commerce platforms and
                 beyond. Each project has presented it&apos;s own set of
@@ -70,7 +70,7 @@ const AboutMe = () => {
                 </span>
                 I DELIVER EXCELLENCE ACROSS DEVICES WITH RESPONSIVE DESIGNS
               </h1>
-              <p className="max-w-screen-md mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
+              <p className="max-w-(--breakpoint-md) mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
                 A responsive website not only enhances usability but also
                 fosters greater user engagement by providing a seamless
                 experience regardless of the devices being used. This is where I

@@ -6,15 +6,6 @@ const DesktopNav = () => {
   return (
     <>
       <div className="hidden font-winkySans lg:flex lg:items-center lg:justify-between lg:container lg:mx-auto pb-8 px-4 py-4">
-<<<<<<< HEAD
-        <a href="#">
-          <img
-            className="w-7 rounded-full cursor-pointer lg:hover:opacity-70"
-            src={logo}
-            alt="logo"
-          />
-        </a>
-=======
         <picture>
           <img
             className="w-9 rounded-full border border-red-600"
@@ -22,20 +13,15 @@ const DesktopNav = () => {
             alt="logo"
           />
         </picture>
->>>>>>> main
         <nav>
           <ul className="lg:flex lg:justify-center lg:align-center">
             {ROUTES.map((listItem) => {
               const { id, title, href } = listItem;
               return (
-<<<<<<< HEAD
-                <li key={id} className="lg:mx-10 last:mr-0 lg:mt-1 hover:opacity-50">
-=======
                 <li
                   key={id}
                   className="lg:mx-10 last:mr-0 lg:mt-1 hover:opacity-50"
                 >
->>>>>>> main
                   <Link to={href}>{title}</Link>
                 </li>
               );

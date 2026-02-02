@@ -2,10 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { PROJECTS } from "../../data";
-<<<<<<< HEAD
-=======
 import { Link } from "react-router-dom";
->>>>>>> main
 
 const Projects = () => {
   return (
@@ -77,8 +74,6 @@ const Projects = () => {
           );
         })}
       </section>
-<<<<<<< HEAD
-=======
       <Link to="/portfolio" className="block text-center w-fit mx-auto">
         <button
           type="button"
@@ -87,7 +82,6 @@ const Projects = () => {
           view portfolio
         </button>
       </Link>
->>>>>>> main
     </>
   );
 };

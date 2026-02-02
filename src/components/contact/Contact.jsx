@@ -21,7 +21,7 @@ const Contact = () => {
             <span className="text-sm block p-1">Let&apos; Chat</span>
             Ready to Embark on a Project?
           </h1>
-          <p className="text-center max-w-screen-md mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
+          <p className="text-center max-w-(--breakpoint-md) mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
             Welcome to the realm where requirements hold as much significance as
             the desired outcomes. Whether you&apos;re a fledgling startup
             establishing your online presence or a seasoned enterprise aiming to
