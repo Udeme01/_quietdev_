@@ -7,11 +7,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-<<<<<<< HEAD
   return (
-=======
-  return ( 
->>>>>>> main
     <>
       <ScrollToTop />
       <Header />
@@ -24,8 +20,4 @@ function App() {
   );
 }
 
-<<<<<<< HEAD
 export default App;
-=======
-export default App;
->>>>>>> main
