@@ -7,9 +7,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+<<<<<<< HEAD
         inter: ["Inter", "sans-serif"],
         indieFlower: ["Indie Flower", "cursive"],
         winkySans: ["Winky Sans", "sans-serif"],
+=======
+        QuickSand: ["Quicksand", "sans-serif"],
+>>>>>>> main
       },
       fontWeight: {
         thin: "100",

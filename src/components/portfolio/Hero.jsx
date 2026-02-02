@@ -4,15 +4,26 @@ import { SOCIALS } from "../../data";
 const Hero = () => {
   return (
     <>
+<<<<<<< HEAD
       <section className="leading-6 font-winkySans font-regular">
         <div className="px-4 py-8 text-left lg:container lg:mx-auto">
           <h1 className="text-3xl mb-3 font-regular text-red-400 md:text-5xl">
+=======
+      <section className="leading-6 font-QuickSand font-regular">
+        <div className="px-4 py-8 text-left lg:container lg:mx-auto">
+          {/* <h1 className="text-3xl mb-3 font-regular text-red-400 md:text-5xl">
+>>>>>>> main
             <span className="text-xs font-winkySans block bg-black text-red-400 w-fit px-2 py-1 tracking-widest dark:bg-neutral-900">
               Web3 Dev
             </span>
             Frontend Developer
+<<<<<<< HEAD
           </h1>
           <p className="leading-7 tracking-wide font-light md:text-lg md:leading-8 lg:w-9/12">
+=======
+          </h1> */}
+          {/* <p className="leading-7 tracking-wide font-light md:text-lg md:leading-8 lg:w-9/12">
+>>>>>>> main
             I am Udeme Emmanuel, your go-to Frontend Developer, passionate about
             crafting user-friendly interfaces that captivate and engage. With a
             knack for translating concepts into pixel-perfect designs, I bring
@@ -21,7 +32,22 @@ const Hero = () => {
             satisfaction and make a lasting impact.Elevate your online presence
             with seamless, responsive web solutions tailored to your unique
             needs.
+<<<<<<< HEAD
           </p>
+=======
+          </p> */}
+
+          <section className="px-6 min-h-[70vh] flex items-center justify-center bg-[url('/heroImgs/hero05.webp')] bg-cover bg-no-repeat bg-center text-white bg-blend-overlay bg-black/60">
+            <section className="flex items-center justify-center flex-col gap-2">
+              <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold uppercase tracking-wider">
+                Udeme Emmanuel
+              </h1>
+              <h2 className="w-full text-center text-lg sm:text-xl font-medium uppercase">
+                Software Engineer || Front end & App Developer || Photographer
+              </h2>
+            </section>
+          </section>
+>>>>>>> main
 
           <section>
             <div className="my-2">

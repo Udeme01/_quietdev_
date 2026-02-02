@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { PROJECTS } from "../../data";
+<<<<<<< HEAD
+=======
+import { Link } from "react-router-dom";
+>>>>>>> main
 
 const Projects = () => {
   return (
@@ -73,6 +77,17 @@ const Projects = () => {
           );
         })}
       </section>
+<<<<<<< HEAD
+=======
+      <Link to="/portfolio" className="block text-center w-fit mx-auto">
+        <button
+          type="button"
+          className="bg-black text-red-400 py-3 px-4 hover:border-none dark:bg-neutral-100 dark:text-neutral-900 hover:bg-red-400 hover:text-white w-fit tracking-wider"
+        >
+          view portfolio
+        </button>
+      </Link>
+>>>>>>> main
     </>
   );
 };

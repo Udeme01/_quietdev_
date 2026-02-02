@@ -20,6 +20,7 @@ const AboutMe = () => {
           elevate brands.
         </p>
         <div className="mt-4">
+<<<<<<< HEAD
           <video autoPlay muted loop controls={false} className="w-screen">
             <source src="./videos/coder-03.mp4" />
           </video>
@@ -29,6 +30,26 @@ const AboutMe = () => {
           <div className="py-10 pt-0 lg:flex">
             <img
               className="exp lg:w-1/2 lg:py-8 lg:px-4"
+=======
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            // poster=""
+            controls={false}
+            className="w-screen rounded-xl"
+          >
+            <source src="https://res.cloudinary.com/djfkvmc4f/video/upload/v1770028614/coder-03_mkuily.mp4" />
+          </video>
+        </div>
+
+        <section className="mt-24 bg-gray-200 p-4 dark:bg-neutral-800 rounded-xl">
+          <div className="py-10 pt-0 lg:flex">
+            <img
+              className="exp lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
+>>>>>>> main
               src="./projectImg/exp.jpg"
               alt="image"
             />
@@ -50,7 +71,11 @@ const AboutMe = () => {
 
           <div className="lg:flex">
             <img
+<<<<<<< HEAD
               className="exp lg:w-1/2 lg:py-8 lg:px-4"
+=======
+              className="exp lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
+>>>>>>> main
               src="./projectImg/res.jpg"
               alt="image"
             />
@@ -73,9 +98,15 @@ const AboutMe = () => {
             </div>
           </div>
 
+<<<<<<< HEAD
           <div className="py-10 pb-0 lg:flex">
             <img
               className="exp lg:w-1/2 lg:py-8 lg:px-4"
+=======
+          <div className="py-10 pb-0 lg:flex border-2 rounded-xl">
+            <img
+              className="lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
+>>>>>>> main
               src="./projectImg/help.jpg"
               alt="image"
             />
