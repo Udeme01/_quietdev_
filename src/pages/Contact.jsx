@@ -1,5 +1,3 @@
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -7,14 +5,11 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { SendMe } from "../../features/SendMe";
-import ScrollToTop from "../ScrollToTop";
+import { SendMe } from "../components/common/SendMe";
 
 const Contact = () => {
   return (
     <div>
-      <ScrollToTop />
-      <Header />
       <section className="font-winkySans mx-4 text-center px-4 py-16 pb-8 bg-gray-200 lg:container lg:mx-auto dark:bg-neutral-800 dark:text-neutral-100">
         <div className="lg:w-3/5 lg:mx-auto">
           <h1 className="font-regular text-3xl my-3 md:text-4xl">
@@ -119,7 +114,6 @@ const Contact = () => {
           </a>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

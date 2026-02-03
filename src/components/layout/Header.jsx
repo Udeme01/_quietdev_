@@ -1,4 +1,4 @@
-import DesktopNav from "./DesktopNav";
+import DesktopNav from "../layout/DesktopNav";
 import MobileNav from "./MobileNav";
 
 const Header = () => {

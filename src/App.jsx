@@ -1,21 +1,34 @@
-import Header from "./components/Header/Header";
-import Hero from "./components/portfolio/Hero";
-// import Skills from "./components/portfolio/Skills";
-import Projects from "./components/portfolio/Projects";
-import Certificates from "./components/portfolio/Certifications";
-import Footer from "./components/Footer/Footer";
-import ScrollToTop from "./components/ScrollToTop";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./pages/Root";
+import AboutMe from "./pages/AboutMe";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root />,
+      children: [
+        {
+          index: true,
+          element: <Portfolio />,
+        },
+        {
+          path: "about",
+          element: <AboutMe />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
+      ],
+    },
+  ]);
+
   return (
     <>
-      <ScrollToTop />
-      <Header />
-      <Hero />
-      {/* <Skills /> */}
-      <Projects />
-      <Certificates />
-      <Footer />
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }

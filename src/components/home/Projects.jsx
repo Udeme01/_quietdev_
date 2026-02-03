@@ -74,14 +74,14 @@ const Projects = () => {
           );
         })}
       </section>
-      <Link to="/portfolio" className="block text-center w-fit mx-auto">
+      {/* <Link to="/portfolio" className="block text-center w-fit mx-auto">
         <button
           type="button"
           className="bg-black text-red-400 py-3 px-4 hover:border-none dark:bg-neutral-100 dark:text-neutral-900 hover:bg-red-400 hover:text-white w-fit tracking-wider"
         >
           view portfolio
         </button>
-      </Link>
+      </Link> */}
     </>
   );
 };
