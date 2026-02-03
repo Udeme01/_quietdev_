@@ -1,9 +1,9 @@
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import logo from "../../../src/img/logo.png";
-import { ROUTES } from "../../data";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ROUTES } from "../../data/routes";
 // import { Theme } from "../../features/ThemeChange";
 
 const MobileNav = () => {
@@ -38,7 +38,7 @@ const MobileNav = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.nav
-              className="bg-white opacity-80 fixed top-20 right-0 bottom-0 left-0 dark:bg-neutral-900"
+              className="bg-white opacity-80 fixed z-100 top-20 right-0 bottom-0 left-0 dark:bg-neutral-900"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -49,7 +49,7 @@ const MobileNav = () => {
                   const { id, title, href } = listItem;
                   return (
                     <motion.li
-                      className="first:border-t first:border-red-100 relative p-10 hover:bg-red-50"
+                      className="first:border-t first:border-red-100 relative p-10 hover:bg-red-50 hover:text-black/80"
                       key={id}
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
@@ -62,6 +62,7 @@ const MobileNav = () => {
                     >
                       <Link
                         to={href}
+                        onClick={() => setIsOpen(false)}
                         className="cursor-pointer w-full absolute border-b border-red-100 top-0 right-0 bottom-0 left-0 py-7 px-8 tracking-wider"
                       >
                         {title}

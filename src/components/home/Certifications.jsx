@@ -1,4 +1,4 @@
-import { CERTIFICATIONS } from "../../data";
+import { CERTIFICATIONS } from "../../data/certifications";
 
 const Certificates = () => {
   return (
@@ -12,7 +12,7 @@ const Certificates = () => {
             const { id, href, certImg, title, description } = certificates;
             return (
               <a key={id} href={href} target="_blank">
-                <div className="border border-red-50 rounded-xl m-4 p-2 flex justify-start gap-4 bg-gray-100 text-black shadow-md dark:bg-neutral-800 dark:text-neutral-100">
+                <div className="rounded-xl m-4 p-2 flex justify-start gap-4 bg-gray-100 text-black shadow-md dark:bg-neutral-800 dark:text-neutral-100">
                   <img
                     src={certImg}
                     alt="logo"

@@ -1,8 +1,8 @@
-import { ROUTES } from "../../data";
 import logo from "../../../src/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { SOCIALS } from "../../data";
+import { SOCIALS } from "../../data/socials";
+import { ROUTES } from "../../data/routes";
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
               const { id, title, href } = listItem;
               return (
                 <li
-                  className="relative text-[1.1rem] tracking-wider p-4 pl-0 py-8 border-b lg:border-none lg:outline-none lg:rounded-md lg:p-1 hover:bg-red-50 lg:hover:bg-transparent"
+                  className="relative text-[1.1rem] tracking-wider p-4 pl-0 py-8 border-b lg:border-none lg:outline-none lg:rounded-md lg:p-1 hover:bg-red-50 hover:text-black/80 lg:hover:bg-transparent lg:hover:dark:text-white/50"
                   key={id}
                 >
                   <Link
@@ -39,7 +39,7 @@ const Footer = () => {
             })}
           </ul>
         </div>
-        <div className="border-b border-slate-300 p-1 flex justify-end align-center">
+        <div className="border-b border-black/10 dark:border-white/10 p-1 flex justify-end align-center">
           <div className="my-2">
             {SOCIALS.map((socials) => {
               const { id, href, target, icon, rel } = socials;
@@ -47,7 +47,7 @@ const Footer = () => {
                 <a key={id} href={href} target={target} rel={rel}>
                   <FontAwesomeIcon
                     icon={icon}
-                    className="text-2xl mr-5 py-2 text-red-400 hover:text-red-600"
+                    className="text-2xl mr-5 py-2 text-red-400 hover:text-red-600 lg:hover:scale-125 lg:transition-all lg:duration-500 lg:ease-in-out"
                   />
                 </a>
               );

@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { PROJECTS } from "../../data";
-import { Link } from "react-router-dom";
+import { PROJECTS } from "../../data/projects";
 
 const Projects = () => {
   return (
@@ -40,7 +39,7 @@ const Projects = () => {
               <div className="ml-4 mb-4">
                 <div className="details__wrapper">
                   {/* Project Tech Stacks */}
-                  <div className="techStacks__wrapper border tracking-wide">
+                  <div className="techStacks__wrapper tracking-wide">
                     <p className="font-light">
                       <span className="font-medium">Tech Stacks: </span>
                       {stacks}

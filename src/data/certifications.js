@@ -1,0 +1,51 @@
+export const CERTIFICATIONS = [
+  {
+    id: "cert01",
+    href: "https://www.coursera.org/account/accomplishments/verify/T5SYKNDLPNH2",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Introduction to Frontend Development",
+  },
+  {
+    id: "cert02",
+    href: "https://www.coursera.org/account/accomplishments/verify/TNGMJ8ZKQCWN",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "HTML and CSS in depth",
+  },
+  {
+    id: "cert03",
+    href: "https://www.coursera.org/account/accomplishments/verify/UA4UPWMZEJH4",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Programming with JavaScript",
+  },
+  {
+    id: "cert04",
+    href: "https://www.coursera.org/account/accomplishments/verify/5Z6PDVNXBA66",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Version Control",
+  },
+  {
+    id: "cert05",
+    href: "https://www.coursera.org/account/accomplishments/verify/9VBNAYJ5P3AR",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "React Basics",
+  },
+  {
+    id: "cert06",
+    href: "https://www.coursera.org/account/accomplishments/verify/ZSHZHPP4ULAB",
+    certImg: "/certImg/coursera.png",
+    title: "Coursera",
+    description: "Advanced React",
+  },
+  {
+    id: "cert07",
+    href: "https://www.freecodecamp.org/certification/Udeme_Emmanuel_Edet/javascript-algorithms-and-data-structures",
+    certImg: "/certImg/freecodecamp.png",
+    title: "Free Code Camp",
+    description: "JavaScript Algorithms and Data Structures",
+  },
+];

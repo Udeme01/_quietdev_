@@ -52,13 +52,40 @@ export const SendMe = () => {
     }));
   };
 
+  const inputStyles = `
+    w-full 
+    p-4 
+    rounded-xl 
+    border-none
+    outline-none
+    border-gray-200 
+    dark:border-gray-700
+    bg-white
+    dark:bg-black/30
+    backdrop-blur-sm
+    text-gray-900 
+    dark:text-white
+    placeholder-black/50
+    dark:placeholder-white/30
+    focus:outline-none 
+    focus:border-black
+    dark:focus:border-white
+    focus:ring
+    focus:ring-black/30
+    dark:focus:ring-white/30
+    transition-all
+    duration-300
+    hover:border-gray-300
+    dark:hover:border-gray-600
+  `;
+
   return (
     <>
       <form className="mt-10 text-center" onSubmit={handleSubmitForm}>
         <div>
           <div className="my-4">
             <input
-              className="w-full p-4 rounded-xl"
+              className={inputStyles}
               type="text"
               name="firstname"
               id="firstname"
@@ -70,7 +97,7 @@ export const SendMe = () => {
           </div>
           <div className="my-4">
             <input
-              className="w-full p-4 rounded-xl"
+              className={inputStyles}
               type="email"
               name="email"
               id="email"
@@ -82,7 +109,7 @@ export const SendMe = () => {
           </div>
           <div>
             <textarea
-              className="w-full p-4 rounded-xl"
+              className={inputStyles}
               type="text"
               name="message"
               id="message"

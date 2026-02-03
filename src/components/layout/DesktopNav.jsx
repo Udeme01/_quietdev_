@@ -1,6 +1,6 @@
 import logo from "../../../src/img/logo.png";
-import { ROUTES } from "../../data";
 import { Link } from "react-router-dom";
+import { ROUTES } from "../../data/routes";
 
 const DesktopNav = () => {
   return (
@@ -30,7 +30,7 @@ const DesktopNav = () => {
         </nav>
 
         <a
-          className="border-2 border-black px-4 py-3 hover:bg-black hover:text-red-400"
+          className="outline bg-black text-white dark:border-white rounded-xl px-4 py-3 hover:bg-black hover:text-white lg:hover:scale-110 lg:transition-all lg:duration-500 lg:ease-in-out"
           href="mailto:quietdevstudio@gmail.com"
         >
           Hire Me

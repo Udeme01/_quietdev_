@@ -32,7 +32,7 @@ const AboutMe = () => {
         <section className="mt-24 bg-gray-200 p-4 dark:bg-neutral-800 rounded-xl">
           <div className="py-10 pt-0 lg:flex">
             <img
-              className="exp lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
+              className="lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
               src="./projectImg/exp.jpg"
               alt="image"
             />
@@ -77,7 +77,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="py-10 pb-0 lg:flex border-2 rounded-xl">
+          <div className="py-10 pb-0 lg:flex rounded-xl">
             <img
               className="lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
               src="./projectImg/help.jpg"

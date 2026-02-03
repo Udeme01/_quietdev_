@@ -1,0 +1,83 @@
+export const SKILLS = [
+  {
+    id: "html",
+    // imgPath: <img src={html} alt="html icon" />,
+    link: "/icons/html.svg",
+    title: "html icon",
+  },
+  {
+    id: "css",
+    link: "/icons/css.svg",
+    title: "css icon",
+  },
+  {
+    id: "js",
+    link: "/icons/js.svg",
+    title: "js icon",
+  },
+  {
+    id: "bootstrap",
+    link: "/icons/bootstrap.svg",
+    title: "bootstrap icon",
+  },
+  {
+    id: "tailwindcss",
+    link: "/icons/tailwindcss.svg",
+    title: "tailwindcss icon",
+  },
+  {
+    id: "react",
+    link: "/icons/react.svg",
+    title: "react icon",
+  },
+  {
+    id: "git",
+    link: "/icons/git.svg",
+    title: "git icon",
+  },
+  {
+    id: "github",
+    link: "/icons/github.svg",
+    title: "github icon",
+  },
+  {
+    id: "vscode",
+    link: "icons/vscode.svg",
+    title: "vscode icon",
+  },
+  // {
+  //   id: "typescript",
+  //   link: "icons/typescript.svg",
+  //   title: "typescript icon",
+  // },
+  // {
+  //   id: "nodejs",
+  //   link: "icons/nodejs.svg",
+  //   title: "nodejs icon",
+  // },
+  // {
+  //   id: "nextjs",
+  //   link: "icons/nextjs.svg",
+  //   title: "nextjs icon",
+  // },
+  // {
+  //   id: "playwright",
+  //   link: "icons/playwright.svg",
+  //   title: "playwright icon",
+  // },
+  // {
+  //   id: "redux",
+  //   link: "icons/redux.svg",
+  //   title: "redux icon",
+  // },
+  {
+    id: "vitejs",
+    link: "icons/vitejs.svg",
+    title: "vitejs icon",
+  },
+  // {
+  //   id: "vitest",
+  //   link: "icons/vitest.svg",
+  //   title: "vitest icon",
+  // },
+];
