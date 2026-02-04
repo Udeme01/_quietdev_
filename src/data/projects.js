@@ -1,43 +1,50 @@
 export const PROJECTS = [
   {
     id: "0",
-    projectImg: "/projectImg/comfy.png",
+    image: "/projectImg/comfy.png",
     title: "Comfy House Furnitures",
+    category: "E-Commerce",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML / CSS / JAVASCRIPT / Contentful CMS",
     previewLink: "https://comfyhousefurnitures.vercel.app",
-    codeLink: "https://github.com/Udeme01/comfyHouse",
+    to: "/project/projectId",
+    size: "large",
   },
   {
     id: "1",
-    projectImg: "/projectImg/wood.png",
+    image: "/projectImg/wood.png",
     title: "Rooms Homepage",
+    category: "Interior Design",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://rooms-homepage-ecom.netlify.app/#",
-    codeLink: "https://github.com/Udeme01/ROOMS-HOMEPAGE",
+    to: "/project/projectId",
+    size: "medium",
   },
   {
     id: "2",
-    projectImg: "/projectImg/yel.png",
+    image: "/projectImg/yel.png",
     title: "Snap | Make Remote Work",
+    category: "Corporate",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://intro-section-app-001.netlify.app/#",
-    codeLink:
-      "https://github.com/Udeme01/Intro-Section-With-Dropdown-Navigation",
+    to: "/project/projectId",
+    size: "medium",
   },
   {
     id: "3",
-    projectImg: "/projectImg/fizzaura.png",
+    image: "/projectImg/fizzaura.png",
     title: "FizzAura Luxury | Fashion",
+    category: "E-Commerce",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://fizzauraluxury.com",
-    codeLink: "https://fizzauraluxury.com",
+    to: "/project/projectId",
+    size: "large",
   },
 ];

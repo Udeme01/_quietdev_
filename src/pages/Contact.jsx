@@ -76,7 +76,7 @@ const Contact = () => {
 
         {/* Instagram */}
         <div className="font-winkySans">
-          <a href="https://www.instagram.com/quietdev_udy/" target="_blank">
+          <a href="https://www.instagram.com/the_quietdev" target="_blank">
             <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:mr-0 lg:mt-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
@@ -96,7 +96,7 @@ const Contact = () => {
 
         {/* Email */}
         <div className="font-winkySans">
-          <a href="mailto:quietdevstudio@gmail.com" target="_blank">
+          <a href="mailto:emmanueludeme.fe@gmail.com" target="_blank">
             <div className="m-4 p-5 flex justify-start gap-4 bg-gray-200 text-black shadow-md lg:ml-0 lg:mb-0 dark:bg-neutral-800 dark:text-neutral-100">
               <div>
                 <FontAwesomeIcon
