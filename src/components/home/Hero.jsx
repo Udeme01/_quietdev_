@@ -36,7 +36,7 @@ const Hero = () => {
           </section>
 
           <section className="w-full flex items-center justify-start gap-4 mt-6">
-            <a href="mailto:quietdevstudio@gmail.com" target="_blank">
+            <a href="mailto:emmanueludeme.fe@gmail.com" target="_blank">
               <button type="button" className={ctaButtonStyle}>
                 Hire Me
               </button>

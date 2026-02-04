@@ -27,7 +27,8 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <Link
             key={project.id}
-            to={project.to}
+            to={project.previewLink}
+            target="_blank"
             className={`
                 group relative overflow-hidden rounded-2xl cursor-pointer
                 ${project.size === "large" ? "lg:col-span-2 lg:row-span-2" : "lg:col-span-1 lg:row-span-1"}

@@ -31,7 +31,7 @@ const DesktopNav = () => {
           </ul>
         </nav>
 
-        <a className={ctaButtonStyle} href="mailto:quietdevstudio@gmail.com">
+        <a className={ctaButtonStyle} href="mailto:emmanueludeme.fe@gmail.com">
           Hire Me
         </a>
       </div>
