@@ -47,4 +47,16 @@ export const PROJECTS = [
     to: "/project/projectId",
     size: "large",
   },
+  {
+    id: "4",
+    image: "/projectImg/homescentsdecor.jpeg",
+    title: "Home Scents Decor",
+    category: "Scents Decor",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
+    stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
+    previewLink: "https://thehomescentsdecor.vercel.app/",
+    to: "/project/projectId",
+    size: "medium",
+  },
 ];
