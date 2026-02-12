@@ -90,10 +90,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="tel:+2347046780531"
+                    href="tel:+2348055742292"
                     className="hover:text-white transition-colors"
                   >
-                    +(234)-704-678-0531
+                    +(234)-805-574-2292
                   </a>
                 </li>
                 <li className="text-neutral-400">Lagos, Nigeria</li>

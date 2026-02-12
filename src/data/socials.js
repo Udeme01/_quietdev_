@@ -31,7 +31,7 @@ export const SOCIALS = [
   },
   {
     id: "whatsapp",
-    href: "https://wa.me/+2347046780531",
+    href: "https://wa.me/+2348055742292",
     target: "_blank",
     icon: faWhatsapp,
     rel: "noopener noreferrer",
