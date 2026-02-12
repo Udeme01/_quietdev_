@@ -1,9 +1,10 @@
 export const PROJECTS = [
   {
     id: "0",
-    image: "/projectImg/comfy.png",
+    image: "/projectImg/comfy.webp",
     title: "Comfy House Furnitures",
     category: "E-Commerce",
+    type: "Static",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML / CSS / JAVASCRIPT / Contentful CMS",
@@ -13,9 +14,10 @@ export const PROJECTS = [
   },
   {
     id: "1",
-    image: "/projectImg/wood.png",
+    image: "/projectImg/wood.webp",
     title: "Rooms Homepage",
     category: "Interior Design",
+    type: "Static",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
@@ -25,9 +27,10 @@ export const PROJECTS = [
   },
   {
     id: "2",
-    image: "/projectImg/yel.png",
+    image: "/projectImg/yel.webp",
     title: "Snap | Make Remote Work",
     category: "Corporate",
+    type: "Static",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
@@ -37,9 +40,10 @@ export const PROJECTS = [
   },
   {
     id: "3",
-    image: "/projectImg/fizzaura.png",
+    image: "/projectImg/fizzaura.webp",
     title: "FizzAura Luxury | Fashion",
     category: "E-Commerce",
+    type: "Dynamic",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
@@ -49,13 +53,27 @@ export const PROJECTS = [
   },
   {
     id: "4",
-    image: "/projectImg/homescentsdecor.jpeg",
+    image: "/projectImg/homescentsdecor.webp",
     title: "Home Scents Decor",
     category: "Scents Decor",
+    type: "In Progress",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://thehomescentsdecor.vercel.app/",
+    to: "/project/projectId",
+    size: "medium",
+  },
+  {
+    id: "5",
+    image: "/projectImg/fitin.webp",
+    title: "Fitin Fashion Brand",
+    category: "Fashion Designs",
+    type: "In Progress",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
+    stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
+    previewLink: "https://fitin-brand.vercel.app/",
     to: "/project/projectId",
     size: "medium",
   },

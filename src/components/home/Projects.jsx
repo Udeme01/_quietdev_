@@ -10,6 +10,14 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredProjects =
+    activeFilter === "All"
+      ? PROJECTS
+      : PROJECTS.filter((project) => project.type === activeFilter);
+
+  const filters = ["All", "Static", "Dynamic", "In Progress"];
 
   return (
     <div className="mx-auto py-10 pt-20 px-4 lg:container">
@@ -22,9 +30,33 @@ const Projects = () => {
           websites, and innovative digital experiences."
       />
 
+      {/* filtered buttons */}
+
+      <section className="mb-16 flex items-center justify-center gap-6 py-6">
+        {filters.map((filter) => {
+          return (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`
+              border px-6 py-2 rounded-full cursor-pointer
+              transition-all duration-300 text-sm md:text-base
+              ${
+                activeFilter === filter
+                  ? "bg-white/70 text-black border-white/0 shadow-lg scale-105"
+                  : "border-white/20 hover:border-white hover:scale-105"
+              }
+            `}
+            >
+              {filter}
+            </button>
+          );
+        })}
+      </section>
+
       {/* Asymmetric Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
-        {PROJECTS.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <Link
             key={project.id}
             to={project.previewLink}

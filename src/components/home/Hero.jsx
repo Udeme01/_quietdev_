@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SOCIALS } from "../../data/socials";
 
 const Hero = () => {
-  const ctaButtonStyle = `bg-black text-white py-3 px-4 hover:border-none dark:bg-black dark:text-white cursor-pointer rounded-xl font-bold tracking-wide hover:bg-transparent hover:text-black hover:outline dark:hover:outline-none dark:hover:bg-white dark:hover:text-black transition-all duration-500`;
+  const ctaButtonStyle = `bg-black text-white py-3 px-4 hover:border-none dark:bg-black dark:text-white cursor-pointer rounded-xl font-bold tracking-wider hover:bg-transparent hover:text-black hover:outline dark:hover:outline-none dark:hover:bg-white dark:hover:text-black transition-all duration-500`;
 
   const iconStyle =
     "w-10 h-10 py-2 text-2xl bg-black text-white hover:bg-white hover:outline dark:hover:outline-0 hover:text-black/90 transition-all duration-300 rounded";
@@ -41,9 +41,13 @@ const Hero = () => {
                 Hire Me
               </button>
             </a>
-            <a href="#" target="_blank">
+            <a
+              href="/resume/emma.resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button type="button" className={ctaButtonStyle}>
-                Get a Template
+                Resume/CV
               </button>
             </a>
           </section>

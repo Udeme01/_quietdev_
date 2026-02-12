@@ -1,4 +1,7 @@
 import { SendMe } from "../components/common/SendMe";
+import experimentImg from "/projectImg/exp.webp";
+import responsiveImg from "/projectImg/res.webp";
+import helpImg from "/projectImg/help.webp";
 
 const AboutMe = () => {
   return (
@@ -33,7 +36,7 @@ const AboutMe = () => {
           <div className="py-10 pt-0 lg:flex">
             <img
               className="lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
-              src="./projectImg/exp.jpg"
+              src={experimentImg}
               alt="image"
             />
             <div className="lg:flex lg:flex-col lg:align-center lg:justify-center lg:py-8 lg:px-4">
@@ -55,7 +58,7 @@ const AboutMe = () => {
           <div className="lg:flex">
             <img
               className="exp lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
-              src="./projectImg/res.jpg"
+              src={responsiveImg}
               alt="image"
             />
             <div className="lg:flex lg:flex-col lg:align-center lg:justify-center lg:py-8 lg:px-4 lg:order-first">
@@ -80,7 +83,7 @@ const AboutMe = () => {
           <div className="py-10 pb-0 lg:flex rounded-xl">
             <img
               className="lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
-              src="./projectImg/help.jpg"
+              src={helpImg}
               alt="image"
             />
             <div className="lg:flex lg:flex-col lg:align-center lg:justify-center lg:w-full">
