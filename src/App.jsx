@@ -7,7 +7,8 @@ import Root from "./pages/Root";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import ProjectDetail from "./pages/Projectdetailpage";
+// import ProjectDetail from "./pages/Projectdetailpage";
+import CaseStudyPage from "./pages/CaseStudyPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,7 +23,7 @@ function App() {
         },
         {
           path: "project/:projectId",
-          element: <ProjectDetail />,
+          element: <CaseStudyPage />,
         },
         {
           path: "about",

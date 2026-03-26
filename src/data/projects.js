@@ -9,7 +9,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML / CSS / JAVASCRIPT / Contentful CMS",
     previewLink: "https://comfyhousefurnitures.vercel.app",
-    to: "/project/projectId",
+    to: "/project/0",
     size: "large",
   },
   {
@@ -22,7 +22,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://rooms-homepage-ecom.netlify.app/#",
-    to: "/project/projectId",
+    to: "/project/1",
     size: "medium",
   },
   {
@@ -35,7 +35,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://intro-section-app-001.netlify.app/#",
-    to: "/project/projectId",
+    to: "/project/2",
     size: "medium",
   },
   {
@@ -48,7 +48,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://fizzauraluxury.com",
-    to: "/project/projectId",
+    to: "/project/3",
     size: "large",
   },
 
@@ -62,7 +62,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://thehomescentsdecor.vercel.app/",
-    to: "/project/projectId",
+    to: "/project/4",
     size: "medium",
   },
   {
@@ -75,7 +75,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://fitin-brand.vercel.app/",
-    to: "/project/projectId",
+    to: "/project/5",
     size: "medium",
   },
   {
@@ -88,7 +88,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://tggc.vercel.app/",
-    to: "/project/projectId",
+    to: "/project/6",
     size: "medium",
   },
   {
@@ -101,7 +101,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://prodigy-task-01.vercel.app/",
-    to: "/project/projectId",
+    to: "/project/7",
     size: "medium",
   },
   {
@@ -114,7 +114,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://product-food-list.vercel.app/",
-    to: "/project/projectId",
+    to: "/project/8",
     size: "medium",
   },
   {
@@ -127,20 +127,21 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
     previewLink: "https://prodigy-task-05.vercel.app/",
-    to: "/project/projectId",
+    to: "/project/9",
     size: "medium",
   },
   {
     id: "10",
-    image: "/projectImg/sunnyside.webp",
-    title: "Sunny Side Agency",
+    image: "/projectImg/ace.webp",
+    title: "Ace Leadership Hub",
     category: "Creative/Agency",
-    type: "Static",
+    type: "Dynamic",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
-    stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
-    previewLink: "https://thesunnyside-agency.vercel.app/",
-    to: "/project/projectId",
+    stacks:
+      "NextJS, ReactJS, JAVASCRIPT, TailwindCSS,Anthropic AI, RESPONSIVE DESIGN",
+    previewLink: "https://ace-leadership-hub.vercel.app/",
+    to: "/project/10",
     size: "medium",
   },
 ];

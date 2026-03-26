@@ -13,7 +13,7 @@
 //       : skillCategories.filter((cat) => cat.id === activeCategory);
 
 //   return (
-//     <div className="min-h-screen px-4 py-10 pt-20 lg:container mx-auto">
+//     <section className="min-h-screen px-4 py-10 pt-20 lg:container mx-auto">
 //       <div>
 //         {/* Header */}
 //         <Sectionheader
@@ -25,7 +25,7 @@
 //         />
 
 //         {/* Category Filter */}
-//         <div className="flex flex-wrap gap-3 mb-16 pb-12 border-b border-neutral-200">
+//         <section className="flex flex-wrap gap-3 mb-16 pb-12 border-b border-neutral-200">
 //           <button
 //             onClick={() => setActiveCategory("all")}
 //             className={`px-6 py-3 font-medium transition-all ${
@@ -50,25 +50,25 @@
 //               <span>{category.title}</span>
 //             </button>
 //           ))}
-//         </div>
+//         </section>
 
 //         {/* Skills Grid */}
-//         <div className="space-y-16">
+//         <section className="space-y-16">
 //           {filteredCategories.map((category, categoryIndex) => (
-//             <div key={category.id} className="group">
+//             <section key={category.id} className="group">
 //               {/* Category Header */}
 //               <div className="flex items-center gap-4 mb-8">
-//                 <div className="w-12 h-12 bg-neutral-900 flex items-center justify-center">
+//                 <div className="w-12 h-12 bg-neutral-100 flex items-center justify-center">
 //                   <FontAwesomeIcon
 //                     icon={category.icon}
-//                     className="text-white text-lg"
+//                     className="text-black text-lg"
 //                   />
 //                 </div>
 //                 <div>
-//                   <h2 className="text-2xl font-bold text-neutral-900">
+//                   <h2 className="text-2xl font-bold text-white">
 //                     {category.title}
 //                   </h2>
-//                   <p className="text-sm text-neutral-500">
+//                   <p className="text-sm text-white/50">
 //                     {category.skills.length}{" "}
 //                     {category.skills.length === 1 ? "skill" : "skills"}
 //                   </p>
@@ -83,10 +83,10 @@
 //                     className="border-b border-neutral-200 pb-6 group/skill hover:border-neutral-900 transition-colors"
 //                   >
 //                     <div className="flex items-center justify-between mb-3">
-//                       <span className="text-base font-medium text-neutral-900">
+//                       <span className="text-base font-medium text-white">
 //                         {skill.name}
 //                       </span>
-//                       <span className="text-sm font-semibold text-neutral-600">
+//                       <span className="text-sm font-semibold text-white/60">
 //                         {skill.level}%
 //                       </span>
 //                     </div>
@@ -102,57 +102,55 @@
 //                   </div>
 //                 ))}
 //               </div>
-//             </div>
+//             </section>
 //           ))}
-//         </div>
+//         </section>
 
 //         {/* Summary Stats */}
-//         <div className="mt-20 pt-16 border-t border-neutral-200">
+//         <section className="mt-20 pt-16 border-t border-neutral-200">
 //           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 //             <div className="text-center md:text-left">
-//               <div className="text-4xl font-bold text-neutral-900 mb-2">
+//               <div className="text-4xl font-bold text-white mb-2">
 //                 {skillCategories.reduce(
 //                   (acc, cat) => acc + cat.skills.length,
 //                   0,
 //                 )}
 //               </div>
-//               <div className="text-sm text-neutral-600 uppercase tracking-wider">
+//               <div className="text-sm text-white/60 uppercase tracking-wider">
 //                 Total Skills
 //               </div>
 //             </div>
 //             <div className="text-center md:text-left">
-//               <div className="text-4xl font-bold text-neutral-900 mb-2">
+//               <div className="text-4xl font-bold text-white mb-2">
 //                 {skillCategories.length}
 //               </div>
-//               <div className="text-sm text-neutral-600 uppercase tracking-wider">
+//               <div className="text-sm text-white/60 uppercase tracking-wider">
 //                 Categories
 //               </div>
 //             </div>
 //             <div className="text-center md:text-left">
-//               <div className="text-4xl font-bold text-neutral-900 mb-2">5+</div>
-//               <div className="text-sm text-neutral-600 uppercase tracking-wider">
+//               <div className="text-4xl font-bold text-white mb-2">5+</div>
+//               <div className="text-sm text-white/60 uppercase tracking-wider">
 //                 Years Experience
 //               </div>
 //             </div>
 //             <div className="text-center md:text-left">
-//               <div className="text-4xl font-bold text-neutral-900 mb-2">
-//                 50+
-//               </div>
-//               <div className="text-sm text-neutral-600 uppercase tracking-wider">
+//               <div className="text-4xl font-bold text-white mb-2">50+</div>
+//               <div className="text-sm text-white/60 uppercase tracking-wider">
 //                 Projects Completed
 //               </div>
 //             </div>
 //           </div>
-//         </div>
+//         </section>
 
 //         {/* CTA Section */}
-//         <div className="mt-16 pt-16 border-t border-neutral-200">
+//         <section className="mt-16 pt-16 border-t border-neutral-200">
 //           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
 //             <div>
-//               <h3 className="text-2xl font-semibold text-neutral-900 mb-2">
+//               <h3 className="text-2xl font-semibold text-white mb-2">
 //                 Let's Work Together
 //               </h3>
-//               <p className="text-neutral-600">
+//               <p className="text-white/60">
 //                 Interested in collaborating? Get in touch to discuss your
 //                 project.
 //               </p>
@@ -165,9 +163,9 @@
 //               />
 //             </button>
 //           </div>
-//         </div>
+//         </section>
 //       </div>
-//     </div>
+//     </section>
 //   );
 // };
 
