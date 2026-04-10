@@ -31,7 +31,7 @@ const Projects = () => {
 
       {/* filtered buttons */}
 
-      <section className="mb-16 flex items-center justify-center gap-6 py-6">
+      <section className="mb-16 flex items-center justify-center gap-3 py-6 overflow-x-auto whitespace-nowrap scrollbar-hide">
         {filters.map((filter) => {
           return (
             <button

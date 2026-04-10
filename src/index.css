@@ -14,3 +14,7 @@
   --lato-bold: 700;
   --lato-black: 900;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
