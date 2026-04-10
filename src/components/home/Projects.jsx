@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Sectionheader from "../common/Sectionheader";
 import { PROJECTS } from "../../data/projects";
 import { Link } from "react-router-dom";
@@ -31,20 +29,15 @@ const Projects = () => {
 
       {/* filtered buttons */}
 
-      <section className="mb-16 flex items-center justify-center gap-3 py-6 overflow-x-auto whitespace-nowrap scrollbar-hide">
+      <section className="grid place-items-center gap-3 sm:flex sm:items-center sm:justify-center mb-8 py-6 overflow-x-auto whitespace-nowrap scrollbar-hide ">
         {filters.map((filter) => {
           return (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`
-              border px-6 py-2 rounded-full cursor-pointer
-              transition-all duration-300 text-sm md:text-base
-              ${
-                activeFilter === filter
-                  ? "bg-white/70 text-black border-white/0 shadow-lg scale-105"
-                  : "border-white/20 hover:border-white hover:scale-105"
-              }
+              className={`w-fit cursor-pointer rounded-lg px-6 py-3
+              transition-all duration-300 text-sm font-medium tracking-wider md:text-base
+              ${activeFilter === filter ? "bg-white text-black" : "bg-black text-white"}
             `}
             >
               {filter}
