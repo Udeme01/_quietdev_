@@ -1,99 +1,5 @@
 export const PROJECTS_DATA = {
   0: {
-    title: "Comfy House Furnitures",
-    subtitle:
-      "A static e-commerce furniture site built with HTML, CSS, JavaScript and Contentful CMS.",
-    client: "Personal Project",
-    role: "Frontend Developer",
-    duration: "2 Weeks",
-    year: "2024",
-    heroBg: "#0D1117",
-    accentColor: "#6AA7B7",
-    accentDark: false,
-    liveUrl: "https://comfyhousefurnitures.vercel.app",
-    tags: ["HTML", "CSS", "JavaScript", "Contentful CMS", "Static"],
-    overview:
-      "A fully responsive furniture e-commerce landing page built using vanilla HTML, CSS and JavaScript with Contentful as a headless CMS for product data.",
-    goals: [
-      "Build a pixel-perfect, fully responsive furniture storefront",
-      "Integrate Contentful CMS for dynamic product listings",
-      "Optimise for fast load times with no framework overhead",
-    ],
-    problemStatement:
-      "A clean, shoppable furniture experience with zero framework dependency.",
-    problemDetail:
-      "The goal was to build a performant static site that still felt dynamic — pulling real product data from a CMS without React or Next.js.",
-    challenges: [
-      {
-        title: "CMS integration without a framework",
-        desc: "Fetching and rendering Contentful data using vanilla JS fetch API.",
-      },
-      {
-        title: "Responsive layout complexity",
-        desc: "Achieving a polished grid layout across all screen sizes with pure CSS.",
-      },
-    ],
-    roleDescription:
-      "Sole developer — designed and built the entire site from scratch.",
-    responsibilities: [
-      "UI design and layout",
-      "Contentful CMS setup",
-      "JavaScript fetch + render logic",
-      "Responsive CSS",
-    ],
-    techStack: [
-      { category: "Markup", tools: "HTML5" },
-      { category: "Styling", tools: "CSS3 (Flexbox + Grid)" },
-      { category: "Logic", tools: "Vanilla JavaScript" },
-      { category: "CMS", tools: "Contentful" },
-      { category: "Deployment", tools: "Vercel" },
-    ],
-    features: [
-      {
-        title: "Contentful-powered product listings",
-        desc: "Products fetched dynamically from Contentful at runtime using the Delivery API.",
-        tech: ["Contentful API", "Fetch API"],
-      },
-      {
-        title: "Fully responsive layout",
-        desc: "CSS Grid and Flexbox used throughout for a mobile-first, multi-column layout.",
-        tech: ["CSS Grid", "Flexbox"],
-      },
-    ],
-    challengeSolutions: [
-      {
-        challenge: "Fetching CMS data without a framework",
-        detail:
-          "No React or Next.js meant manual fetch calls and DOM manipulation.",
-        solution:
-          "Built a lightweight async render pipeline using vanilla fetch + template literals to inject product cards.",
-      },
-    ],
-    resultsContext:
-      "Delivered on time as a portfolio project demonstrating CMS integration without a framework.",
-    metrics: [
-      { value: "100%", label: "Vanilla JS" },
-      { value: "2wk", label: "Timeline" },
-      { value: "CMS", label: "Contentful" },
-    ],
-    outcomes: [
-      "Fully functional CMS-driven product page",
-      "Mobile-first responsive design",
-      "Deployed and live on Vercel",
-    ],
-    learnings: [
-      {
-        title: "Vanilla JS is powerful",
-        desc: "Building without a framework sharpened my understanding of the DOM and async patterns.",
-      },
-      {
-        title: "CMS flexibility",
-        desc: "Contentful's delivery API is straightforward and decouples content from code cleanly.",
-      },
-    ],
-  },
-
-  1: {
     title: "Rooms Homepage",
     subtitle:
       "A clean interior design landing page with slide-in navigation and responsive hero layout.",
@@ -179,7 +85,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  2: {
+  1: {
     title: "Snap | Make Remote Work",
     subtitle:
       "A responsive SaaS landing page with animated dropdown navigation and mobile menu.",
@@ -265,7 +171,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  3: {
+  2: {
     title: "FizzAura Luxury | Fashion",
     subtitle:
       "A dynamic fashion e-commerce platform with product pages, cart, and checkout flow.",
@@ -358,7 +264,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  4: {
+  3: {
     title: "Home Scents Decor",
     subtitle:
       "An in-progress e-commerce store for a home fragrance and decor brand.",
@@ -445,7 +351,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  5: {
+  4: {
     title: "Fitin Fashion Brand",
     subtitle:
       "An in-progress fashion brand site with lookbook, product showcase, and brand storytelling.",
@@ -530,7 +436,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  6: {
+  5: {
     title: "TGGC",
     subtitle:
       "An in-progress nonprofit/community site for a grassroots organisation.",
@@ -615,7 +521,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  7: {
+  6: {
     title: "Loopstudios",
     subtitle:
       "A creative agency landing page with full-bleed imagery, animated nav, and VR showcase grid.",
@@ -702,181 +608,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  8: {
-    title: "Lagos Dessert Shop",
-    subtitle:
-      "A dynamic dessert e-commerce app with cart management, item quantity controls, and order confirmation.",
-    client: "Frontend Mentor Challenge",
-    role: "Frontend Developer",
-    duration: "1 Week",
-    year: "2024",
-    heroBg: "#1A0A00",
-    accentColor: "#FB923C",
-    accentDark: true,
-    liveUrl: "https://product-food-list.vercel.app/",
-    tags: ["Dynamic", "E-commerce", "JavaScript"],
-    overview:
-      "A Frontend Mentor challenge — a dessert product listing page with a live cart, quantity controls, and an order confirmation modal.",
-    goals: [
-      "Live cart with add/remove/quantity",
-      "Order confirmation modal",
-      "Responsive product grid",
-    ],
-    problemStatement:
-      "Build a fully interactive dessert shop cart experience with zero framework.",
-    problemDetail:
-      "This challenge required real cart state — add, remove, increment, decrement, total calculation, and a confirmation modal — in vanilla JS.",
-    challenges: [
-      {
-        title: "Cart state management",
-        desc: "Tracking quantities, totals, and item state across the UI in vanilla JS.",
-      },
-      {
-        title: "Order confirmation modal",
-        desc: "A modal showing the full cart summary on order confirmation.",
-      },
-    ],
-    roleDescription: "Sole developer on a Frontend Mentor challenge.",
-    responsibilities: [
-      "Product grid",
-      "Cart logic",
-      "Quantity controls",
-      "Modal UI",
-    ],
-    techStack: [
-      { category: "Markup", tools: "HTML5" },
-      { category: "Styling", tools: "CSS3" },
-      { category: "Logic", tools: "Vanilla JavaScript" },
-      { category: "Deployment", tools: "Vercel" },
-    ],
-    features: [
-      {
-        title: "Live cart with quantity controls",
-        desc: "Add to cart, increment/decrement quantities, remove items — all with live total calculation.",
-        tech: ["Vanilla JS", "DOM manipulation"],
-      },
-      {
-        title: "Order confirmation modal",
-        desc: "Modal overlay showing full cart summary with a 'Start New Order' reset flow.",
-        tech: ["JS", "CSS modal"],
-      },
-    ],
-    challengeSolutions: [
-      {
-        challenge: "Live cart totals without React",
-        detail:
-          "Cart totals needed to update instantly on every quantity change.",
-        solution:
-          "Built a cart state object in JS that re-renders the cart panel and recalculates totals on every mutation.",
-      },
-    ],
-    resultsContext: "Completed as a Frontend Mentor challenge.",
-    metrics: [
-      { value: "100%", label: "Design match" },
-      { value: "1wk", label: "Timeline" },
-    ],
-    outcomes: [
-      "Fully interactive cart",
-      "Order confirmation flow",
-      "Mobile-responsive grid",
-    ],
-    learnings: [
-      {
-        title: "Vanilla JS state is enough",
-        desc: "A simple JS object as a state store + a render function handles most cart logic cleanly.",
-      },
-    ],
-  },
-
-  9: {
-    title: "Weather App",
-    subtitle:
-      "A dynamic weather application using the OpenWeather API with location search and live conditions.",
-    client: "Personal Project",
-    role: "Frontend Developer",
-    duration: "1 Week",
-    year: "2024",
-    heroBg: "#0C1A2E",
-    accentColor: "#38BDF8",
-    accentDark: true,
-    liveUrl: "https://prodigy-task-05.vercel.app/",
-    tags: ["Dynamic", "API", "JavaScript", "Web App"],
-    overview:
-      "A live weather app that fetches real-time weather data from the OpenWeather API based on user location search — displaying temperature, conditions, humidity, and wind speed.",
-    goals: [
-      "Live weather data from OpenWeather API",
-      "Location search with error handling",
-      "Clean, readable weather UI",
-    ],
-    problemStatement:
-      "Build a real-time weather app with a live API and a clear, readable UI.",
-    problemDetail:
-      "The challenge was handling async API calls, error states, and dynamic UI updates — all without a framework.",
-    challenges: [
-      {
-        title: "Async API error handling",
-        desc: "Gracefully handling invalid locations and network errors.",
-      },
-      {
-        title: "Dynamic UI updates",
-        desc: "Re-rendering weather data instantly on each search without page reload.",
-      },
-    ],
-    roleDescription: "Sole developer — personal project.",
-    responsibilities: [
-      "API integration",
-      "Search UI",
-      "Weather data display",
-      "Error handling",
-    ],
-    techStack: [
-      { category: "Markup", tools: "HTML5" },
-      { category: "Styling", tools: "CSS3" },
-      { category: "Logic", tools: "Vanilla JavaScript" },
-      { category: "API", tools: "OpenWeather API" },
-      { category: "Deployment", tools: "Vercel" },
-    ],
-    features: [
-      {
-        title: "Live weather data",
-        desc: "Fetches real-time temperature, humidity, wind speed, and conditions from OpenWeather API.",
-        tech: ["Fetch API", "OpenWeather"],
-      },
-      {
-        title: "Location search",
-        desc: "Search any city worldwide with error feedback for invalid locations.",
-        tech: ["JS", "DOM updates"],
-      },
-    ],
-    challengeSolutions: [
-      {
-        challenge: "Handling API errors gracefully",
-        detail:
-          "Invalid cities returned error responses that needed user-friendly messaging.",
-        solution:
-          "Wrapped fetch in try/catch and checked response.ok before rendering — showing a clear error message on failure.",
-      },
-    ],
-    resultsContext: "Live and functional as a personal project.",
-    metrics: [
-      { value: "Live", label: "Status" },
-      { value: "API", label: "OpenWeather" },
-      { value: "1wk", label: "Timeline" },
-    ],
-    outcomes: [
-      "Live weather data for any city",
-      "Error handling for bad searches",
-      "Clean responsive UI",
-    ],
-    learnings: [
-      {
-        title: "API error handling",
-        desc: "Always check response.ok and handle network errors — real APIs fail in ways you don't expect.",
-      },
-    ],
-  },
-
-  10: {
+  7: {
     title: "ACE Leadership Hub",
     subtitle:
       "An in-progress full-stack EdTech platform for Africa's leading leadership development brand — combining a personal brand site, LMS, multi-type assessment engine, blog, and admin dashboard.",
@@ -899,12 +631,12 @@ export const PROJECTS_DATA = {
     overview:
       "ACE Leadership Hub is a leadership EdTech platform built for Daniel Ade-Peters — a certified leadership coach, mediator, and speaker based in Lagos. The platform combines a personal brand site, LMS, multi-assessment engine, blog/media library, events system, and a full admin dashboard.",
     overviewExtra:
-      "Scoped across three phases over three months with a ₦500,000 contract. Phase 1 covered the public-facing site and assessment flows. Phase 2 covers Supabase integration and the LMS. Phase 3 covers the admin dashboard and Paystack.",
+      "Scoped across three phases over three months contract. Phase 1 covered the public-facing site and assessment flows. Phase 2 covers Supabase integration and the LMS. Phase 3 covers the admin dashboard and Paystack.",
     goals: [
       "Build a premium personal brand site positioning Daniel alongside Tony Robbins and BetterUp",
       "Create a multi-type leadership assessment engine with instant results and programme recommendations",
       "Build a full LMS with programme pages, subscription pricing, and curriculum display",
-      "Create a blog/media library handling articles, YouTube video embeds, and photo galleries",
+      "Create a blog/media library handling articles, and YouTube video embeds",
       "Design a reusable architecture ready for Supabase and Paystack in Phase 2",
     ],
     problemStatement:
@@ -940,7 +672,7 @@ export const PROJECTS_DATA = {
       "All 20+ page builds from scratch",
       "Assessment engine — scoring logic for 4 assessment types",
       "Reusable data layer (programsData.js, assessmentData.js, blogData.js)",
-      "AI chat widget via Anthropic API",
+      "AI chat widget via Anthropic API ( Claude )",
       "Deployment to Vercel",
     ],
     techStack: [
@@ -950,7 +682,7 @@ export const PROJECTS_DATA = {
       { category: "Backend / DB", tools: "Supabase (Phase 2)" },
       { category: "Payments", tools: "Paystack (Phase 2)" },
       { category: "AI", tools: "Anthropic Claude API" },
-      { category: "Fonts", tools: "Playfair Display + Inter" },
+      { category: "Fonts", tools: "Inter" },
       { category: "Deployment", tools: "Vercel" },
     ],
     features: [
@@ -975,9 +707,9 @@ export const PROJECTS_DATA = {
         tech: ["Anthropic API", "Next.js API route"],
       },
       {
-        title: "3-Step Register + Multi-Step Auth",
-        desc: "Split-screen auth pages with animated step transitions across Personal Info → Contact → Security.",
-        tech: ["Multi-step form state", "AnimatePresence"],
+        title: "Login + Auth",
+        desc: "Split-screen auth pages.",
+        tech: ["AnimatePresence"],
       },
     ],
     challengeSolutions: [
@@ -1030,7 +762,7 @@ export const PROJECTS_DATA = {
       "Created a data architecture ready for Supabase integration in Phase 2",
       "Client approved all deliverables and signed off on Phase 2 commencement",
       "Platform designed to scale to 500+ users without architectural changes",
-      "AI chat widget integrated and functioning with Anthropic Claude API",
+      "AI chat widget integrated and functioning with Anthropic Claude API - soon in phase 2",
     ],
     learnings: [
       {
