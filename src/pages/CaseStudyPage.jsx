@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { PROJECTS_DATA } from "../data/projectsData";
+import Sectionheader from "../components/common/Sectionheader";
 
 function CheckIcon({ accent }) {
   return (
