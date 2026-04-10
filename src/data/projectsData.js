@@ -887,7 +887,7 @@ export const PROJECTS_DATA = {
     heroBg: "#0A0A0A",
     accentColor: "#D4AF37",
     accentDark: true,
-    liveUrl: "https://ace-leadership-hub.vercel.app/",
+    liveUrl: "https://aceleadership.vercel.app/",
     tags: [
       "Next.js",
       "React",

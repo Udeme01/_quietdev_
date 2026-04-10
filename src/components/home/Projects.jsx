@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpRightFromSquare,
-  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Sectionheader from "../common/Sectionheader";
 import { PROJECTS } from "../../data/projects";
