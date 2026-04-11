@@ -119,7 +119,7 @@ const Certificates = () => {
                 <a
                   target="_blank"
                   href={cert.link}
-                  className="flex items-center gap-2 text-sm font-medium text-slate-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:gap-3 cursor-pointer"
+                  className="flex items-center gap-2 text-sm font-medium text-slate-900 cursor-pointer"
                 >
                   <span>View Certificate</span>
                   <FontAwesomeIcon

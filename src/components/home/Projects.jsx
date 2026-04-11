@@ -7,48 +7,21 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
-  const [activeFilter, setActiveFilter] = useState("All");
-
-  const filteredProjects =
-    activeFilter === "All"
-      ? PROJECTS
-      : PROJECTS.filter((project) => project.type === activeFilter);
-
-  const filters = ["All", "Static", "Dynamic", "In Progress"];
 
   return (
     <div className="mx-auto py-10 pt-20 px-4 lg:container">
       {/* Header Section */}
 
       <Sectionheader
-        headerTitle="My Projects"
+        headerTitle="Completed Projects"
         headerSubtitle="My Portfolio"
         headerBrief=" Explore a collection of creative works spanning e-commerce, corporate
           websites, and innovative digital experiences."
       />
 
-      {/* filtered buttons */}
-
-      <section className="grid place-items-center gap-3 sm:flex sm:items-center sm:justify-center mb-8 py-6 overflow-x-auto whitespace-nowrap scrollbar-hide ">
-        {filters.map((filter) => {
-          return (
-            <button
-              key={filter}
-              onClick={() => setActiveFilter(filter)}
-              className={`w-fit cursor-pointer rounded-lg px-6 py-3
-              transition-all duration-300 text-sm font-medium tracking-wider md:text-base
-              ${activeFilter === filter ? "bg-white text-black" : "bg-black text-white"}
-            `}
-            >
-              {filter}
-            </button>
-          );
-        })}
-      </section>
-
       {/* Asymmetric Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
-        {filteredProjects.map((project, index) => (
+        {PROJECTS.map((project, index) => (
           <Link
             key={project.id}
             to={project.to}

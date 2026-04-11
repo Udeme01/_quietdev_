@@ -9,7 +9,7 @@ export const SendMe = () => {
 
   //   send whatsapp
   const sendFormToWhatsApp = () => {
-    let phoneNumber = "+2347036055083";
+    let phoneNumber = "+2348055742292";
 
     let firstname = inputValues.firstname;
     let email = inputValues.email;
@@ -82,7 +82,7 @@ export const SendMe = () => {
   return (
     <>
       <form className="mt-10 text-center" onSubmit={handleSubmitForm}>
-        <div>
+        <section>
           <div className="my-4">
             <input
               className={inputStyles}
@@ -95,6 +95,7 @@ export const SendMe = () => {
               onChange={(event) => handleInputChange("firstname", event)}
             />
           </div>
+
           <div className="my-4">
             <input
               className={inputStyles}
@@ -107,6 +108,7 @@ export const SendMe = () => {
               onChange={(event) => handleInputChange("email", event)}
             />
           </div>
+
           <div>
             <textarea
               className={inputStyles}
@@ -119,9 +121,9 @@ export const SendMe = () => {
               onChange={(event) => handleInputChange("message", event)}
             />
           </div>
-        </div>
+        </section>
         <button
-          className="bg-white px-4 py-2 rounded-xl mt-4 text-md capitalize tracking-wide dark:bg-neutral-900"
+          className="bg-white px-4 py-2 rounded-xl mt-4 text-md capitalize tracking-wide dark:bg-neutral-900 cursor-pointer"
           type="submit"
         >
           submit

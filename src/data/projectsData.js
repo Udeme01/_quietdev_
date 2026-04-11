@@ -1,177 +1,5 @@
 export const PROJECTS_DATA = {
   0: {
-    title: "Rooms Homepage",
-    subtitle:
-      "A clean interior design landing page with slide-in navigation and responsive hero layout.",
-    client: "Frontend Mentor Challenge",
-    role: "Frontend Developer",
-    duration: "1 Week",
-    year: "2023",
-    heroBg: "#111",
-    accentColor: "#C9B99A",
-    accentDark: true,
-    liveUrl: "https://rooms-homepage-ecom.netlify.app/#",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
-    overview:
-      "A Frontend Mentor challenge — a high-fidelity homepage for a furniture/interior brand with a custom slide-in mobile nav and full-bleed hero imagery.",
-    goals: [
-      "Pixel-perfect recreation of the Rooms homepage design",
-      "Custom animated mobile navigation",
-      "Clean responsive layout",
-    ],
-    problemStatement:
-      "Recreate a premium interior design homepage with precise layout and behaviour.",
-    problemDetail:
-      "This challenge required precise CSS positioning, a custom hamburger nav, and a hero slider — all without any libraries.",
-    challenges: [
-      {
-        title: "Custom slide-in nav",
-        desc: "Building a smooth mobile navigation overlay with pure CSS transitions.",
-      },
-      {
-        title: "Hero image slider",
-        desc: "Left/right arrow navigation with JS-driven slide transitions.",
-      },
-    ],
-    roleDescription: "Sole developer on a Frontend Mentor challenge build.",
-    responsibilities: [
-      "HTML/CSS layout",
-      "JS slider logic",
-      "Mobile nav behaviour",
-      "Cross-browser testing",
-    ],
-    techStack: [
-      { category: "Markup", tools: "HTML5" },
-      { category: "Styling", tools: "CSS3" },
-      { category: "Logic", tools: "Vanilla JavaScript" },
-      { category: "Deployment", tools: "Netlify" },
-    ],
-    features: [
-      {
-        title: "Animated mobile navigation",
-        desc: "Slide-in overlay nav triggered by a hamburger icon — pure CSS transitions.",
-        tech: ["CSS transitions", "JS toggle"],
-      },
-      {
-        title: "Hero image slider",
-        desc: "Arrow-driven full-bleed image carousel with JS index tracking.",
-        tech: ["Vanilla JS", "CSS transitions"],
-      },
-    ],
-    challengeSolutions: [
-      {
-        challenge: "Slide-in nav without a library",
-        detail: "Needed smooth overlay nav with no external dependencies.",
-        solution:
-          "Used CSS transform: translateX and a JS class toggle to animate the nav panel in and out.",
-      },
-    ],
-    resultsContext:
-      "Completed as a Frontend Mentor challenge — strong match to the original design spec.",
-    metrics: [
-      { value: "100%", label: "Design match" },
-      { value: "1wk", label: "Timeline" },
-    ],
-    outcomes: [
-      "Pixel-perfect layout",
-      "Smooth mobile nav",
-      "Responsive across all breakpoints",
-    ],
-    learnings: [
-      {
-        title: "CSS-only animations",
-        desc: "Transform and transition are enough for most simple UI animations — no JS library needed.",
-      },
-    ],
-  },
-
-  1: {
-    title: "Snap | Make Remote Work",
-    subtitle:
-      "A responsive SaaS landing page with animated dropdown navigation and mobile menu.",
-    client: "Frontend Mentor Challenge",
-    role: "Frontend Developer",
-    duration: "1 Week",
-    year: "2023",
-    heroBg: "#1B1B2F",
-    accentColor: "#A78BFA",
-    accentDark: false,
-    liveUrl: "https://intro-section-app-001.netlify.app/#",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
-    overview:
-      "A SaaS product intro page for 'Snap' — featuring multi-level dropdown navigation, a mobile hamburger menu, and a clean two-column hero layout.",
-    goals: [
-      "Build accessible dropdown navigation",
-      "Responsive mobile menu with overlay",
-      "Clean product-style hero section",
-    ],
-    problemStatement:
-      "Build a SaaS landing page with complex multi-level dropdown navigation.",
-    problemDetail:
-      "The challenge required building accessible, animated dropdown menus that work on both desktop hover and mobile tap — without a framework.",
-    challenges: [
-      {
-        title: "Multi-level dropdown nav",
-        desc: "Toggling dropdown panels open/closed with keyboard and click support.",
-      },
-      {
-        title: "Mobile overlay menu",
-        desc: "A full-height side-drawer nav with a dimmed background overlay.",
-      },
-    ],
-    roleDescription: "Sole developer on a Frontend Mentor challenge build.",
-    responsibilities: [
-      "Dropdown nav logic",
-      "Mobile drawer nav",
-      "Hero layout",
-      "Accessibility",
-    ],
-    techStack: [
-      { category: "Markup", tools: "HTML5" },
-      { category: "Styling", tools: "CSS3" },
-      { category: "Logic", tools: "Vanilla JavaScript" },
-      { category: "Deployment", tools: "Netlify" },
-    ],
-    features: [
-      {
-        title: "Dropdown navigation",
-        desc: "Animated dropdown menus with arrow icon rotation and smooth height transitions.",
-        tech: ["CSS transitions", "JS toggle"],
-      },
-      {
-        title: "Mobile side drawer",
-        desc: "Full-height mobile nav drawer with background overlay and close button.",
-        tech: ["Vanilla JS", "CSS"],
-      },
-    ],
-    challengeSolutions: [
-      {
-        challenge: "Accessible dropdown menus",
-        detail: "Dropdowns needed to work for both click and keyboard users.",
-        solution:
-          "Used aria-expanded attributes and JS event listeners to toggle visibility and animate arrow icons.",
-      },
-    ],
-    resultsContext:
-      "Completed as a Frontend Mentor challenge with full design fidelity.",
-    metrics: [
-      { value: "100%", label: "Design match" },
-      { value: "1wk", label: "Timeline" },
-    ],
-    outcomes: [
-      "Accessible dropdown nav",
-      "Responsive mobile drawer",
-      "Clean hero layout",
-    ],
-    learnings: [
-      {
-        title: "Accessibility matters",
-        desc: "Using aria-expanded and keyboard events makes nav components usable for everyone.",
-      },
-    ],
-  },
-
-  2: {
     title: "FizzAura Luxury | Fashion",
     subtitle:
       "A dynamic fashion e-commerce platform with product pages, cart, and checkout flow.",
@@ -265,7 +93,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  3: {
+  1: {
     title: "Home Scents Decor",
     subtitle:
       "An in-progress e-commerce store for a home fragrance and decor brand.",
@@ -356,7 +184,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  4: {
+  2: {
     title: "Fitin Fashion Brand",
     subtitle:
       "An in-progress fashion brand site with lookbook, product showcase, and brand storytelling.",
@@ -445,7 +273,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  5: {
+  3: {
     title: "TGGC",
     subtitle:
       "An in-progress nonprofit/community site for a grassroots organisation.",
@@ -532,94 +360,7 @@ export const PROJECTS_DATA = {
     ],
   },
 
-  6: {
-    title: "Loopstudios",
-    subtitle:
-      "A creative agency landing page with full-bleed imagery, animated nav, and VR showcase grid.",
-    client: "Frontend Mentor Challenge",
-    role: "Frontend Developer",
-    duration: "1 Week",
-    year: "2023",
-    heroBg: "#111",
-    accentColor: "#fff",
-    accentDark: true,
-    liveUrl: "https://prodigy-task-01.vercel.app/",
-    tags: ["Static", "Creative", "Agency", "HTML/CSS"],
-    overview:
-      "A Frontend Mentor challenge build — a creative VR agency homepage with full-bleed imagery, a custom hamburger nav, and a hover-effect image grid.",
-    goals: [
-      "Full-bleed hero with overlay text",
-      "Hover effects on the creation grid",
-      "Custom mobile navigation",
-    ],
-    problemStatement:
-      "Build a visually striking agency homepage with complex image hover effects.",
-    problemDetail:
-      "Loopstudios required precise CSS overlay techniques and a polished hover interaction on the creation grid.",
-    challenges: [
-      {
-        title: "Image hover overlays",
-        desc: "Each creation card needed a gradient overlay and text reveal on hover.",
-      },
-      {
-        title: "Hamburger nav",
-        desc: "A custom mobile nav with logo repositioning.",
-      },
-    ],
-    roleDescription: "Sole developer on a Frontend Mentor challenge.",
-    responsibilities: [
-      "Hero layout",
-      "Creation grid with hover effects",
-      "Mobile navigation",
-      "Typography",
-    ],
-    techStack: [
-      { category: "Markup", tools: "HTML5" },
-      { category: "Styling", tools: "CSS3" },
-      { category: "Logic", tools: "Vanilla JavaScript" },
-      { category: "Deployment", tools: "Vercel" },
-    ],
-    features: [
-      {
-        title: "Creation grid with hover overlays",
-        desc: "CSS gradient overlays reveal on hover with text sliding in — no JS required.",
-        tech: ["CSS transitions", "Flexbox"],
-      },
-      {
-        title: "Custom hamburger nav",
-        desc: "Mobile nav with animated hamburger icon and logo layout shift.",
-        tech: ["CSS", "JS toggle"],
-      },
-    ],
-    challengeSolutions: [
-      {
-        challenge: "CSS-only hover overlays",
-        detail:
-          "Each card needed a gradient overlay that fades in on hover with text.",
-        solution:
-          "Used position: absolute overlays with opacity: 0 and CSS :hover to transition them in.",
-      },
-    ],
-    resultsContext:
-      "Completed as a Frontend Mentor challenge with high design fidelity.",
-    metrics: [
-      { value: "100%", label: "Design match" },
-      { value: "1wk", label: "Timeline" },
-    ],
-    outcomes: [
-      "Pixel-perfect challenge completion",
-      "Smooth hover interactions",
-      "Responsive layout",
-    ],
-    learnings: [
-      {
-        title: "CSS :hover is powerful",
-        desc: "Complex hover interactions — overlays, text reveals, colour shifts — don't need JavaScript.",
-      },
-    ],
-  },
-
-  7: {
+  4: {
     title: "ACE Leadership Hub",
     subtitle:
       "An in-progress full-stack EdTech platform for Africa's leading leadership development brand — combining a personal brand site, LMS, multi-type assessment engine, blog, and admin dashboard.",

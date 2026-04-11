@@ -10,6 +10,11 @@ export const ROUTES = [
     href: "/about",
   },
   {
+    id: "testimonials",
+    title: "Testimonials",
+    href: "/testimonials",
+  },
+  {
     id: "contact",
     title: "Contact",
     href: "/contact",

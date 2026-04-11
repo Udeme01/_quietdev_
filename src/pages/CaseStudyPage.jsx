@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { PROJECTS_DATA } from "../data/projectsData";
-import Sectionheader from "../components/common/Sectionheader";
 
 function CheckIcon({ accent }) {
   return (
@@ -43,21 +42,6 @@ export default function CaseStudyPage() {
   const { projectId } = useParams();
   const p = PROJECTS_DATA[projectId];
   const [open, setOpen] = useState(null);
-
-  if (!p)
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center gap-4 bg-[#0A0A0A]">
-        <span className="text-5xl font-black text-white">404</span>
-        <span className="text-white/50 text-sm">Project not found</span>
-        <Link
-          to="/portfolio"
-          className="font-mono text-[11px] tracking-[0.2em] uppercase"
-          style={{ color: "#D4AF37" }}
-        >
-          ← Back to projects
-        </Link>
-      </div>
-    );
 
   const ac = p.accentColor || "#000";
 
