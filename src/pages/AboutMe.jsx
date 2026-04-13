@@ -5,98 +5,159 @@ import helpImg from "/projectImg/help.webp";
 
 const AboutMe = () => {
   return (
-    <>
-      <section className="container font-winkySans mx-auto px-4 py-16 pb-0 dark:text-neutral-100">
-        <h1 className="text-center font-regular text-2xl mb-3 md:text-4xl">
-          LEAVE BEHIND THE WORLD OF MAKE-BELIEVE, WELCOME TO MY CORNER OF THE
-          WEB, WHERE CODE MEETS CREATIVITY!
-        </h1>
-        <p className="text-center max-w-(--breakpoint-md) mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
-          I&apos;m Udeme Emmanuel, a passionate frontend developer with a keen
-          eye for design and a committment to excellence. I specialize in
-          seamless and exceptional user experiences that captivate audiences and
-          elevate brands.
-        </p>
-        <div className="mt-4">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="none"
-            // poster=""
-            controls={false}
-            className="w-screen rounded-xl"
+    <main className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
+      <section className="lg:container mx-auto">
+        {/* ── HERO ── */}
+        <section className="pt-24 pb-16">
+          {/* Eyebrow */}
+          <span className="text-[11px] uppercase tracking-[0.3em] text-white/30 font-semibold mb-4 block">
+            About Me
+          </span>
+
+          {/* Hero heading */}
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase leading-[0.92] text-white mb-6 font-bebas">
+            Not just a developer.
+            <br />
+            <span className="text-white/25">A craftsman</span>
+            <br />
+            who ships.
+          </h1>
+
+          {/* Intro paragraph */}
+          <p className="text-white/50 text-base sm:text-lg leading-relaxed max-w-2xl mt-6">
+            I'm <span className="text-white font-medium">Udeme Emmanuel</span>,
+            a frontend developer with a sharp eye for design and a genuine
+            obsession with crafting experiences that feel effortless. I
+            specialise in building seamless, high-quality interfaces that
+            captivate users and elevate brands.
+          </p>
+        </section>
+
+        {/* ── VIDEO ── */}
+        <div className="mb-24">
+          <div
+            className="rounded-2xl overflow-hidden border border-white/8"
+            style={{ borderColor: "rgba(255,255,255,0.07)" }}
           >
-            <source src="https://res.cloudinary.com/djfkvmc4f/video/upload/v1770028614/coder-03_mkuily.mp4" />
-          </video>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="none"
+              controls={false}
+              className="w-full"
+            >
+              <source src="https://res.cloudinary.com/djfkvmc4f/video/upload/v1770028614/coder-03_mkuily.mp4" />
+            </video>
+          </div>
         </div>
 
-        <section className="mt-24 bg-gray-200 p-4 dark:bg-neutral-800 rounded-xl">
-          <div className="py-10 pt-0 lg:flex">
-            <img
-              className="lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
-              src={experimentImg}
-              alt="image"
-            />
-            <div className="lg:flex lg:flex-col lg:align-center lg:justify-center lg:py-8 lg:px-4">
-              <h1 className="font-regular text-2xl mt-3 md:text-4xl">
-                ARMED WITH ALMOST 2 YEARS OF EXPERIENCE, MY FINGER IS ON THE
-                TRIGGER
-              </h1>
-              <p className="max-w-(--breakpoint-md) mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
-                Having had the privilege of working on a diverse array of
-                projects, from corporate websites to e-commerce platforms and
-                beyond. Each project has presented it&apos;s own set of
-                challenges and opportunities for growth, allowing me to develop
-                a well rounded skill and a keen understanding of what it takes
-                to create exceptional user experience.
-              </p>
-            </div>
-          </div>
-
-          <div className="lg:flex">
-            <img
-              className="exp lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
-              src={responsiveImg}
-              alt="image"
-            />
-            <div className="lg:flex lg:flex-col lg:align-center lg:justify-center lg:py-8 lg:px-4 lg:order-first">
-              <h1 className="font-regular text-2xl mt-3 md:text-4xl">
-                <span className="text-xs block bg-white w-fit p-1 tracking-widest dark:bg-neutral-900">
-                  RESPONSIVE DESIGN
+        {/* ── CONTENT SECTIONS ── */}
+        <div className="space-y-6 mb-24">
+          {/* Block 1 — Experience */}
+          <div
+            className="rounded-2xl bg-white/3 border border-white/8 overflow-hidden"
+            style={{ borderColor: "rgba(255,255,255,0.07)" }}
+          >
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-1/2 shrink-0">
+                <img
+                  src={experimentImg}
+                  alt="Experience"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-white/25 mb-4 font-semibold">
+                  Experience
                 </span>
-                I DELIVER EXCELLENCE ACROSS DEVICES WITH RESPONSIVE DESIGNS
-              </h1>
-              <p className="max-w-(--breakpoint-md) mx-auto mt-2 leading-7 font-light md:text-lg md:leading-8">
-                A responsive website not only enhances usability but also
-                fosters greater user engagement by providing a seamless
-                experience regardless of the devices being used. This is where I
-                craft designs that truly leave an impact. I achieve this by
-                employing fluid grids, flexible images, and media queries to
-                ensure that every element of a website responds gracefully to
-                different screen sizes.
-              </p>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase leading-tight text-white mb-4 font-bebas">
+                  Almost 2 years in.
+                  <br />
+                  <span className="text-white/30">And still hungry.</span>
+                </h2>
+                <p className="text-white/50 text-sm sm:text-base leading-relaxed">
+                  In nearly two years, I've had the privilege of working across
+                  a wide range of projects — from corporate websites to
+                  e-commerce platforms and everything in between. Each project
+                  has sharpened my skills, deepened my understanding of what
+                  users need, and confirmed one thing: great work comes from
+                  caring about the details.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="py-10 pb-0 lg:flex rounded-xl">
-            <img
-              className="lg:w-1/2 lg:py-8 lg:px-4 rounded-xl"
-              src={helpImg}
-              alt="image"
-            />
-            <div className="lg:flex lg:flex-col lg:align-center lg:justify-center lg:w-full">
-              <h1 className="text-center font-regular text-2xl mt-3 md:text-4xl">
-                SO, HOW CAN I HELP?
-              </h1>
-              <SendMe />
+          {/* Block 2 — Responsive Design */}
+          <div
+            className="rounded-2xl bg-white/3 border border-white/8 overflow-hidden"
+            style={{ borderColor: "rgba(255,255,255,0.07)" }}
+          >
+            <div className="flex flex-col lg:flex-row-reverse">
+              <div className="lg:w-1/2 shrink-0">
+                <img
+                  src={responsiveImg}
+                  alt="Responsive Design"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-white/25 mb-4 font-semibold">
+                  Responsive Design
+                </span>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase leading-tight text-white mb-4 font-bebas">
+                  Every screen.
+                  <br />
+                  <span className="text-white/30">Every device.</span>
+                </h2>
+                <p className="text-white/50 text-sm sm:text-base leading-relaxed">
+                  A website that only works on desktop is half a website. I
+                  build with fluid grids, flexible images, and precise media
+                  queries so every layout responds gracefully — whether
+                  someone's on a 4K monitor or a 5-year-old phone. Great design
+                  shouldn't be a privilege reserved for big screens.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+
+          {/* Block 3 — CTA / SendMe */}
+          <div
+            className="rounded-2xl bg-white/3 border border-white/8 overflow-hidden"
+            style={{ borderColor: "rgba(255,255,255,0.07)" }}
+          >
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-1/2 shrink-0">
+                <img
+                  src={helpImg}
+                  alt="Let's work together"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-white/25 mb-4 font-semibold">
+                  Work With Me
+                </span>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase leading-tight text-white mb-4 font-bebas">
+                  Got a project
+                  <br />
+                  <span className="text-white/30">in mind?</span>
+                </h2>
+                <p className="text-white/50 text-sm sm:text-base leading-relaxed mb-6">
+                  Whether you need a full website built from scratch, a Figma
+                  design brought to life, or an existing site cleaned up — I'm
+                  ready. Let's build something worth showing off.
+                </p>
+                <SendMe />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-    </>
+    </main>
   );
 };
 
 export default AboutMe;
+// max-w-5xl mx-auto px-5 sm:px-8

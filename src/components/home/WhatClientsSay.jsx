@@ -32,24 +32,23 @@ const testimonials = [
 
 export function WhatClientsSay() {
   return (
-    <section className="bg-[#111] py-20 px-6 md:px-12 lg:px-24 overflow-hidden">
-      <div className="max-w-5xl mx-auto">
+    <section className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
+      <div className="lg:container mx-auto">
         {/* Heading */}
         <div className="mb-16">
           <h2
-            className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-white leading-tight mb-4"
+            className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-white leading-tight mb-4 font-bebas"
             style={{
-              fontFamily: "'Bebas Neue', 'Impact', sans-serif",
               letterSpacing: "-0.02em",
             }}
           >
-            I've Helped 20+ <span className="text-white/20">Companies</span>
+            I've Helped 5+ <span className="text-white/20">Companies</span>
             <br />
             Design, Ship,
             <br />
             <span className="relative inline-block">
               and Raise.
-              <span className="absolute -bottom-2 left-0 w-full h-[3px] bg-white/30 rounded-full" />
+              <span className="absolute -bottom-2 left-0 w-full h-0.75 bg-white/30 rounded-full" />
             </span>
           </h2>
           <p className="text-white/40 text-base md:text-lg mt-6 font-light">
@@ -62,7 +61,7 @@ export function WhatClientsSay() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-white/[0.04] border border-white/10 rounded-2xl p-6 md:p-7 flex flex-col gap-5 hover:bg-white/[0.07] hover:border-white/20 transition-all duration-300 group"
+              className="relative bg-white/4 border border-white/10 rounded-2xl p-6 md:p-7 flex flex-col gap-5 hover:bg-white/[0.07] hover:border-white/20 transition-all duration-300 group"
             >
               {/* Quote mark */}
               <span className="text-6xl font-serif text-white/10 leading-none -mt-2 select-none">
@@ -70,7 +69,7 @@ export function WhatClientsSay() {
               </span>
 
               {/* Quote */}
-              <p className="text-white/70 text-sm md:text-[15px] leading-relaxed flex-1 -mt-4">
+              <p className="text-white/50 text-sm md:text-[15px] leading-relaxed flex-1 -mt-4">
                 {t.quote}
               </p>
 
@@ -80,7 +79,7 @@ export function WhatClientsSay() {
               {/* Author */}
               <div className="flex items-center gap-3">
                 <div
-                  className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.color} flex items-center justify-center text-white text-xs font-black shrink-0`}
+                  className={`w-10 h-10 rounded-full bg-linear-to-br ${t.color} flex items-center justify-center text-white text-xs font-black shrink-0`}
                 >
                   {t.initials}
                 </div>

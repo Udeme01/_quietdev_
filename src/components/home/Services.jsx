@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Sectionheader from "../common/Sectionheader";
 
 // ─── WHAT I DO ───────────────────────────────────────────────────────────────
 
@@ -56,31 +57,19 @@ const services = [
 
 export function WhatIDo() {
   return (
-    <section className="bg-[#111] min-h-screen py-20 px-6 md:px-12 lg:px-24">
-      <div className="max-w-5xl mx-auto">
+    <section className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
+      <div className="lg:container mx-auto">
         {/* Heading */}
-        <h2
-          className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter text-white leading-none mb-20"
-          style={{
-            fontFamily: "'Bebas Neue', 'Impact', sans-serif",
-            letterSpacing: "-0.02em",
-          }}
-        >
-          What I Do
-        </h2>
+
+        <Sectionheader headerTitle="What I Do" />
 
         {/* Services */}
         <div className="flex flex-col gap-0">
           {services.map((s, i) => (
             <div
               key={i}
-              className="group relative border-t border-white/10 py-10 md:py-12 flex flex-col md:flex-row md:items-start gap-6 md:gap-10 hover:bg-white/[0.03] transition-all duration-300 cursor-default px-2"
+              className="group relative border-t border-white/10 py-10 md:py-12 flex flex-col md:flex-row lg:items-start gap-6 md:gap-10 hover:bg-white/3 transition-all duration-300 cursor-default px-2"
             >
-              {/* Number */}
-              <span className="hidden md:block text-xs font-mono text-white/20 mt-1 w-8 shrink-0">
-                0{i + 1}
-              </span>
-
               {/* Icon bubble */}
               <div className="shrink-0 w-12 h-12 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#111] transition-all duration-300">
                 {s.icon}

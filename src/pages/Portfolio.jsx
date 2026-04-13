@@ -12,7 +12,7 @@ const Portfolio = () => {
     <>
       <Hero />
       <Projects />
-      {/* <Skills /> */}
+      <Skills />
       <WhatIDo />
       <WhatClientsSay />
       <FAQ />

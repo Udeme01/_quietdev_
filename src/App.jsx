@@ -10,6 +10,8 @@ import Portfolio from "./pages/Portfolio";
 import CaseStudyPage from "./pages/CaseStudyPage";
 import NotFound from "./pages/NotFound";
 import Testimonials from "./pages/Testimonials";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +40,14 @@ function App() {
         {
           path: "contact",
           element: <Contact />,
+        },
+        {
+          path: "privacy",
+          element: <PrivacyPolicy />,
+        },
+        {
+          path: "terms",
+          element: <TermsOfService />,
         },
       ],
     },

@@ -10,13 +10,14 @@ import {
 import Sectionheader from "../common/Sectionheader";
 import { certifications } from "../../data/certifications";
 import { Link } from "react-router-dom";
+import { Button } from "../common/Button";
 
 const Certificates = () => {
   const [hoveredCert, setHoveredCert] = useState(null);
 
   return (
-    <section className="bg-white dark:bg-transparent lg:container px-4 pt-24 mx-auto">
-      <div>
+    <section className="bg-transparent min-h-screen py-20 px-6 md:px-12 lg:px-24">
+      <div className="lg:container mx-auto">
         {/* Header Section */}
         <Sectionheader
           headerTitle="Certifications"
@@ -123,10 +124,10 @@ const Certificates = () => {
                     className="text-white text-lg"
                   />
                 </div>
-                <div className="text-3xl font-bold text-black/90 dark:text-white mb-2">
+                <div className="text-3xl font-bold text-white/50 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-sm text-black/60 dark:text-white font-medium">
+                <div className="text-sm text-white/50 font-medium">
                   {stat.label}
                 </div>
               </div>
@@ -141,15 +142,15 @@ const Certificates = () => {
               <h3 className="text-xl font-semibold text-black/90 dark:text-white tracking-wide mb-2">
                 View Complete Credential Portfolio
               </h3>
-              <p className="text-black/60 dark:text-white tracking-wide">
+              <p className="text-white/50 text-sm leading-relaxed">
                 Access detailed information about all certifications and
                 credentials
               </p>
             </div>
-            <Link className="px-8 py-4 bg-black/90 dark:bg-white text-white dark:text-black font-semibold rounded hover:bg-black/80 dark:hover:text-white transition-colors duration-300 flex items-center gap-3 whitespace-nowrap">
-              <span>View All Credentials</span>
+            <Button>
+              View All Credentials
               <FontAwesomeIcon icon={faExternalLinkAlt} />
-            </Link>
+            </Button>
           </div>
         </div>
       </div>

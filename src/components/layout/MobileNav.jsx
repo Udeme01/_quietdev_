@@ -1,104 +1,119 @@
 import { Sling as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../../src/img/logo.png";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ROUTES } from "../../data/routes";
-// import { Theme } from "../../features/ThemeChange";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
 
-  // disable scrolling when nav-menu isOpen;
-  if (isOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "scroll";
-  }
+  // ✅ Moved out of render into useEffect
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  // ✅ Auto-close on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
-    <>
-      <div className="flex justify-between align-center font-winkySans font-regular leading-tight shadow bg-white dark:bg-black/5 px-4 pl-8 py-4 lg:container lg:mx-auto lg:hidden">
-        <picture className="flex flex-col justify-center align-center w-fit">
-          <img
-            className="w-9 rounded-full border border-red-400"
-            src={logo}
-            alt="logo"
-          />
-        </picture>
-        {/* <Theme /> */}
-        {/* availability... */}
-        <div className="flex items-center justify-center space-x-2 bg-black/30 px-2 rounded-lg">
-          <div className="animate-pulse bg-green-300 w-5 h-5 rounded-full relative flex items-center justify-center">
-            <span className="animate-pulse bg-green-700 w-3 h-3 rounded-full absolute flex"></span>
-          </div>
-          <h1 className="text-xs tracking-wide rounded-full text-right underline underline-offset-2">
-            Available to take on new Website projects! Let’s talk
-          </h1>
-        </div>
-        <button className="relative">
-          <Hamburger
-            toggled={isOpen}
-            toggle={setIsOpen}
-            size={20}
-            color="white"
-          />
-        </button>
-        <AnimatePresence>
-          {isOpen && (
-            <motion.nav
-              className="bg-white opacity-80 fixed z-100 top-20 right-0 bottom-0 left-0 dark:bg-neutral-900 font-lato"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <ul className="">
-                {ROUTES.map((listItem, idx) => {
-                  const { id, title, href } = listItem;
-                  return (
-                    <motion.li
-                      className="first:border-t first:border-black/10 dark:first:border-white/10 relative p-10 hover:bg-black/10"
-                      key={id}
-                      initial={{ scale: 0, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 260,
-                        damping: 20,
-                        delay: 0.1 + idx / 10,
-                      }}
-                    >
-                      <Link
-                        to={href}
-                        onClick={() => setIsOpen(false)}
-                        className="cursor-pointer w-full absolute border-b border-black/10 dark:border-white/10 top-0 right-0 bottom-0 left-0 py-7 px-8 tracking-wider font-bold"
-                      >
-                        {title}
-                      </Link>
-                    </motion.li>
-                  );
-                })}
-                <motion.a
-                  href="mailto:quietdevstudio@gmail.com"
-                  className="bg-black text-white p-5 mt-4 absolute right-4 left-4 bottom-4 text-center dark:bg-neutral-100 dark:text-neutral-900 hover:scale-95 transition-all duration-500 ease-in-out"
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <button
-                    type="button"
-                    className="text-xl tracking-wider cursor-pointer"
-                  >
-                    Hire Me
-                  </button>
-                </motion.a>
-              </ul>
-            </motion.nav>
-          )}
-        </AnimatePresence>
+    <section className="lg:hidden flex justify-between items-center px-5 py-4 bg-[#0f0f0f] border-b border-white/[0.07]">
+      {/* Logo */}
+      <Link to="/">
+        <img
+          className="w-8 h-8 rounded-full border border-white/20"
+          src={logo}
+          alt="Udeme Emmanuel"
+        />
+      </Link>
+
+      {/* Availability badge */}
+      <div className="flex items-center gap-2 border border-white/10 bg-white/4 px-3 py-1.5 rounded-full">
+        <span className="relative flex w-1.5 h-1.5">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+          <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400" />
+        </span>
+        <span className="text-[10px] font-medium text-white/50">
+          Available for work
+        </span>
       </div>
-    </>
+
+      {/* Hamburger — z-index keeps it above the overlay */}
+      <button className="relative z-101">
+        <Hamburger
+          toggled={isOpen}
+          toggle={setIsOpen}
+          size={20}
+          color="white"
+        />
+      </button>
+
+      {/* Fullscreen overlay menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.nav
+            className="fixed z-100 inset-0 bg-[#0f0f0f] flex flex-col justify-between pt-24 pb-8 px-6"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+          >
+            {/* Nav links */}
+            <ul className="flex flex-col">
+              {ROUTES.map(({ id, title, href }, idx) => {
+                const isActive = pathname === href;
+                return (
+                  <motion.li
+                    key={id}
+                    className="border-b border-white/[0.07]"
+                    initial={{ opacity: 0, x: -16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.05 + idx * 0.07, duration: 0.3 }}
+                  >
+                    <Link
+                      to={href}
+                      onClick={() => setIsOpen(false)}
+                      className={`flex items-center justify-between py-5 transition-colors ${
+                        isActive
+                          ? "text-white"
+                          : "text-white/40 hover:text-white"
+                      }`}
+                      style={{ fontFamily: "'DM Sans', sans-serif" }}
+                    >
+                      <span className="text-lg font-semibold tracking-tight">
+                        {title}
+                      </span>
+                      {/* Active indicator dot */}
+                      {isActive && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-white" />
+                      )}
+                    </Link>
+                  </motion.li>
+                );
+              })}
+            </ul>
+
+            {/* Bottom CTA — ✅ no nested button inside anchor */}
+            <motion.a
+              href="mailto:emmanueludeme.fe@gmail.com"
+              className="block w-full text-center bg-white text-[#0f0f0f] font-bold text-sm tracking-wide py-4 rounded-full hover:bg-white/90 transition-colors"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35, duration: 0.3 }}
+            >
+              Hire Me →
+            </motion.a>
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </section>
   );
 };
 

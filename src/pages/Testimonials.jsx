@@ -239,20 +239,20 @@ export default function Testimonials() {
                   className="rounded-2xl overflow-hidden cursor-pointer"
                   style={{ boxShadow: "0 8px 40px rgba(0,0,0,0.5)" }}
                 >
-                  <div className="relative aspect-[9/10] overflow-hidden bg-neutral-900">
+                  <div className="relative aspect-9/10 overflow-hidden bg-neutral-900">
                     <img
                       src={v.thumbnail}
                       alt={v.name}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
+                    <div className="absolute inset-0 bg-linear-to-b from-black/40 via-transparent to-black/80" />
                     <div className="absolute top-3 left-3">
                       <div className="flex items-center gap-1 bg-black/50 text-white/80 text-[10px] font-medium px-2 py-1 rounded-full border border-white/10">
                         {v.tag}
                       </div>
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 px-4 py-4">
-                      <div className="w-full h-[2px] bg-white/20 rounded-full mb-3">
+                      <div className="w-full h-0.5 bg-white/20 rounded-full mb-3">
                         <div
                           className="h-full bg-white rounded-full"
                           style={{ width: "30%" }}
@@ -299,7 +299,7 @@ export default function Testimonials() {
               ))}
               {/* CTA card at bottom of right */}
               <div
-                className="relative rounded-2xl border border-white/10 bg-white/[0.04] p-6 flex flex-col justify-between"
+                className="relative rounded-2xl border border-white/10 bg-white/4 p-6 flex flex-col justify-between"
                 style={{
                   marginTop: `-${Math.min(2 * 8, 32)}px`,
                   zIndex: 0,
@@ -334,13 +334,13 @@ export default function Testimonials() {
           {textTestimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-white/[0.03] border border-white/8 rounded-2xl p-5 sm:p-6 flex flex-col gap-4 hover:bg-white/[0.06] hover:border-white/15 transition-all duration-300"
+              className="relative bg-white/3 border border-white/8 rounded-2xl p-5 sm:p-6 flex flex-col gap-4 hover:bg-white/6 hover:border-white/15 transition-all duration-300"
               style={{ borderColor: "rgba(255,255,255,0.07)" }}
             >
               {/* Author */}
               <div className="flex items-center gap-3">
                 <div
-                  className={`w-9 h-9 rounded-full bg-gradient-to-br ${t.color} flex items-center justify-center text-white text-xs font-black shrink-0`}
+                  className={`w-9 h-9 rounded-full bg-linear-to-br ${t.color} flex items-center justify-center text-white text-xs font-black shrink-0`}
                 >
                   {t.initials}
                 </div>

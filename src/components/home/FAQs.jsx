@@ -29,13 +29,12 @@ export function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="bg-[#111] py-20 px-6 md:px-12 lg:px-24">
-      <div className="max-w-3xl mx-auto">
+    <section className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
+      <div className="lg:container mx-auto">
         {/* Heading */}
         <h2
-          className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-white leading-tight mb-16"
+          className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-white leading-tight mb-16 font-bebas"
           style={{
-            fontFamily: "'Bebas Neue', 'Impact', sans-serif",
             letterSpacing: "-0.02em",
           }}
         >
