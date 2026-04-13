@@ -23,7 +23,7 @@ const MobileNav = () => {
   }, [pathname]);
 
   return (
-    <section className="lg:hidden flex justify-between items-center px-5 py-4 bg-[#0f0f0f] border-b border-white/[0.07]">
+    <section className="lg:hidden flex justify-between items-center px-6 md:px-12 lg:px-24 py-4 bg-[#0f0f0f] border-b border-white/[0.07]">
       {/* Logo */}
       <Link to="/">
         <img

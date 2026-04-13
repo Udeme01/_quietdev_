@@ -30,7 +30,7 @@ export function FAQ() {
 
   return (
     <section className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
-      <div className="lg:container mx-auto">
+      <div className="lg:max-w-350 mx-auto">
         {/* Heading */}
         <h2
           className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-white leading-tight mb-16 font-bebas"

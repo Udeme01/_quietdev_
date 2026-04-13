@@ -25,8 +25,9 @@ const Skills = () => {
   ];
 
   return (
-    <main className="min-h-screen bg-[#0f0f0f] text-white">
-      <div className="max-w-5xl mx-auto px-5 sm:px-8 pt-24 pb-24">
+    <main className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
+      <div className="lg:max-w-350 mx-auto">
+        {/* <div className="max-w-5xl mx-auto px-5 sm:px-8 pt-24 pb-24"> */}
         {/* ── HEADER ── */}
         <header className="mb-16 sm:mb-20">
           <span
@@ -35,21 +36,15 @@ const Skills = () => {
           >
             Expertise
           </span>
-          <h1
-            className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase leading-[0.92] tracking-tighter text-white mb-6"
-            style={{ fontFamily: "'Bebas Neue', Impact, sans-serif" }}
-          >
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase leading-[0.92] text-white mb-6 font-bebas">
             Skills &
             <br />
             <span className="text-white/25">Technologies</span>
           </h1>
-          <p
-            className="text-white/40 text-base sm:text-lg leading-relaxed max-w-xl"
-            style={{ fontFamily: "'DM Sans', sans-serif" }}
-          >
+          {/* <p className="text-white/40 text-base sm:text-lg leading-relaxed max-w-xl">
             A rundown of the tools, languages, and frameworks I use to design
             and build things people enjoy using.
-          </p>
+          </p> */}
         </header>
 
         {/* ── STATS ROW ── */}

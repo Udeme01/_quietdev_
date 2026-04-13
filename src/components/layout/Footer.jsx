@@ -10,8 +10,8 @@ import { Button, SocialButton } from "../common/Button";
 const Footer = () => {
   return (
     <footer className="bg-transparent py-20 px-6 md:px-12 lg:px-24 text-center">
-    {/* <footer className="bg-neutral-900 text-white mt-24 font-lato md:py-16 mx-4 text-center"> */}
-      <section className="lg:container mx-auto px-6 md:px-12 lg:px-20 bg-black rounded-3xl">
+      {/* <footer className="bg-neutral-900 text-white mt-24 font-lato md:py-16 mx-4 text-center"> */}
+      <section className="lg:max-w-350 mx-auto px-6 md:px-12 lg:px-20 bg-black rounded-3xl">
         {/* available */}
         <section className="pt-12">
           <div>

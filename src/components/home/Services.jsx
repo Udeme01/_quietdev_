@@ -58,7 +58,7 @@ const services = [
 export function WhatIDo() {
   return (
     <section className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
-      <div className="lg:container mx-auto">
+      <div className="lg:max-w-350 mx-auto">
         {/* Heading */}
 
         <Sectionheader headerTitle="What I Do" />

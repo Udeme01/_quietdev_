@@ -33,7 +33,7 @@ const testimonials = [
 export function WhatClientsSay() {
   return (
     <section className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
-      <div className="lg:container mx-auto">
+      <div className="lg:max-w-350 mx-auto">
         {/* Heading */}
         <div className="mb-16">
           <h2

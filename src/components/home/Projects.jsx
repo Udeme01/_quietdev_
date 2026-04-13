@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <section className="bg-transparent min-h-screen py-20 px-6 md:px-12 lg:px-24">
-      <div className="lg:container mx-auto">
+      <div className="lg:max-w-350 mx-auto">
         {/* Header Section */}
 
         <Sectionheader

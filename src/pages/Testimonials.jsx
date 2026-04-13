@@ -209,14 +209,12 @@ function VideoCard({ v, index }) {
 
 export default function Testimonials() {
   return (
-    <main className="min-h-screen bg-[#0f0f0f] text-white">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <main className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
+      <div className="lg:max-w-350 mx-auto">
+        {/* <div className="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28"> */}
         {/* ── HERO HEADING ── */}
         <div className="mb-16 sm:mb-20">
-          <h1
-            className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase leading-[0.92] tracking-tighter text-white mb-5"
-            style={{ fontFamily: "'Bebas Neue', 'Impact', sans-serif" }}
-          >
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase leading-[0.92] text-white mb-5 font-bebas">
             I've Helped 20+ <span className="text-white/25">Companies</span>
             <br />
             Design, Ship,

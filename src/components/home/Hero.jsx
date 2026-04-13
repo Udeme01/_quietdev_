@@ -5,8 +5,9 @@ import { AnchorButton, SocialButton } from "../common/Button";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-[#0f0f0f] text-white">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-20 pb-20">
+    <section className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
+      <div className="max-w-350 mx-auto">
+        {/* <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-20 pb-20"> */}
         {/* ── MAIN GRID ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-end min-h-[85vh]">
           {/* ── LEFT — Text content ── */}
