@@ -27,12 +27,21 @@ const MobileNav = () => {
           />
         </picture>
         {/* <Theme /> */}
+        {/* availability... */}
+        <div className="flex items-center justify-center space-x-2 bg-black/30 px-2 rounded-lg">
+          <div className="animate-pulse bg-green-300 w-5 h-5 rounded-full relative flex items-center justify-center">
+            <span className="animate-pulse bg-green-700 w-3 h-3 rounded-full absolute flex"></span>
+          </div>
+          <h1 className="text-xs tracking-wide rounded-full text-right underline underline-offset-2">
+            Available to take on new Website projects! Let’s talk
+          </h1>
+        </div>
         <button className="relative">
           <Hamburger
             toggled={isOpen}
             toggle={setIsOpen}
             size={20}
-            color="red"
+            color="white"
           />
         </button>
         <AnimatePresence>

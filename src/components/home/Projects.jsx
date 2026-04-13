@@ -9,7 +9,7 @@ const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
 
   return (
-    <div className="mx-auto py-10 pt-20 px-4 lg:container">
+    <div className="mx-auto py-10 pt-24 px-4 lg:container">
       {/* Header Section */}
 
       <Sectionheader

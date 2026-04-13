@@ -15,6 +15,7 @@ const DesktopNav = () => {
             alt="logo"
           />
         </picture>
+
         <nav>
           <ul className="lg:flex lg:justify-center lg:align-center">
             {ROUTES.map((listItem) => {
@@ -31,8 +32,17 @@ const DesktopNav = () => {
           </ul>
         </nav>
 
-        <a className={ctaButtonStyle} href="mailto:emmanueludeme.fe@gmail.com">
-          Hire Me
+        {/* availability... */}
+        <a
+          href="mailto:emmanueludeme.fe@gmail.com"
+          className="flex items-center justify-center space-x-2 bg-black/30 p-4 rounded-lg"
+        >
+          <div className="animate-pulse bg-green-300 w-5 h-5 rounded-full relative flex items-center justify-center">
+            <span className="animate-pulse bg-green-700 w-3 h-3 rounded-full absolute flex"></span>
+          </div>
+          <h1 className="text-sm tracking-wide rounded-full text-right font-bold">
+            Available to take on new projects! Let’s talk
+          </h1>
         </a>
       </div>
     </>

@@ -1,39 +1,3 @@
-// import { CERTIFICATIONS } from "../../data/certifications";
-
-// const Certificates = () => {
-//   return (
-//     <>
-//       <section className="lg:container lg:mx-auto mt-12 font-winkySans">
-//         <h1 className="text-3xl text-left font-medium m-4 mt-8 text-red-400 tracking-wide">
-//           Certifications
-//         </h1>
-//         <div className="tracking-wide lg:grid lg:grid-cols-3">
-//           {CERTIFICATIONS.map((certificates) => {
-//             const { id, href, certImg, title, description } = certificates;
-//             return (
-//               <a key={id} href={href} target="_blank">
-//                 <div className="rounded-xl m-4 p-2 flex justify-start gap-4 bg-gray-100 text-black shadow-md dark:bg-neutral-800 dark:text-neutral-100">
-//                   <img
-//                     src={certImg}
-//                     alt="logo"
-//                     className="rounded-full w-24 border p-px bg-white border-red-400"
-//                   />
-//                   <div className="flex justify-center align-center flex-col w-full">
-//                     <h2 className="font-regular text-lg">{title}</h2>
-//                     <p className="font-light text-md">{description}</p>
-//                   </div>
-//                 </div>
-//               </a>
-//             );
-//           })}
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
-
-// export default Certificates;
-
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -51,7 +15,7 @@ const Certificates = () => {
   const [hoveredCert, setHoveredCert] = useState(null);
 
   return (
-    <div className="bg-white dark:bg-transparent lg:container px-4 pt-20 mx-auto">
+    <section className="bg-white dark:bg-transparent lg:container px-4 pt-24 mx-auto">
       <div>
         {/* Header Section */}
         <Sectionheader
@@ -62,7 +26,7 @@ const Certificates = () => {
         />
 
         {/* Certifications Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-0">
           {certifications.map((cert) => (
             <div
               key={cert.id}
@@ -111,7 +75,7 @@ const Certificates = () => {
                 </div>
 
                 {/* Certificate Title */}
-                <h4 className="text-lg font-semibold text-slate-900 mb-6 leading-snug min-h-[3.5rem]">
+                <h4 className="text-lg font-semibold text-slate-900 mb-6 leading-snug min-h-14">
                   {cert.title}
                 </h4>
 
@@ -133,18 +97,18 @@ const Certificates = () => {
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-slate-900 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
             </div>
           ))}
-        </div>
+        </section>
 
         {/* Stats Section */}
-        {/* <div className="border-t border-white/20 pt-16">
+        <section className="border-t border-white/20 pt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
               {
                 icon: faGraduationCap,
-                number: "7",
+                number: "7+",
                 label: "Certifications Earned",
               },
-              { icon: faAward, number: "2", label: "Learning Platforms" },
+              { icon: faAward, number: "2+", label: "Learning Platforms" },
               { icon: faChartLine, number: "500+", label: "Hours of Training" },
               {
                 icon: faCheckCircle,
@@ -168,10 +132,10 @@ const Certificates = () => {
               </div>
             ))}
           </div>
-        </div> */}
+        </section>
 
         {/* Bottom CTA */}
-        {/* <div className="mt-16 pt-16 border-t border-slate-200">
+        <div className="mt-16 pt-16 border-t border-slate-200">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold text-black/90 dark:text-white tracking-wide mb-2">
@@ -182,14 +146,14 @@ const Certificates = () => {
                 credentials
               </p>
             </div>
-            <button className="px-8 py-4 bg-black/90 dark:bg-white text-white dark:text-black font-semibold rounded hover:bg-black/80 dark:hover:text-white transition-colors duration-300 flex items-center gap-3 whitespace-nowrap">
+            <Link className="px-8 py-4 bg-black/90 dark:bg-white text-white dark:text-black font-semibold rounded hover:bg-black/80 dark:hover:text-white transition-colors duration-300 flex items-center gap-3 whitespace-nowrap">
               <span>View All Credentials</span>
               <FontAwesomeIcon icon={faExternalLinkAlt} />
-            </button>
+            </Link>
           </div>
-        </div> */}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -32,7 +32,7 @@ const Footer = () => {
 
         {/* ready to embark on a project - section */}
         <section className="py-32 flex items-center justify-center flex-col">
-          <h1 className="text-4xl mb-6 md:text-5xl lg:text-6xl xl:text-7xl max-w-6xl uppercase">
+          <h1 className="text-4xl mb-6 md:text-5xl lg:text-6xl xl:text-7xl max-w-3xl uppercase">
             Ready to level up your website?
           </h1>
           <Link className="border rounded-full px-6 py-3 flex items-center justify-center gap-3">
