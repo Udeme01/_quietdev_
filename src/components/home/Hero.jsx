@@ -1,7 +1,5 @@
 import { AnchorButton, SocialButton } from "../common/Button";
-
-// 👇 Replace this with your actual portrait image import
-// import portraitImg from "/heroImgs/portrait.webp";
+import portraitImg from "/myself/portrait.jpg";
 
 const Hero = () => {
   return (
@@ -98,8 +96,7 @@ const Hero = () => {
               {/* Portrait */}
               <div className="rounded-2xl overflow-hidden border border-white/10 aspect-3/4">
                 <img
-                  // src={portraitImg}
-                  src="#"
+                  src={portraitImg}
                   alt="Udeme Emmanuel"
                   className="w-full h-full object-cover object-top"
                 />

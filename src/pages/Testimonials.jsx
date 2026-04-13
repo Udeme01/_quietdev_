@@ -215,7 +215,7 @@ export default function Testimonials() {
         {/* ── HERO HEADING ── */}
         <div className="mb-16 sm:mb-20">
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase leading-[0.92] text-white mb-5 font-bebas">
-            I've Helped 20+ <span className="text-white/25">Companies</span>
+            I've Helped 5+ <span className="text-white/25">Companies</span>
             <br />
             Design, Ship,
             <br />
