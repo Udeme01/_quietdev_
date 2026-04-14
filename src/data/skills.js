@@ -55,12 +55,15 @@ export const skillCategories = [
     icon: faTools,
     skills: [
       { name: "Git & GitHub", level: 90 },
+      { name: "GitHub Co-Pilot", level: 90 },
       { name: "VS Code", level: 95 },
       { name: "NPM/Yarn", level: 85 },
       // { name: "Webpack", level: 75 },
       // { name: "Docker", level: 70 },
       // { name: "CI/CD", level: 70 },
       // { name: "Agile/Scrum", level: 80 },
+      { name: "Claude AI", level: 80 },
+      { name: "ChatGPT", level: 80 },
     ],
   },
 ];
