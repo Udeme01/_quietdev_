@@ -73,12 +73,12 @@ const AboutMe = () => {
                   Experience
                 </span>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase leading-tight text-white mb-4 font-bebas">
-                  Almost 2 years in.
+                  3+ years in.
                   <br />
                   <span className="text-white/30">And still hungry.</span>
                 </h2>
                 <p className="text-white/50 text-sm sm:text-base leading-relaxed">
-                  In nearly two years, I've had the privilege of working across
+                  In nearly three years, I've had the privilege of working across
                   a wide range of projects — from corporate websites to
                   e-commerce platforms and everything in between. Each project
                   has sharpened my skills, deepened my understanding of what

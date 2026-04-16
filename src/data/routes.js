@@ -9,11 +9,11 @@ export const ROUTES = [
     title: "About Me",
     href: "/about",
   },
-  {
-    id: "testimonials",
-    title: "Testimonials",
-    href: "/testimonials",
-  },
+  // {
+  //   id: "testimonials",
+  //   title: "Testimonials",
+  //   href: "/testimonials",
+  // },
   {
     id: "contact",
     title: "Contact",

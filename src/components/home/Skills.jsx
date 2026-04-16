@@ -20,8 +20,8 @@ const Skills = () => {
   const stats = [
     { value: totalSkills, label: "Total Skills" },
     { value: skillCategories.length, label: "Categories" },
-    { value: "2+", label: "Years Experience" },
-    { value: "20+", label: "Projects Shipped" },
+    { value: "3+", label: "Years Experience" },
+    { value: "5+", label: "Projects Shipped" },
   ];
 
   return (
@@ -30,10 +30,7 @@ const Skills = () => {
         {/* <div className="max-w-5xl mx-auto px-5 sm:px-8 pt-24 pb-24"> */}
         {/* ── HEADER ── */}
         <header className="mb-16 sm:mb-20">
-          <span
-            className="text-[11px] uppercase tracking-[0.3em] text-white/25 font-semibold mb-4 block"
-            style={{ fontFamily: "'DM Sans', sans-serif" }}
-          >
+          <span className="text-[11px] uppercase tracking-[0.3em] text-white/25 font-semibold mb-4 block">
             Expertise
           </span>
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase leading-[0.92] text-white mb-6 font-bebas">
@@ -161,16 +158,10 @@ const Skills = () => {
 
         {/* ── BOTTOM CTA ── */}
         <section className="mt-24 text-center" aria-label="Call to action">
-          <p
-            className="text-[11px] uppercase tracking-[0.25em] text-white/25 mb-4 font-semibold"
-            style={{ fontFamily: "'DM Sans', sans-serif" }}
-          >
+          <p className="text-[11px] uppercase tracking-[0.25em] text-white/25 mb-4 font-semibold">
             Ready to build?
           </p>
-          <h2
-            className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase text-white mb-10 leading-tight"
-            style={{ fontFamily: "'Bebas Neue', Impact, sans-serif" }}
-          >
+          <h2 className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase text-white mb-10 leading-tight font-bebas">
             Let's discuss
             <br />
             <span className="text-white/25">your project.</span>
@@ -178,10 +169,9 @@ const Skills = () => {
           <Link
             to="/contact"
             className="inline-flex items-center gap-3 bg-white text-[#0f0f0f] font-bold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors"
-            style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Get in touch
-            <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+            <FontAwesomeIcon icon={faArrowRight} className="bg-black text-white p-2 rounded-full text-xs" />
           </Link>
         </section>
       </div>

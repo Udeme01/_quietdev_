@@ -17,10 +17,10 @@ const services = [
         />
       </svg>
     ),
-    label: "UX/UI Design",
-    tag: "DESIGN",
+    label: "Interface Design",
+    tag: "UI • UX • Layout",
     description:
-      "User Experience Design and User Interface Design are some of the most important skill-sets that help make an app or web-app stand out from the crowd. I ensure your designs are intuitive, compelling, and memorable — that makes all the difference.",
+      "I design clean and user-friendly interfaces directly during development, ensuring every layout is simple, functional, and built for real users. My focus is on clarity, usability, and delivering a smooth experience without unnecessary complexity.",
   },
   {
     icon: (
@@ -31,10 +31,10 @@ const services = [
         />
       </svg>
     ),
-    label: "Website Development",
-    tag: "WEBFLOW",
+    label: "Frontend Development",
+    tag: "React • Next.js",
     description:
-      "I design and build fast, scalable, and conversion-focused websites using Webflow. From Figma to live site, I ensure clean structure, responsive design, and easy updates, so your website not only looks great but works for your business.",
+      "I build fast, responsive, and scalable user interfaces using modern technologies like React and Next.js, with a strong focus on performance and clean architecture, so your website not only looks great but works for your business",
   },
   {
     icon: (
@@ -48,10 +48,44 @@ const services = [
         />
       </svg>
     ),
-    label: "Website Development",
-    tag: "FRAMER",
+    label: "API Integration",
+    tag: "REST API • Fetch/Axios",
     description:
-      "I create interactive, visually stunning websites with Framer, perfect for startups and brands that want bold design, smooth animations, and flexibility. With Framer, I bring ideas to life quickly, blending creativity with performance.",
+      "I connect applications to real-world data by integrating APIs, handling authentication, and managing dynamic content so products work seamlessly.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+        <path
+          d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    label: "Product Development",
+    tag: "MVP • Startup",
+    description:
+      "I turn ideas into functional digital products, focusing on building practical solutions that are ready for real users, not just concepts.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+        <path
+          d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    label: "Performance Optimization",
+    tag: "SEO • Best Practices",
+    description:
+      "I improve website speed and structure to ensure better user experience, responsiveness, and overall performance.",
   },
 ];
 

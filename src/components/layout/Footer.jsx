@@ -37,13 +37,16 @@ const Footer = () => {
           <h1 className="text-4xl mb-6 md:text-5xl lg:text-6xl xl:text-7xl max-w-3xl uppercase">
             Ready to level up your website?
           </h1>
-          <Button>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-3 bg-white text-[#0f0f0f] font-bold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors"
+          >
             Get in touch{" "}
             <FontAwesomeIcon
               icon={faArrowRight}
-              className="bg-black text-white p-2 rounded-full"
+              className="bg-black text-white p-2 rounded-full text-xs"
             />
-          </Button>
+          </Link>
         </section>
 
         {/* Bottom Bar */}

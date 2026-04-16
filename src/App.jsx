@@ -33,10 +33,10 @@ function App() {
           path: "about",
           element: <AboutMe />,
         },
-        {
-          path: "testimonials",
-          element: <Testimonials />,
-        },
+        // {
+        //   path: "testimonials",
+        //   element: <Testimonials />,
+        // },
         {
           path: "contact",
           element: <Contact />,

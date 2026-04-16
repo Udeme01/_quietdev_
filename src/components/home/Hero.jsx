@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
 
             {/* Name */}
-            <h1 className="text-[17vw] sm:text-[12vw] lg:text-[9.5vw] font-black uppercase leading-[0.85] text-white mb-6 font-bebas">
+            <h1 className="text-[clamp(3rem,12vw,8rem)] font-black uppercase leading-[0.85] text-white mb-6 font-bebas">
               Udeme
               <br />
               <span className="text-white/25">Emmanuel</span>
@@ -94,13 +94,13 @@ const Hero = () => {
               </div>
 
               {/* Portrait */}
-              <div className="rounded-2xl overflow-hidden border border-white/10 aspect-3/4">
+              {/* <div className="rounded-2xl overflow-hidden border border-white/10 aspect-3/4">
                 <img
                   src={portraitImg}
                   alt="Udeme Emmanuel"
                   className="w-full h-full object-cover object-top"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -101,7 +101,7 @@ const Certificates = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="border-t border-white/20 pt-16">
+        {/* <section className="border-t border-white/20 pt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
               {
@@ -133,10 +133,10 @@ const Certificates = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Bottom CTA */}
-        <div className="mt-16 pt-16 border-t border-slate-200">
+        {/* <div className="mt-16 pt-16 border-t border-slate-200">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold text-black/90 dark:text-white tracking-wide mb-2">
@@ -152,7 +152,7 @@ const Certificates = () => {
               <FontAwesomeIcon icon={faExternalLinkAlt} />
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

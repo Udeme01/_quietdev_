@@ -4,8 +4,8 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "Do you do Web Design or Development only?",
-    a: "Yes, I do both. I usually work on projects from design to Webflow and Framer development. However, if you only require web design or development, I'm available for both.",
+    q: "What kind of projects do you work on?",
+    a: "I primarily work on modern web applications, business websites, and MVPs for startups. Whether you need a landing page, a full product, or improvements to an existing project, I focus on building solutions that are functional, scalable, and user-friendly.",
   },
   {
     q: "Will I get a responsive website?",
@@ -16,8 +16,8 @@ const faqs = [
     a: "Pricing depends on the scope and complexity of the project. Reach out with your requirements and I'll send over a tailored quote.",
   },
   {
-    q: "Do I need a Webflow/Framer Account?",
-    a: "For Webflow projects, you'll need a Webflow account to host your site. For Framer projects, a Framer account is required. I'll walk you through the setup process — it's straightforward.",
+    q: "What do you need from me to get started?",
+    a: "To get started, I’ll need a clear idea of your project goals, any content or references you have, and access to relevant tools if needed. If you’re unsure about the details, I can guide you through the process and help shape your idea into a working product.",
   },
   {
     q: "Are you available 24/7?",
