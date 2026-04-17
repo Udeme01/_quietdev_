@@ -14,7 +14,7 @@ const Projects = () => {
         {/* Header Section */}
 
         <Sectionheader
-          headerTitle="Completed Projects"
+          headerTitle="Selected Projects"
           headerSubtitle="My Portfolio"
           headerBrief=" Explore a collection of creative works spanning e-commerce, corporate
           websites, and innovative digital experiences."

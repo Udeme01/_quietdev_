@@ -4,7 +4,7 @@ export const PROJECTS_DATA = {
     subtitle:
       "A dynamic fashion e-commerce platform with product pages, cart, and checkout flow.",
     client: "FizzAura Brand",
-    role: "Frontend Developer",
+    role: "Full-Stack Developer (Lead)",
     duration: "3 Weeks",
     year: "2026",
     heroBg: "#0A0A0A",
@@ -98,7 +98,7 @@ export const PROJECTS_DATA = {
     subtitle:
       "An in-progress e-commerce store for a home fragrance and decor brand.",
     client: "Home Scents Decor",
-    role: "Frontend Developer",
+    role: "Frontend Lead / Full-Stack Development",
     duration: "Ongoing",
     year: "2025",
     heroBg: "#1A1208",
@@ -189,7 +189,7 @@ export const PROJECTS_DATA = {
     subtitle:
       "An in-progress fashion brand site with lookbook, product showcase, and brand storytelling.",
     client: "Fitin Brand",
-    role: "Frontend Developer",
+    role: "Frontend Lead / Full-Stack Development",
     duration: "Ongoing",
     year: "2026",
     heroBg: "#0F0F0F",
@@ -278,7 +278,7 @@ export const PROJECTS_DATA = {
     subtitle:
       "An in-progress nonprofit/community site for a grassroots organisation.",
     client: "TGGC",
-    role: "Frontend Developer",
+    role: "Full-Stack Developer (Lead)",
     duration: "Ongoing",
     year: "2026",
     heroBg: "#0B1E0B",
@@ -371,7 +371,7 @@ export const PROJECTS_DATA = {
     heroBg: "#0A0A0A",
     accentColor: "#D4AF37",
     accentDark: true,
-    liveUrl: "https://aceleadership.vercel.app/",
+    liveUrl: "https://theaceleadershiptech.vercel.app/",
     tags: [
       "Next.js",
       "React",
