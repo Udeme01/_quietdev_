@@ -17,12 +17,12 @@ const Skills = () => {
     0,
   );
 
-  const stats = [
-    { value: totalSkills, label: "Total Skills" },
-    { value: skillCategories.length, label: "Categories" },
-    { value: "3+", label: "Years Experience" },
-    { value: "5+", label: "Projects Shipped" },
-  ];
+  // const stats = [
+  //   { value: totalSkills, label: "Total Skills" },
+  //   { value: skillCategories.length, label: "Categories" },
+  //   { value: "3+", label: "Years Experience" },
+  //   { value: "5+", label: "Projects Shipped" },
+  // ];
 
   return (
     <main className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
@@ -45,7 +45,7 @@ const Skills = () => {
         </header>
 
         {/* ── STATS ROW ── */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+        {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
           {stats.map((s, i) => (
             <div
               key={i}
@@ -65,7 +65,7 @@ const Skills = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* ── FILTER TABS ── */}
         <div
