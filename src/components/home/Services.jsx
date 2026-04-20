@@ -17,10 +17,10 @@ const services = [
         />
       </svg>
     ),
-    label: "Interface Design",
+    label: "UI & Product Design",
     tag: "UI • UX • Layout",
     description:
-      "I design clean and user-friendly interfaces directly during development, ensuring every layout is simple, functional, and built for real users. My focus is on clarity, usability, and delivering a smooth experience without unnecessary complexity.",
+      "I design functional, high-clarity interfaces directly during development. No unnecessary complexity—just clean layouts built for real users.",
   },
   {
     icon: (
@@ -31,10 +31,10 @@ const services = [
         />
       </svg>
     ),
-    label: "Frontend Development",
-    tag: "React • Next.js",
+    label: "Full-Stack Development",
+    tag: "React • Next.js • Scalable Architecture",
     description:
-      "I build fast, responsive, and scalable user interfaces using modern technologies like React and Next.js, with a strong focus on performance and clean architecture, so your website not only looks great but works for your business",
+      "I build the entire engine. From responsive frontends to secure API integrations and database architecture, I ensure your product works seamlessly from end to end.",
   },
   {
     icon: (
@@ -48,11 +48,12 @@ const services = [
         />
       </svg>
     ),
-    label: "API Integration",
-    tag: "REST API • Fetch/Axios",
+    label: "Custom Integrations & Data Security.",
+    tag: "Secure APIs",
     description:
       "I connect applications to real-world data by integrating APIs, handling authentication, and managing dynamic content so products work seamlessly.",
   },
+
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
@@ -65,27 +66,10 @@ const services = [
         />
       </svg>
     ),
-    label: "Product Development",
-    tag: "MVP • Startup",
-    description:
-      "I turn ideas into functional digital products, focusing on building practical solutions that are ready for real users, not just concepts.",
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path
-          d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
-    label: "Performance Optimization",
+    label: "Performance & Scalability",
     tag: "SEO • Best Practices",
     description:
-      "I improve website speed and structure to ensure better user experience, responsiveness, and overall performance.",
+      "I optimize for speed and structure. I ensure your platform is lightweight, SEO-friendly, and architected to grow alongside your business.",
   },
 ];
 

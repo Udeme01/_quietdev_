@@ -30,31 +30,33 @@ const Hero = () => {
 
             {/* Role tags */}
             <div className="flex flex-wrap gap-2 mb-6">
-              {["Frontend Developer", "UI/UX Design", "Photographer"].map(
-                (tag, i) => (
-                  <span
-                    key={i}
-                    className="text-[11px] uppercase tracking-[0.15em] text-white/40 font-semibold px-3 py-1.5 rounded-full border border-white/10"
-                  >
-                    {tag}
-                  </span>
-                ),
-              )}
+              {[
+                "Custom Web Design",
+                "Business Dashboards",
+                "Secure Platforms",
+              ].map((tag, i) => (
+                <span
+                  key={i}
+                  className="text-[11px] uppercase tracking-[0.15em] text-white/40 font-semibold px-3 py-1.5 rounded-full border border-white/10"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
 
             {/* Tagline */}
-            <p
-              className="text-white/40 text-sm sm:text-[15px] leading-relaxed max-w-sm mb-10"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
-            >
-              I build fast, beautiful websites and interfaces that people
-              actually enjoy using. Based in Nigeria — working worldwide.
+            <p className="text-white/40 text-sm sm:text-[15px] leading-relaxed max-w-sm mb-10">
+              {/* I build fast, beautiful websites and interfaces that people
+              actually enjoy using. Based in Nigeria — working worldwide. */}
+              I build websites and custom tools that actually work for your
+              business. No templates, no glitches—just solid code that handles
+              the heavy lifting so you don't have to. Need a site? DM me.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 mb-8">
-              <AnchorButton href="mailto:emmanueludeme.fe@gmail.com">
-                Hire Me
+              <AnchorButton href="https://wa.me/2347046780531?text=Hi%20Udeme,%20I'm%20interested%20in%20building%20a%20website!">
+                Send a DM!
               </AnchorButton>
               <a
                 href="/resume/emma.resume.pdf"
