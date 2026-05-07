@@ -1,4 +1,4 @@
-const lastUpdated = "April 13, 2025";
+const lastUpdated = "May 7, 2025";
 const ownerName = "Emmanuel Udeme";
 const ownerEmail = "emmanueludeme.fe@gmail.com";
 
@@ -45,8 +45,8 @@ export default function TermsOfService() {
 
         <Section title="1. Services">
           <p>
-            I provide UX/UI design, Webflow development, and Framer development
-            services for websites and web applications. The specific scope,
+            I provide Frontend web development
+            service for websites and web applications. The specific scope,
             deliverables, timeline, and price for each project are agreed upon
             before work begins, typically outlined in a project proposal or
             contract.
@@ -214,7 +214,7 @@ export default function TermsOfService() {
             Questions about these terms? Email me at{" "}
             <a
               href={`mailto:${ownerEmail}`}
-              className="text-white/70 underline underline-offset-2 hover:text-white transition-colors"
+              className="text-green-700 underline underline-offset-2 hover:text-green-500 transition-colors"
             >
               {ownerEmail}
             </a>{" "}

@@ -1,7 +1,7 @@
-const lastUpdated = "April 13, 2025";
+const lastUpdated = "May 7, 2025";
 const ownerName = "Emmanuel Udeme";
 const ownerEmail = "emmanueludeme.fe@gmail.com";
-const websiteUrl = "emmanueludeme.dev"; // update this
+const websiteUrl = "https://quietdev.vercel.app/portfolio"; // update this
 
 const Section = ({ title, children }) => (
   <div className="mb-10">
@@ -38,19 +38,26 @@ export default function PrivacyPolicy() {
         {/* Intro */}
         <p className="text-white/50 text-sm leading-relaxed mb-12">
           Your privacy matters. This policy explains what information I collect
-          when you visit <span className="text-white/70">{websiteUrl}</span> or
-          reach out to work with me, how I use it, and what rights you have over
-          it. I keep things simple — I'm a solo freelancer, not a corporation.
+          when you visit{" "}
+          <a
+            href={websiteUrl}
+            className="text-green-700 underline underline-offset-2 hover:text-green-500 transition-colors"
+          >
+            my website
+          </a>{" "}
+          or reach out to work with me, how I use it, and what rights you have
+          over it. I keep things simple — I'm a solo freelancer, not a
+          corporation.
         </p>
 
         <Section title="1. Who I Am">
           <p>
-            I'm {ownerName}, a freelance UX/UI Designer and Web Developer. This
-            website is my personal portfolio and the primary way potential
-            clients get in touch with me. You can reach me at{" "}
+            I'm {ownerName}, a freelance Frontend Engineer. This website is my
+            personal portfolio and the primary way potential clients get in
+            touch with me. You can reach me at{" "}
             <a
               href={`mailto:${ownerEmail}`}
-              className="text-white/70 underline underline-offset-2 hover:text-white transition-colors"
+              className="text-green-700 underline underline-offset-2 hover:text-green-500 transition-colors"
             >
               {ownerEmail}
             </a>
@@ -74,8 +81,7 @@ export default function PrivacyPolicy() {
           </ul>
           <p className="mt-3">
             I do not collect payment information directly. Any payments are
-            processed through third-party platforms (e.g. Paystack, Wise, or
-            PayPal) with their own privacy policies.
+            processed through third-party platforms (e.g. Paystack, Palmpay, MoniePoint) with their own privacy policies.
           </p>
         </Section>
 
