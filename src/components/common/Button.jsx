@@ -23,7 +23,7 @@ export const AnchorButton = ({ children, href }) => {
 export const SocialButton = ({ className }) => {
   return (
     <section className={className}>
-      <div className="mt-7 flex items-center gap-3">
+      <div className="flex items-center gap-3">
         {SOCIALS.map((socials) => {
           const { id, href, target, icon, rel } = socials;
           return (
