@@ -3,6 +3,7 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { SendMe } from "../components/common/SendMe";
@@ -26,10 +27,10 @@ const socials = [
   },
   {
     id: 3,
-    label: "Instagram",
+    label: "Twiiter",
     description: "Follow the journey — behind the scenes of dev and design.",
-    href: "https://www.instagram.com/the_quietdev",
-    icon: faInstagram,
+    href: "https://x.com/the_quietdev",
+    icon: faXTwitter,
   },
   {
     id: 4,

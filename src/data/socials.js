@@ -2,7 +2,7 @@
 
 import {
   faGithub,
-  faInstagram,
+  faXTwitter,
   faLinkedin,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
@@ -23,10 +23,10 @@ export const SOCIALS = [
     rel: "noopener noreferrer",
   },
   {
-    id: "instagram",
-    href: "https://www.instagram.com/the_quietdev",
+    id: "Twitter",
+    href: "https://x.com/the_quietdev",
     target: "_blank",
-    icon: faInstagram,
+    icon: faXTwitter,
     rel: "noopener noreferrer",
   },
   {
