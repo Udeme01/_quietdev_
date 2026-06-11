@@ -63,7 +63,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
     stacks:
       "NextJS, ReactJS, JAVASCRIPT, TailwindCSS,Anthropic AI, RESPONSIVE DESIGN",
-    previewLink: "https://theaceleadershiptech.vercel.app/",
+    previewLink: "https://aceleadershiphub.com/",
     to: "/project/4",
     size: "large",
   },
