@@ -24,7 +24,7 @@ const Hero = () => {
             <section className="flex items-center mb-6 gap-4">
               <div className="w-20 h-0.5 bg-white/20 rounded-full" />
               <p className="text-2xl tracking-widest text-white/70">
-                Lead Frontend Engineer
+                Lead Frontend Web Engineer
               </p>
             </section>
 
