@@ -1,27 +1,27 @@
-import React from "react";
+// import React from "react";
+import PropTypes from "prop-types";
 
-const Sectionheader = ({ headerTitle, headerBrief, headerSubtitle }) => {
+const Sectionheader = ({ headerTitle, headerBrief }) => {
   return (
-    <div className="mb-16">
-      {/* <div className="flex items-center gap-3 mb-6">
-        <div className="h-px w-16 bg-black/80 dark:bg-white"></div>
-        <span className="text-black/60 dark:text-white text-xs font-medium tracking-wider uppercase font-bebas">
-          {headerSubtitle}
-        </span>
-      </div> */}
+    <div className="mb-10">
       <h1
-        className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter text-white leading-none mb-3 font-bebas"
+        className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter text-white leading-none mb-1 font-bebas"
         style={{
           letterSpacing: "-0.02em",
         }}
       >
         {headerTitle}
       </h1>
-      {/* <p className="text-black/60 dark:text-white/60 text-sm max-w-2xl leading-relaxed">
+      <p className="text-black/60 dark:text-white/60 text-sm max-w-2xl leading-relaxed">
         {headerBrief}
-      </p> */}
+      </p>
     </div>
   );
+};
+
+Sectionheader.propTypes = {
+  headerTitle: PropTypes.string.isRequired,
+  headerBrief: PropTypes.string.isRequired,
 };
 
 export default Sectionheader;

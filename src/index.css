@@ -14,6 +14,11 @@
   --lato-regular: 400;
   --lato-bold: 700;
   --lato-black: 900;
+
+  /* color */
+  --brand-color-DEFAULT: "#5B8CFF";
+  --brand-color-light: "#7AA6FF";
+  --brand-color-dark: "#3E6EEB";
 }
 
 .scrollbar-hide::-webkit-scrollbar {
