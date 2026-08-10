@@ -5,7 +5,7 @@ import { PROJECTS } from "../../data/projects";
 
 const Projects = () => {
   return (
-    <section className="bg-transparent px-6">
+    <section className="bg-transparent px-6" id="projects">
       <div className="lg:max-w-350 mx-auto">
         <Sectionheader
           headerTitle="Projects I've shipped."

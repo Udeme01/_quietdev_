@@ -5,7 +5,7 @@ import { skillCategories } from "../../data/skills";
 import { Link } from "react-router-dom";
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory] = useState("all");
 
   const filteredCategories =
     activeCategory === "all"
