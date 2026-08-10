@@ -7,7 +7,16 @@ export const PROJECTS = [
     type: "Dynamic",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
-    stacks: "HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN",
+    stacks: [
+      "Google Analytic",
+      "Vercel Analytics",
+      "Open Graph",
+      "TailwindCSS",
+      "ReactJS",
+      "Redux",
+      "Supabase",
+      "RESPONSIVE DESIGN",
+    ],
     previewLink: "https://fizzauraluxury.com",
     to: "/project/0",
     size: "medium",
@@ -61,8 +70,14 @@ export const PROJECTS = [
     type: "Dynamic",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia sit aliquam placeat inventore repellendus aliquid dolore sed ipsam maiores?",
-    stacks:
-      "NextJS, ReactJS, JAVASCRIPT, TailwindCSS,Anthropic AI, RESPONSIVE DESIGN",
+    stacks: [
+      "NextJS",
+      "ReactJS",
+      "JAVASCRIPT",
+      "TailwindCSS",
+      "Anthropic AI",
+      "RESPONSIVE DESIGN",
+    ],
     previewLink: "https://aceleadershiphub.com/",
     to: "/project/4",
     size: "large",

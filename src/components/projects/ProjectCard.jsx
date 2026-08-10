@@ -7,8 +7,9 @@ const ProjectCard = ({ project }) => {
   const {
     title,
     description,
+    stacks,
     image,
-    link,
+    previewLink,
     category,
     year,
     tags = [],
@@ -16,12 +17,10 @@ const ProjectCard = ({ project }) => {
 
   return (
     <a
-      href={link}
+      href={previewLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block rounded-3xl border border-white/10 bg-white/[0.02] overflow-hidden
-                 transition-all duration-500 hover:border-white/20 hover:bg-white/[0.04]
-                 hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.15)]"
+      className="group block rounded-3xl border border-white/15 bg-white/[0.02] overflow-hidden transition-all duration-500 hover:border-green-500/20 hover:bg-green-800/[0.04] hover:shadow-[0_0_60px_-15px_rgba(22, 101, 52, 0.5)]"
     >
       {/* Image */}
       <div className="relative h-[200px] sm:h-[280px] md:h-[200px] lg:h-[300px] overflow-hidden">
@@ -65,6 +64,17 @@ const ProjectCard = ({ project }) => {
           {description}
         </p>
 
+        <div className="mt-4 flex flex-wrap gap-2">
+          {stacks.map((stack) => (
+            <span
+              key={stack}
+              className="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1.5 text-[8px] font-medium tracking-[0.18em] text-white/50 uppercase"
+            >
+              {stack}
+            </span>
+          ))}
+        </div>
+
         {tags.length > 0 && (
           <div className="mt-5 flex flex-wrap gap-2">
             {tags.map((tag) => (
@@ -86,8 +96,9 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
+    stacks: PropTypes.string,
     image: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
+    previewLink: PropTypes.string.isRequired,
     category: PropTypes.string,
     year: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     tags: PropTypes.arrayOf(PropTypes.string),

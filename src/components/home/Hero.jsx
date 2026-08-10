@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="flex flex-col justify-end order-2 lg:order-1">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-lg tracking-widest text-white/70 font-medium">
-                I&apos;m <span className="text-blue-300">Udeme Emmanuel</span>{" "}
+                I&apos;m <span className="text-green-700">Udeme Emmanuel</span>{" "}
                 aKa theQuietdev
               </span>
             </div>
@@ -20,8 +20,8 @@ const Hero = () => {
             {/* Name */}
             {/* text-[clamp(3rem,10vw,8rem)] */}
             <h1 className="text-[clamp(3rem,14vw,4rem)] font-black leading-14 tracking-wider text-white mb-4 font-bebas">
-              Building <span className="text-blue-300">products</span> that
-              <span className="text-blue-300"> businesses rely on.</span>
+              Building <span className="text-green-700">products</span> that
+              <span className="text-green-700"> businesses rely on.</span>
             </h1>
 
             {/* Divider */}

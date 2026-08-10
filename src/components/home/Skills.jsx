@@ -12,18 +12,6 @@ const Skills = () => {
       ? skillCategories
       : skillCategories.filter((cat) => cat.id === activeCategory);
 
-  const totalSkills = skillCategories.reduce(
-    (acc, cat) => acc + cat.skills.length,
-    0,
-  );
-
-  // const stats = [
-  //   { value: totalSkills, label: "Total Skills" },
-  //   { value: skillCategories.length, label: "Categories" },
-  //   { value: "3+", label: "Years Experience" },
-  //   { value: "5+", label: "Projects Shipped" },
-  // ];
-
   return (
     <main className="bg-transparent py-20 px-6 md:px-12 lg:px-24">
       <div className="lg:max-w-350 mx-auto">
@@ -38,37 +26,10 @@ const Skills = () => {
             <br />
             <span className="text-white/25">Technologies</span>
           </h1>
-          {/* <p className="text-white/40 text-base sm:text-lg leading-relaxed max-w-xl">
-            A rundown of the tools, languages, and frameworks I use to design
-            and build things people enjoy using.
-          </p> */}
         </header>
 
-        {/* ── STATS ROW ── */}
-        {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
-          {stats.map((s, i) => (
-            <div
-              key={i}
-              className="bg-white/3 border border-white/[0.07] rounded-2xl px-5 py-5"
-            >
-              <p
-                className="text-3xl sm:text-4xl font-black text-white mb-1"
-                style={{ fontFamily: "'Bebas Neue', Impact, sans-serif" }}
-              >
-                {s.value}
-              </p>
-              <p
-                className="text-[11px] uppercase tracking-[0.2em] text-white/30 font-semibold"
-                style={{ fontFamily: "'DM Sans', sans-serif" }}
-              >
-                {s.label}
-              </p>
-            </div>
-          ))}
-        </div> */}
-
         {/* ── FILTER TABS ── */}
-        <div
+        {/* <div
           className="flex flex-wrap gap-2 mb-12"
           role="tablist"
           aria-label="Filter skills by category"
@@ -102,14 +63,17 @@ const Skills = () => {
               {cat.title}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* ── SKILL CATEGORIES ── */}
-        <div className="space-y-5" role="tabpanel">
+        <div
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-4"
+          role="tabpanel"
+        >
           {filteredCategories.map((category) => (
             <section
               key={category.id}
-              className="rounded-2xl border border-white/[0.07] bg-white/3 overflow-hidden"
+              className="rounded-2xl border border-white/[0.07] hover:border-green-700/50 bg-black/3 hover:bg-green-800/10 overflow-hidden transition-all duration-700"
             >
               {/* Category header */}
               <div className="flex items-center gap-4 px-6 py-5 border-b border-white/[0.07]">
@@ -137,14 +101,11 @@ const Skills = () => {
               </div>
 
               {/* Skills grid */}
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 divide-x divide-y divide-white/5">
+              <ul className="flex flex-wrap py-4 px-2">
                 {category.skills.map((skill, idx) => (
-                  <li
-                    key={idx}
-                    className="px-5 py-4 hover:bg-white/4 transition-colors duration-150"
-                  >
+                  <li key={idx} className="p-2">
                     <span
-                      className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+                      className="text-xs font-medium text-white/50 group-hover:text-white hover:border-green-700 border border-white/10 transition-colors border px-3 py-1.5 rounded-full"
                       style={{ fontFamily: "'DM Sans', sans-serif" }}
                     >
                       {skill.name}
@@ -162,7 +123,7 @@ const Skills = () => {
             Ready to build?
           </p>
           <h2 className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase text-white mb-10 leading-tight font-bebas">
-            Let's discuss
+            Let&apos;s discuss
             <br />
             <span className="text-white/25">your project.</span>
           </h2>
@@ -171,7 +132,10 @@ const Skills = () => {
             className="inline-flex items-center gap-3 bg-white text-[#0f0f0f] font-bold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors"
           >
             Get in touch
-            <FontAwesomeIcon icon={faArrowRight} className="bg-black text-white p-2 rounded-full text-xs" />
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              className="bg-black text-white p-2 rounded-full text-xs"
+            />
           </Link>
         </section>
       </div>

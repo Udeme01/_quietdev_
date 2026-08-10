@@ -21,7 +21,7 @@ const Sectionheader = ({ headerTitle, headerBrief }) => {
 
 Sectionheader.propTypes = {
   headerTitle: PropTypes.string.isRequired,
-  headerBrief: PropTypes.string.isRequired,
+  headerBrief: PropTypes.string,
 };
 
 export default Sectionheader;

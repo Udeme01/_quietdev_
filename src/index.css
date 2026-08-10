@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap");
+
 @import "tailwindcss";
 
 @theme {
@@ -16,9 +17,9 @@
   --lato-black: 900;
 
   /* color */
-  --brand-color-DEFAULT: "#5B8CFF";
-  --brand-color-light: "#7AA6FF";
-  --brand-color-dark: "#3E6EEB";
+  --brand-color: "#1c2f2a";
+  --neutral-light: "#ffffff";
+  --neutral-dark: "#000000";
 }
 
 .scrollbar-hide::-webkit-scrollbar {
